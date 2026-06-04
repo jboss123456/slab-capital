@@ -3,28 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>SLAB CAPITAL</title>
+<title>SLAB TRACK</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#04070a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Slab Capital">
+<meta name="apple-mobile-web-app-title" content="Slab Track">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{--bg:#04070a;--panel:#0a1015;--panel2:#0d1620;--line:#152230;--green:#28f5a8;--green-dim:#0f7a55;--red:#ff5d6c;--amber:#ffcb52;--text:#e2edf2;--mute:#5d7682;--cyan:#3fe0ff;--glow:0 0 26px rgba(40,245,168,.4)}
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospace;-webkit-font-smoothing:antialiased}
-  body{min-height:100vh;padding:max(20px,env(safe-area-inset-top)) 14px 0;position:relative;overflow-x:hidden;background-image:radial-gradient(circle at 15% -5%, rgba(40,245,168,.10), transparent 42%),radial-gradient(circle at 95% 8%, rgba(63,224,255,.06), transparent 38%),linear-gradient(rgba(21,34,48,.45) 1px, transparent 1px),linear-gradient(90deg, rgba(21,34,48,.45) 1px, transparent 1px);background-size:auto,auto,38px 38px,38px 38px}
+  body{min-height:100vh;padding:max(20px,env(safe-area-inset-top)) 14px 24px;position:relative;overflow-x:hidden;background-image:radial-gradient(circle at 15% -5%, rgba(40,245,168,.10), transparent 42%),radial-gradient(circle at 95% 8%, rgba(63,224,255,.06), transparent 38%),linear-gradient(rgba(21,34,48,.45) 1px, transparent 1px),linear-gradient(90deg, rgba(21,34,48,.45) 1px, transparent 1px);background-size:auto,auto,38px 38px,38px 38px}
   body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;background:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px);mix-blend-mode:overlay}
-  .wrap{max-width:530px;margin:0 auto;padding-bottom:24px;position:relative;z-index:1}
-  .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+  .wrap{max-width:530px;margin:0 auto;position:relative;z-index:1}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:14px}
   .logo{font-family:'Chakra Petch',sans-serif;font-weight:700;letter-spacing:1.5px;font-size:21px;display:flex;align-items:center;gap:8px}
   .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:var(--glow);animation:pulse 1.8s infinite}
   .sub{color:var(--mute);font-size:9.5px;letter-spacing:3px;margin-top:5px}
   .clock{text-align:right;font-size:9.5px;color:var(--mute);letter-spacing:1.5px}
   .clock .live{color:var(--green);font-weight:600;display:flex;align-items:center;gap:5px;justify-content:flex-end}
   .clock .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:var(--glow);animation:pulse 1.4s infinite}
+  .tabs{display:flex;gap:6px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:5px;margin-bottom:16px}
+  .tabs button{flex:1;background:none;border:none;color:var(--mute);font-family:'Chakra Petch',sans-serif;font-weight:600;font-size:11px;letter-spacing:1px;padding:9px 4px;border-radius:8px;cursor:pointer;transition:.15s}
+  .tabs button.on{background:linear-gradient(160deg,#10391f,#0a2417);color:var(--green);box-shadow:inset 0 0 0 1px rgba(40,245,168,.3)}
+  .view{display:none}
+  .view.on{display:block;animation:rise .35s}
   .total{position:relative;border:1px solid var(--line);border-radius:16px;background:linear-gradient(155deg,var(--panel2),var(--panel) 70%);padding:22px 22px 20px;overflow:hidden;margin-bottom:18px;box-shadow:0 0 0 1px rgba(40,245,168,.05),0 24px 50px -30px #000}
   .total::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% -15%, rgba(40,245,168,.16), transparent 52%);pointer-events:none}
   .lab{font-size:9.5px;letter-spacing:3.5px;color:var(--mute)}
@@ -37,7 +42,7 @@
   .day{color:var(--mute)}
   .cost{font-size:9.5px;color:var(--mute);margin-top:13px;letter-spacing:1.5px;border-top:1px solid var(--line);padding-top:12px}
   .sectionlab{font-size:9.5px;letter-spacing:3.5px;color:var(--mute);margin:0 4px 10px;display:flex;justify-content:space-between}
-  .pos{border:1px solid var(--line);border-radius:14px;background:linear-gradient(165deg,var(--panel),#080d12);padding:16px 17px;margin-bottom:12px;position:relative;overflow:hidden;opacity:0;animation:rise .5s forwards}
+  .pos{border:1px solid var(--line);border-radius:14px;background:linear-gradient(165deg,var(--panel),#080d12);padding:16px 17px;margin-bottom:12px;position:relative;overflow:hidden}
   .pos .accent{position:absolute;left:0;top:0;bottom:0;width:3px}
   .pos .glow{position:absolute;right:-20px;top:-30px;width:130px;height:130px;border-radius:50%;pointer-events:none;opacity:.4}
   .top{display:flex;justify-content:space-between;align-items:flex-start;position:relative;gap:10px}
@@ -60,25 +65,34 @@
   .legend{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:12px;font-size:9px;color:var(--mute)}
   .legend div{display:flex;align-items:center;gap:5px}
   .sw{width:8px;height:8px;border-radius:2px}
-  .tape{position:fixed;bottom:0;left:0;right:0;background:#03060a;border-top:1px solid var(--line);height:calc(40px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);display:flex;align-items:center;overflow:hidden;z-index:20}
-  .run{display:flex;gap:30px;white-space:nowrap;animation:scroll 26s linear infinite;font-size:11px;letter-spacing:1px;line-height:40px;height:40px;align-items:center;will-change:transform;backface-visibility:hidden;transform:translateZ(0)}
-  .t b{color:var(--text);font-family:'Chakra Petch';font-weight:700}
-  .g{color:var(--green)}.rd{color:var(--red)}.a{color:var(--amber)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+  .stat{border:1px solid var(--line);border-radius:14px;background:linear-gradient(165deg,var(--panel),#080d12);padding:16px}
+  .stat .k{font-size:9px;letter-spacing:2px;color:var(--mute)}
+  .stat .v{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:24px;margin-top:8px;line-height:1}
+  .stat .v.sm{font-size:17px}
+  .chartbox{border:1px solid var(--line);border-radius:16px;background:linear-gradient(155deg,var(--panel2),var(--panel) 70%);padding:20px 18px}
+  .chartbox .note{font-size:10px;color:var(--mute);line-height:1.6;text-align:center;padding:24px 8px}
   .disc{text-align:center;font-size:8px;color:#2c3d46;letter-spacing:1.2px;margin-top:18px;line-height:1.6}
   .loading{text-align:center;color:var(--mute);padding:50px 0;font-size:11px;letter-spacing:2px}
-  @keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-  @keyframes scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <div class="head">
-    <div><div class="logo"><span class="dot"></span>SLAB CAPITAL</div><div class="sub">GRADED CARD INDEX · JORDAN</div></div>
-    <div class="clock"><div class="live">LIVE</div><div id="updated" style="margin-top:5px">—</div></div>
+    <div><div class="logo"><span class="dot"></span>SLAB TRACK</div><div class="sub">GRADED CARD INDEX &middot; JORDAN</div></div>
+    <div class="clock"><div class="live">LIVE</div><div id="updated" style="margin-top:5px">&mdash;</div></div>
   </div>
-  <div id="app"><div class="loading">FETCHING MARKET DATA…</div></div>
-  <div class="disc">NOT FINANCIAL ADVICE · VALUES FROM DAILY SOLD-COMP SNAPSHOTS</div>
+  <div class="tabs">
+    <button id="t-pf" class="on" onclick="showTab('pf')">PORTFOLIO</button>
+    <button id="t-bv" onclick="showTab('bv')">BOOK VALUE</button>
+    <button id="t-ch" onclick="showTab('ch')">CHART</button>
+  </div>
+  <div id="v-pf" class="view on"><div class="loading">FETCHING MARKET DATA&hellip;</div></div>
+  <div id="v-bv" class="view"></div>
+  <div id="v-ch" class="view"></div>
+  <div class="disc">NOT FINANCIAL ADVICE &middot; VALUES ARE ESTIMATES FROM DAILY SOLD-COMP SNAPSHOTS</div>
 </div>
 <script>
 const DOT = String.fromCharCode(183);
@@ -93,48 +107,98 @@ function hex2rgb(h){const n=parseInt(h.slice(1),16);return [n>>16&255,n>>8&255,n
 function rgba(c,a){return 'rgba('+c[0]+','+c[1]+','+c[2]+','+a+')'}
 function bigName(n){return n.split(DOT)[0].trim()}
 function smallName(n){return n.split(DOT).slice(1).join(' '+DOT+' ').trim()}
-async function load(){
-  let d;
-  try{ d = await (await fetch('data.json?t='+Date.now())).json(); }
-  catch(e){ document.getElementById('app').innerHTML='<div class="loading">Could not load data.json.</div>'; return; }
-  render(d);
+function showTab(t){
+  ['pf','bv','ch'].forEach(x=>{
+    document.getElementById('v-'+x).classList.toggle('on', x===t);
+    document.getElementById('t-'+x).classList.toggle('on', x===t);
+  });
 }
-function render(d){
-  document.getElementById('updated').textContent=(d.updated||'').toUpperCase();
+let DATA=null;
+async function load(){
+  try{ DATA = await (await fetch('data.json?t='+Date.now())).json(); }
+  catch(e){ document.getElementById('v-pf').innerHTML='<div class="loading">Could not load data.json.</div>'; return; }
+  document.getElementById('updated').textContent=(DATA.updated||'').toUpperCase();
+  renderPortfolio(DATA); renderBook(DATA); renderChart(DATA);
+}
+function totals(d){
   const h=d.holdings;
+  return {h, now:h.reduce((s,p)=>s+p.now,0), cost:h.reduce((s,p)=>s+p.cost,0), prev:h.reduce((s,p)=>s+(p.prev??p.now),0)};
+}
+function renderPortfolio(d){
+  const {h,now,cost,prev}=totals(d);
   h.forEach((p,i)=>{ if(!p.color) p.color=PALETTE[i%PALETTE.length]; });
-  const totNow=h.reduce((s,p)=>s+p.now,0), totCost=h.reduce((s,p)=>s+p.cost,0), totPrev=h.reduce((s,p)=>s+(p.prev??p.now),0);
-  const allTime=pct(totNow,totCost), dayChg=totNow-totPrev, dayPct=pct(totNow,totPrev);
+  const allTime=pct(now,cost), dayChg=now-prev, dayPct=pct(now,prev);
   let html='<div class="total"><div class="lab">PORTFOLIO VALUE '+DOT+' CAD</div>'
     +'<div class="val"><span class="cur">C$</span><span id="tv">0</span></div>'
     +'<div class="row"><span class="pill '+(allTime>=0?'g':'r')+'">'+(allTime>=0?'\u25B2':'\u25BC')+' '+fmtPct(allTime)+'</span>'
     +'<span class="day">'+(dayChg>=0?'+':'\u2212')+CUR(Math.abs(dayChg))+' today ('+fmtPct(dayPct)+')</span></div>'
-    +'<div class="cost">COST BASIS '+CUR(totCost)+' '+DOT+' '+h.length+' POSITIONS</div></div>'
-    +'<div class="sectionlab"><span>POSITIONS</span><span>COST \u2192 NOW</span></div>';
-  h.forEach((p,i)=>{
+    +'<div class="cost">COST BASIS '+CUR(cost)+' '+DOT+' '+h.length+' POSITIONS</div></div>'
+    +'<div class="sectionlab"><span>POSITIONS</span><span>COST &rarr; NOW</span></div>';
+  h.forEach(p=>{
     const ret=pct(p.now,p.cost), c=trend(ret), col=p.color, rgb=hex2rgb(col);
-    const retCol = ret>5?'var(--green)':ret<-5?'var(--red)':'var(--amber)';
-    html+='<div class="pos" style="animation-delay:'+(.07*i)+'s">'
-      +'<div class="accent" style="background:'+col+';box-shadow:0 0 14px '+rgba(rgb,.6)+'"></div>'
+    const rc = ret>5?'var(--green)':ret<-5?'var(--red)':'var(--amber)';
+    html+='<div class="pos"><div class="accent" style="background:'+col+';box-shadow:0 0 14px '+rgba(rgb,.6)+'"></div>'
       +'<div class="glow" style="background:radial-gradient(circle,'+rgba(rgb,.13)+',transparent 70%)"></div>'
-      +'<div class="top"><div class="lft">'
-      +'<div class="tkr">'+bigName(p.name)+' <span class="badge" style="color:'+col+';background:'+rgba(rgb,.12)+';border:1px solid '+rgba(rgb,.33)+'">'+badge(ret)+'</span></div>'
+      +'<div class="top"><div class="lft"><div class="tkr">'+bigName(p.name)+' <span class="badge" style="color:'+col+';background:'+rgba(rgb,.12)+';border:1px solid '+rgba(rgb,.33)+'">'+badge(ret)+'</span></div>'
       +'<div class="name">'+smallName(p.name)+'</div></div>'
-      +'<div class="ret" style="color:'+retCol+'">'+fmtPct(ret)+'<span class="x">'+(p.now/p.cost).toFixed(1)+'\u00D7 cost</span></div></div>'
+      +'<div class="ret" style="color:'+rc+'">'+fmtPct(ret)+'<span class="x">'+(p.now/p.cost).toFixed(1)+'\u00D7 cost</span></div></div>'
       +'<div class="mid"><div class="spark"><svg viewBox="0 0 120 38" width="100%" height="38" preserveAspectRatio="none"><path d="'+SPARK[c]+'" fill="none" stroke="'+col+'" stroke-width="2.2"/></svg></div>'
       +'<div class="figs"><div class="fig"><div class="k">COST</div><div class="v">'+CUR(p.cost)+'</div></div>'
       +'<div class="fig"><div class="k">NOW</div><div class="v now">'+CUR(p.now)+'</div></div></div></div></div>';
   });
   const sorted=[...h].sort((a,b)=>b.now-a.now);
   html+='<div class="alloc"><div class="k">ALLOCATION BY VALUE</div><div class="bar">';
-  sorted.forEach(p=>{ html+='<span style="width:'+(p.now/totNow*100).toFixed(1)+'%;background:'+p.color+'"></span>'; });
+  sorted.forEach(p=>{ html+='<span style="width:'+(p.now/now*100).toFixed(1)+'%;background:'+p.color+'"></span>'; });
   html+='</div><div class="legend">';
-  sorted.forEach(p=>{ html+='<div><span class="sw" style="background:'+p.color+'"></span>'+bigName(p.name)+' '+Math.round(p.now/totNow*100)+'%</div>'; });
+  sorted.forEach(p=>{ html+='<div><span class="sw" style="background:'+p.color+'"></span>'+bigName(p.name)+' '+Math.round(p.now/now*100)+'%</div>'; });
   html+='</div></div>';
-  document.getElementById('app').innerHTML=html;
+  document.getElementById('v-pf').innerHTML=html;
   const el=document.getElementById('tv');let cur=0;
-  const step=()=>{cur+=Math.ceil((totNow-cur)/8);if(cur>=totNow){el.textContent=Math.round(totNow).toLocaleString();return}el.textContent=cur.toLocaleString();requestAnimationFrame(step)};
+  const step=()=>{cur+=Math.ceil((now-cur)/8);if(cur>=now){el.textContent=Math.round(now).toLocaleString();return}el.textContent=cur.toLocaleString();requestAnimationFrame(step)};
   setTimeout(step,300);
+}
+function renderBook(d){
+  const {h,now,cost}=totals(d);
+  const profit=now-cost, ret=pct(now,cost);
+  const byRet=[...h].sort((a,b)=>pct(b.now,b.cost)-pct(a.now,a.cost));
+  const best=byRet[0], worst=byRet[byRet.length-1];
+  let html='<div class="grid2">'
+    +'<div class="stat"><div class="k">INVESTED</div><div class="v">'+CUR(cost)+'</div></div>'
+    +'<div class="stat"><div class="k">CURRENT VALUE</div><div class="v" style="color:var(--green)">'+CUR(now)+'</div></div>'
+    +'<div class="stat"><div class="k">TOTAL PROFIT</div><div class="v" style="color:'+(profit>=0?'var(--green)':'var(--red)')+'">'+(profit>=0?'+':'\u2212')+CUR(Math.abs(profit))+'</div></div>'
+    +'<div class="stat"><div class="k">RETURN</div><div class="v" style="color:'+(ret>=0?'var(--green)':'var(--red)')+'">'+fmtPct(ret)+'</div></div>'
+    +'<div class="stat"><div class="k">BEST PERFORMER</div><div class="v sm">'+bigName(best.name)+'</div><div class="k" style="margin-top:6px;color:var(--green)">'+fmtPct(pct(best.now,best.cost))+'</div></div>'
+    +'<div class="stat"><div class="k">WORST PERFORMER</div><div class="v sm">'+bigName(worst.name)+'</div><div class="k" style="margin-top:6px;color:'+(pct(worst.now,worst.cost)>=0?'var(--green)':'var(--red)')+'">'+fmtPct(pct(worst.now,worst.cost))+'</div></div>'
+    +'</div><div class="sectionlab"><span>PROFIT / LOSS PER CARD</span></div>';
+  [...h].sort((a,b)=>(b.now-b.cost)-(a.now-a.cost)).forEach(p=>{
+    const pl=p.now-p.cost;
+    html+='<div class="pos" style="padding:13px 16px"><div class="top"><div class="lft"><div class="tkr" style="font-size:14px">'+bigName(p.name)+'</div></div>'
+      +'<div class="ret" style="font-size:17px;color:'+(pl>=0?'var(--green)':'var(--red)')+'">'+(pl>=0?'+':'\u2212')+CUR(Math.abs(pl))+'</div></div></div>';
+  });
+  document.getElementById('v-bv').innerHTML=html;
+}
+function renderChart(d){
+  const {now}=totals(d);
+  const hist=(d.history||[]).slice();
+  const box=document.getElementById('v-ch');
+  if(hist.length<2){
+    const cur=hist.length?hist[hist.length-1].v:now;
+    box.innerHTML='<div class="chartbox"><div class="lab">BOOK VALUE OVER TIME</div>'
+      +'<div class="val" style="font-size:40px"><span class="cur">C$</span>'+Math.round(cur).toLocaleString()+'</div>'
+      +'<div class="note">Your value history is just getting started. The daily update logs your book value each morning, so this chart fills in over the coming days. Check back in a few days to see the line build.</div></div>';
+    return;
+  }
+  const vals=hist.map(p=>p.v), mn=Math.min(...vals), mx=Math.max(...vals), W=300, H=140, pad=8;
+  const span=(mx-mn)||1;
+  const xy=hist.map((p,i)=>[pad+i/(hist.length-1)*(W-2*pad), pad+(1-(p.v-mn)/span)*(H-2*pad)]);
+  const line=xy.map((p,i)=>(i?'L':'M')+p[0].toFixed(1)+','+p[1].toFixed(1)).join(' ');
+  const area=line+' L'+(W-pad)+','+(H-pad)+' L'+pad+','+(H-pad)+' Z';
+  const first=hist[0].v, last=hist[hist.length-1].v, chg=pct(last,first);
+  box.innerHTML='<div class="chartbox"><div class="lab">BOOK VALUE OVER TIME</div>'
+    +'<div class="val" style="font-size:40px"><span class="cur">C$</span>'+Math.round(last).toLocaleString()+'</div>'
+    +'<div class="row" style="margin-bottom:14px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'\u25B2':'\u25BC')+' '+fmtPct(chg)+'</span><span class="day">since '+hist[0].d+'</span></div>'
+    +'<svg viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(40,245,168,.28)"/><stop offset="1" stop-color="rgba(40,245,168,0)"/></linearGradient></defs>'
+    +'<path d="'+area+'" fill="url(#ag)"/><path d="'+line+'" fill="none" stroke="#28f5a8" stroke-width="2.5"/></svg></div>';
 }
 load();
 </script>
