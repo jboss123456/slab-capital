@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>SLAB CAPITAL</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#04070a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Slab Capital">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=Chakra+Petch:wght@700&amp;display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#04070a;--panel:#0a1015;--panel2:#0d1620;--line:#152230;
+    --green:#28f5a8;--green-dim:#0f7a55;--red:#ff5d6c;--amber:#ffcb52;
+    --text:#e2edf2;--mute:#5d7682;--cyan:#3fe0ff;--glow:0 0 26px rgba(40,245,168,.4);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospace;-webkit-font-smoothing:antialiased}
+  body{min-height:100vh;padding:max(20px,env(safe-area-inset-top)) 14px 0;position:relative;overflow-x:hidden;
+    background-image:
+      radial-gradient(circle at 15% -5%, rgba(40,245,168,.10), transparent 42%),
+      radial-gradient(circle at 95% 8%, rgba(63,224,255,.06), transparent 38%),
+      linear-gradient(rgba(21,34,48,.45) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(21,34,48,.45) 1px, transparent 1px);
+    background-size:auto,auto,38px 38px,38px 38px}
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px);mix-blend-mode:overlay}
+  .wrap{max-width:530px;margin:0 auto;padding-bottom:96px;position:relative;z-index:1}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+  .logo{font-family:'Chakra Petch',sans-serif;font-weight:700;letter-spacing:1.5px;font-size:21px;display:flex;align-items:center;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:var(--glow);animation:pulse 1.8s infinite}
+  .sub{color:var(--mute);font-size:9.5px;letter-spacing:3px;margin-top:5px}
+  .clock{text-align:right;font-size:9.5px;color:var(--mute);letter-spacing:1.5px}
+  .clock .live{color:var(--green);font-weight:600;display:flex;align-items:center;gap:5px;justify-content:flex-end}
+  .clock .live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:var(--glow);animation:pulse 1.4s infinite}
+  .total{position:relative;border:1px solid var(--line);border-radius:16px;background:linear-gradient(155deg,var(--panel2),var(--panel) 70%);padding:22px 22px 20px;overflow:hidden;margin-bottom:18px;box-shadow:0 0 0 1px rgba(40,245,168,.05),0 24px 50px -30px #000}
+  .total::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 88% -15%, rgba(40,245,168,.16), transparent 52%);pointer-events:none}
+  .lab{font-size:9.5px;letter-spacing:3.5px;color:var(--mute)}
+  .val{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:50px;line-height:1;margin:8px 0 4px;letter-spacing:-1px;text-shadow:0 0 38px rgba(40,245,168,.3)}
+  .val .cur{font-size:20px;color:var(--mute);vertical-align:super;margin-right:3px;text-shadow:none}
+  .row{display:flex;gap:10px;align-items:center;font-size:12.5px;font-weight:600;flex-wrap:wrap}
+  .pill{border-radius:7px;padding:4px 9px}
+  .pill.g{background:rgba(40,245,168,.12);border:1px solid rgba(40,245,168,.32);color:var(--green)}
+  .pill.r{background:rgba(255,93,108,.12);border:1px solid rgba(255,93,108,.32);color:var(--red)}
+  .day{color:var(--mute)}
+  .cost{font-size:9.5px;color:var(--mute);margin-top:13px;letter-spacing:1.5px;border-top:1px solid var(--line);padding-top:12px}
+  .sectionlab{font-size:9.5px;letter-spacing:3.5px;color:var(--mute);margin:0 4px 10px;display:flex;justify-content:space-between}
+  .pos{border:1px solid var(--line);border-radius:14px;background:linear-gradient(165deg,var(--panel),#080d12);padding:16px 17px;margin-bottom:12px;position:relative;overflow:hidden;opacity:0;animation:rise .5s forwards}
+  .pos .accent{position:absolute;left:0;top:0;bottom:0;width:3px}
+  .pos .glow{position:absolute;right:-20px;top:-30px;width:130px;height:130px;border-radius:50%;pointer-events:none;opacity:.4}
+  .top{display:flex;justify-content:space-between;align-items:flex-start;position:relative}
+  .tkr{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:18px;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+  .badge{font-size:8px;letter-spacing:1px;padding:2px 7px;border-radius:5px;font-weight:600}
+  .name{font-size:9px;color:var(--mute);letter-spacing:.5px;margin-top:5px;max-width:190px;line-height:1.45}
+  .ret{text-align:right;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;line-height:1}
+  .ret .x{font-size:9.5px;color:var(--mute);display:block;margin-top:4px;font-family:'IBM Plex Mono';font-weight:500}
+  .mid{display:flex;align-items:flex-end;gap:14px;margin-top:8px}
+  .spark{flex:1;min-width:0}
+  .figs{display:flex;gap:16px;text-align:right}
+  .fig .k{font-size:7.5px;color:var(--mute);letter-spacing:1.5px}
+  .fig .v{font-size:13px;font-weight:600;margin-top:3px}
+  .fig .v.now{color:var(--text)}
+  .alloc{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px 17px;margin-top:6px}
+  .alloc .k{font-size:9.5px;letter-spacing:3px;color:var(--mute);margin-bottom:12px}
+  .bar{display:flex;height:14px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+  .bar span{height:100%}
+  .legend{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:12px;font-size:9px;color:var(--mute)}
+  .legend div{display:flex;align-items:center;gap:5px}
+  .sw{width:8px;height:8px;border-radius:2px}
+  .tape{position:fixed;bottom:0;left:0;right:0;background:#03060a;border-top:1px solid var(--line);height:36px;display:flex;align-items:center;overflow:hidden;z-index:20;padding-bottom:env(safe-area-inset-bottom)}
+  .run{display:flex;gap:30px;white-space:nowrap;animation:scroll 26s linear infinite;font-size:11px;letter-spacing:1px}
+  .t b{color:var(--text);font-family:'Chakra Petch';font-weight:700}
+  .g{color:var(--green)}.rd{color:var(--red)}.a{color:var(--amber)}
+  .disc{text-align:center;font-size:8px;color:#2c3d46;letter-spacing:1.2px;margin-top:18px;line-height:1.6}
+  .loading{text-align:center;color:var(--mute);padding:50px 0;font-size:11px;letter-spacing:2px}
+  @keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <div>
+      <div class="logo"><span class="dot"></span>SLAB CAPITAL</div>
+      <div class="sub">GRADED CARD INDEX &middot; JORDAN</div>
+    </div>
+    <div class="clock"><div class="live">LIVE</div><div id="updated" style="margin-top:5px">&mdash;</div></div>
+  </div>
+  <div id="app"><div class="loading">FETCHING MARKET DATA&hellip;</div></div>
+  <div class="disc">NOT FINANCIAL ADVICE &middot; VALUES FROM DAILY SOLD-COMP SNAPSHOTS</div>
+</div>
+<div class="tape"><div class="run" id="tape"></div></div>
+<script>
+const CUR = c => 'C$' + Math.round(c).toLocaleString();
+const pct = (n,b) => b ? (n-b)/b*100 : 0;
+const fmtPct = p => (p>=0?'+':'') + p.toFixed(p>=100?0:1) + '%';
+const PALETTE = ['#28f5a8','#b07cff','#ff8a5d','#2a6b54','#ffcb52','#3fe0ff','#ff5d6c'];
+const SPARK = {
+  up:   'M0,32 L20,30 L40,26 L60,22 L80,15 L100,9 L120,4',
+  flat: 'M0,19 L20,21 L40,18 L60,20 L80,18 L100,19 L120,18',
+  down: 'M0,12 L20,14 L40,15 L60,18 L80,20 L100,22 L120,24'
+};
+function trend(ret){ return ret>5?'up':ret<-5?'down':'flat'; }
+function badge(ret){ return ret>=100?'HOT':ret>5?'UP':ret<-5?'RED':'FLAT'; }
+function hex2rgb(h){const n=parseInt(h.slice(1),16);return [n>>16&255,n>>8&255,n&255];}
+function rgba(rgb,a){return 'rgba('+rgb[0]+','+rgb[1]+','+rgb[2]+','+a+')';}
+
+async function load(){
+  let d;
+  try{ d = await (await fetch('data.json?t='+Date.now())).json(); }
+  catch(e){ document.getElementById('app').innerHTML='<div class="loading">Could not load data.json &mdash; make sure it sits next to index.html.</div>'; return; }
+  render(d);
+}
+function render(d){
+  document.getElementById('updated').textContent=(d.updated||'').toUpperCase();
+  const h=d.holdings;
+  h.forEach((p,i)=>{ if(!p.color) p.color=PALETTE[i%PALETTE.length]; });
+  const totNow=h.reduce((s,p)=>s+p.now,0);
+  const totCost=h.reduce((s,p)=>s+p.cost,0);
+  const totPrev=h.reduce((s,p)=>s+(p.prev??p.now),0);
+  const allTime=pct(totNow,totCost), dayChg=totNow-totPrev, dayPct=pct(totNow,totPrev);
+
+  let html='<div class="total">'
+    +'<div class="lab">PORTFOLIO VALUE &middot; CAD</div>'
+    +'<div class="val"><span class="cur">C$</span><span id="tv">0</span></div>'
+    +'<div class="row">'
+    +'<span class="pill '+(allTime>=0?'g':'r')+'">'+(allTime>=0?'\u25B2':'\u25BC')+' '+fmtPct(allTime)+'</span>'
+    +'<span class="day">'+(dayChg>=0?'+':'\u2212')+CUR(Math.abs(dayChg))+' today ('+fmtPct(dayPct)+')</span>'
+    +'</div>'
+    +'<div class="cost">COST BASIS '+CUR(totCost)+' &middot; '+h.length+' POSITIONS</div>'
+    +'</div>'
+    +'<div class="sectionlab"><span>POSITIONS</span><span>COST &rarr; NOW</span></div>';
+
+  h.forEach((p,i)=>{
+    const ret=pct(p.now,p.cost), c=trend(ret), col=p.color, rgb=hex2rgb(col);
+    const retCol = ret>5?'var(--green)':ret<-5?'var(--red)':'var(--amber)';
+    html+='<div class="pos" style="animation-delay:'+(.07*i)+'s">'
+      +'<div class="accent" style="background:'+col+';box-shadow:0 0 14px '+rgba(rgb,.6)+'"></div>'
+      +'<div class="glow" style="background:radial-gradient(circle,'+rgba(rgb,.13)+',transparent 70%)"></div>'
+      +'<div class="top"><div>'
+      +'<div class="tkr">'+p.ticker+' <span class="badge" style="color:'+col+';background:'+rgba(rgb,.12)+';border:1px solid '+rgba(rgb,.33)+'">'+badge(ret)+'</span></div>'
+      +'<div class="name">'+p.name+'</div></div>'
+      +'<div class="ret" style="color:'+retCol+'">'+fmtPct(ret)+'<span class="x">'+(p.now/p.cost).toFixed(1)+'\u00D7 cost</span></div>'
+      +'</div>'
+      +'<div class="mid"><div class="spark"><svg viewBox="0 0 120 38" width="100%" height="38" preserveAspectRatio="none"><path d="'+SPARK[c]+'" fill="none" stroke="'+col+'" stroke-width="2.2"/></svg></div>'
+      +'<div class="figs"><div class="fig"><div class="k">COST</div><div class="v">'+CUR(p.cost)+'</div></div>'
+      +'<div class="fig"><div class="k">NOW</div><div class="v now">'+CUR(p.now)+'</div></div></div></div>'
+      +'</div>';
+  });
+
+  const sorted=[...h].sort((a,b)=>b.now-a.now);
+  html+='<div class="alloc"><div class="k">ALLOCATION BY VALUE</div><div class="bar">';
+  sorted.forEach(p=>{ html+='<span style="width:'+(p.now/totNow*100).toFixed(1)+'%;background:'+p.color+'"></span>'; });
+  html+='</div><div class="legend">';
+  sorted.forEach(p=>{ html+='<div><span class="sw" style="background:'+p.color+'"></span>'+p.ticker+' '+Math.round(p.now/totNow*100)+'%</div>'; });
+  html+='</div></div>';
+
+  document.getElementById('app').innerHTML=html;
+
+  const el=document.getElementById('tv');let cur=0;
+  const step=()=>{cur+=Math.ceil((totNow-cur)/8);if(cur>=totNow){el.textContent=Math.round(totNow).toLocaleString();return}el.textContent=cur.toLocaleString();requestAnimationFrame(step)};
+  setTimeout(step,300);
+
+  const items=[...h.map(p=>({t:p.ticker,v:p.now,c:pct(p.now,p.cost)})),{t:'BOOK',v:totNow,c:allTime}];
+  const tape=items.map(x=>{const k=x.c>5?'g':x.c<-5?'rd':'a';const ar=x.c>5?'\u25B2':x.c<-5?'\u25BC':'\u25AC';return '<span class="t"><b>'+x.t+'</b> '+Math.round(x.v)+' <span class="'+k+'">'+ar+' '+fmtPct(x.c)+'</span></span>';}).join('');
+  document.getElementById('tape').innerHTML=tape+tape;
+}
+load();
+</script>
+</body>
+</html>
