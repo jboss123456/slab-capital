@@ -1,0 +1,14 @@
+{
+"name": "Slab Capital",
+"short_name": "Slab Capital",
+"description": "Daily One Piece + Pokémon card market terminal",
+"start_url": "./index.html",
+"display": "standalone",
+"orientation": "portrait",
+"background_color": "#05080a",
+"theme_color": "#05080a",
+"icons": [
+{ "src": "icon-180.png", "sizes": "180x180", "type": "image/png" },
+{ "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+]
+}
