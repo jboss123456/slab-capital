@@ -17,7 +17,7 @@
   html,body{background:var(--bg);color:var(--text);font-family:'IBM Plex Mono',monospace;-webkit-font-smoothing:antialiased}
   body{min-height:100vh;padding:max(20px,env(safe-area-inset-top)) 14px 0;position:relative;overflow-x:hidden;background-image:radial-gradient(circle at 15% -5%, rgba(40,245,168,.10), transparent 42%),radial-gradient(circle at 95% 8%, rgba(63,224,255,.06), transparent 38%),linear-gradient(rgba(21,34,48,.45) 1px, transparent 1px),linear-gradient(90deg, rgba(21,34,48,.45) 1px, transparent 1px);background-size:auto,auto,38px 38px,38px 38px}
   body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;background:repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px);mix-blend-mode:overlay}
-  .wrap{max-width:530px;margin:0 auto;padding-bottom:96px;position:relative;z-index:1}
+  .wrap{max-width:530px;margin:0 auto;padding-bottom:24px;position:relative;z-index:1}
   .head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
   .logo{font-family:'Chakra Petch',sans-serif;font-weight:700;letter-spacing:1.5px;font-size:21px;display:flex;align-items:center;gap:8px}
   .dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:var(--glow);animation:pulse 1.8s infinite}
@@ -80,7 +80,6 @@
   <div id="app"><div class="loading">FETCHING MARKET DATA…</div></div>
   <div class="disc">NOT FINANCIAL ADVICE · VALUES FROM DAILY SOLD-COMP SNAPSHOTS</div>
 </div>
-<div class="tape"><div class="run" id="tape"></div></div>
 <script>
 const DOT = String.fromCharCode(183);
 const CUR = c => 'C$' + Math.round(c).toLocaleString();
@@ -136,9 +135,6 @@ function render(d){
   const el=document.getElementById('tv');let cur=0;
   const step=()=>{cur+=Math.ceil((totNow-cur)/8);if(cur>=totNow){el.textContent=Math.round(totNow).toLocaleString();return}el.textContent=cur.toLocaleString();requestAnimationFrame(step)};
   setTimeout(step,300);
-  const items=[...h.map(p=>({t:bigName(p.name),v:p.now,c:pct(p.now,p.cost)})),{t:'BOOK',v:totNow,c:allTime}];
-  const tape=items.map(x=>{const k=x.c>5?'g':x.c<-5?'rd':'a';const ar=x.c>5?'\u25B2':x.c<-5?'\u25BC':'\u25AC';return '<span class="t"><b>'+x.t+'</b> '+Math.round(x.v)+' <span class="'+k+'">'+ar+' '+fmtPct(x.c)+'</span></span>';}).join('');
-  document.getElementById('tape').innerHTML=tape+tape;
 }
 load();
 </script>
