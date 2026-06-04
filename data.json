@@ -1,11 +1,51 @@
 {
-"updated": "Jun 03 2026",
-"currency": "C$",
-"holdings": [
-{ "ticker": "$LUFFY", "query": "Luffy OP13-118 SP Wanted Japanese CGC Pristine 10", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 726, "now": 730, "color": "#28f5a8" },
-{ "ticker": "$GARDV", "query": "Mega Gardevoir ex MEP 032 PSA 10", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 340, "now": 345, "color": "#b07cff" },
-{ "ticker": "$HAWL", "query": "Mega Hawlucha ex 268 217 Ascended Heroes PSA 10", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 238, "now": 240, "color": "#ff8a5d" },
-{ "ticker": "$DEOXYS", "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 209, "now": 210, "color": "#2a6b54" },
-{ "ticker": "$EEVEE", "query": "Eevee 074 131 Pokemon Day 2025 promo stamp PSA 10", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 142, "now": 140, "color": "#ffcb52" }
-]
+  "updated": "Jun 04 2026",
+  "currency": "C$",
+  "holdings": [
+    {
+      "ticker": "$LUFFY",
+      "query": "Luffy OP13-118 SP Wanted Japanese CGC Pristine 10",
+      "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
+      "cost": 261,
+      "prev": 726,
+      "now": 730,
+      "color": "#28f5a8"
+    },
+    {
+      "ticker": "$GARDV",
+      "query": "Mega Gardevoir ex MEP 032 PSA 10",
+      "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
+      "cost": 160,
+      "prev": 345,
+      "now": 241.4,
+      "color": "#b07cff"
+    },
+    {
+      "ticker": "$HAWL",
+      "query": "Mega Hawlucha ex 268 217 Ascended Heroes PSA 10",
+      "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
+      "cost": 160,
+      "prev": 240,
+      "now": 108.8,
+      "color": "#ff8a5d"
+    },
+    {
+      "ticker": "$DEOXYS",
+      "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10",
+      "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10",
+      "cost": 205,
+      "prev": 210,
+      "now": 132.7,
+      "color": "#2a6b54"
+    },
+    {
+      "ticker": "$EEVEE",
+      "query": "Eevee 074 131 Pokemon Day 2025 promo stamp PSA 10",
+      "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
+      "cost": 150,
+      "prev": 140,
+      "now": 151.64,
+      "color": "#ffcb52"
+    }
+  ]
 }
