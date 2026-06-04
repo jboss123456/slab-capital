@@ -54,7 +54,7 @@
   .pos .accent{position:absolute;left:0;top:0;bottom:0;width:3px}
   .pos .glow{position:absolute;right:-20px;top:-30px;width:130px;height:130px;border-radius:50%;pointer-events:none;opacity:.4}
   .top{display:flex;justify-content:space-between;align-items:flex-start;position:relative}
-  .tkr{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:18px;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+  .tkr{font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;max-width:235px;line-height:1.35}
   .badge{font-size:8px;letter-spacing:1px;padding:2px 7px;border-radius:5px;font-weight:600}
   .name{font-size:9px;color:var(--mute);letter-spacing:.5px;margin-top:5px;max-width:190px;line-height:1.45}
   .ret{text-align:right;font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:22px;line-height:1}
@@ -144,8 +144,8 @@ function render(d){
       +'<div class="accent" style="background:'+col+';box-shadow:0 0 14px '+rgba(rgb,.6)+'"></div>'
       +'<div class="glow" style="background:radial-gradient(circle,'+rgba(rgb,.13)+',transparent 70%)"></div>'
       +'<div class="top"><div>'
-      +'<div class="tkr">'+p.ticker+' <span class="badge" style="color:'+col+';background:'+rgba(rgb,.12)+';border:1px solid '+rgba(rgb,.33)+'">'+badge(ret)+'</span></div>'
-      +'<div class="name">'+p.name+'</div></div>'
+      +'<div class="tkr">'+p.name+' <span class="badge" style="color:'+col+';background:'+rgba(rgb,.12)+';border:1px solid '+rgba(rgb,.33)+'">'+badge(ret)+'</span></div>'
+      +'</div>'
       +'<div class="ret" style="color:'+retCol+'">'+fmtPct(ret)+'<span class="x">'+(p.now/p.cost).toFixed(1)+'\u00D7 cost</span></div>'
       +'</div>'
       +'<div class="mid"><div class="spark"><svg viewBox="0 0 120 38" width="100%" height="38" preserveAspectRatio="none"><path d="'+SPARK[c]+'" fill="none" stroke="'+col+'" stroke-width="2.2"/></svg></div>'
@@ -167,7 +167,7 @@ function render(d){
   const step=()=>{cur+=Math.ceil((totNow-cur)/8);if(cur>=totNow){el.textContent=Math.round(totNow).toLocaleString();return}el.textContent=cur.toLocaleString();requestAnimationFrame(step)};
   setTimeout(step,300);
 
-  const items=[...h.map(p=>({t:p.ticker,v:p.now,c:pct(p.now,p.cost)})),{t:'BOOK',v:totNow,c:allTime}];
+  const items=[...h.map(p=>({t:p.name.split('·')[0].trim(),v:p.now,c:pct(p.now,p.cost)})),{t:'BOOK',v:totNow,c:allTime}];
   const tape=items.map(x=>{const k=x.c>5?'g':x.c<-5?'rd':'a';const ar=x.c>5?'\u25B2':x.c<-5?'\u25BC':'\u25AC';return '<span class="t"><b>'+x.t+'</b> '+Math.round(x.v)+' <span class="'+k+'">'+ar+' '+fmtPct(x.c)+'</span></span>';}).join('');
   document.getElementById('tape').innerHTML=tape+tape;
 }
