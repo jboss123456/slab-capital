@@ -89,6 +89,9 @@ def main():
         data = json.load(f)
 
     for card in data["holdings"]:
+        if card.get("lock"):
+            print(f"\nSkipping locked (manual) price: {card['name']}")
+            continue
         print(f"\nProcessing: {card['name']}")
         price = get_comp(card["query"])
         if price is not None:
