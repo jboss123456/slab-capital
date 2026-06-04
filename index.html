@@ -61,14 +61,14 @@
   .legend div{display:flex;align-items:center;gap:5px}
   .sw{width:8px;height:8px;border-radius:2px}
   .tape{position:fixed;bottom:0;left:0;right:0;background:#03060a;border-top:1px solid var(--line);height:calc(40px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);display:flex;align-items:center;overflow:hidden;z-index:20}
-  .run{display:flex;gap:30px;white-space:nowrap;animation:scroll 26s linear infinite;font-size:11px;letter-spacing:1px;line-height:40px;height:40px;align-items:center}
+  .run{display:flex;gap:30px;white-space:nowrap;animation:scroll 26s linear infinite;font-size:11px;letter-spacing:1px;line-height:40px;height:40px;align-items:center;will-change:transform;backface-visibility:hidden;transform:translateZ(0)}
   .t b{color:var(--text);font-family:'Chakra Petch';font-weight:700}
   .g{color:var(--green)}.rd{color:var(--red)}.a{color:var(--amber)}
   .disc{text-align:center;font-size:8px;color:#2c3d46;letter-spacing:1.2px;margin-top:18px;line-height:1.6}
   .loading{text-align:center;color:var(--mute);padding:50px 0;font-size:11px;letter-spacing:2px}
   @keyframes rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @keyframes scroll{from{transform:translate3d(0,0,0)}to{transform:translate3d(-50%,0,0)}}
 </style>
 </head>
 <body>
