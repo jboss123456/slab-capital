@@ -4,6 +4,7 @@ from datetime import datetime
 
 SCRAPER_API_KEY = os.environ["SCRAPER_API_KEY"]
 USD_TO_CAD = 1.36
+MIN_COMPS = 3
 
 def get_comp(query, floor=10):
     url = "https://www.ebay.com/sch/i.html?_nkw=" + query.replace(" ", "+") + "&LH_Sold=1&LH_Complete=1&LH_ItemCondition=3000&_sop=13"
@@ -13,8 +14,7 @@ def get_comp(query, floor=10):
             return None
     except Exception as e:
         print("request failed:", e); return None
-    html = resp.text
-    soup = BeautifulSoup(html, "html.parser")
+    soup = BeautifulSoup(resp.text, "html.parser")
     prices = []
     for tag in (soup.select(".s-item__price") or soup.select("[class*=price]") or []):
         m = re.search(r"[$]([\d,]+\.\d{2})", tag.get_text(strip=True).split(" to ")[0])
@@ -22,16 +22,15 @@ def get_comp(query, floor=10):
             v = float(m.group(1).replace(",", ""))
             if floor < v < 5000:
                 prices.append(v)
-    if not prices:
-        for p in re.findall(r'US\s*\$([\d,]+\.\d{2})', html)[:30]:
-            try:
-                v = float(p.replace(",", ""))
-                if floor < v < 5000: prices.append(v)
-            except: pass
-    if not prices:
-        print("no comps above floor for", query); return None
-    cad = round(statistics.median(prices[:10]) * USD_TO_CAD, 2)
-    print(query, "->", len(prices[:10]), "comps -> CAD", cad)
+    if len(prices) < MIN_COMPS:
+        print(query, "- only", len(prices), "comps - holding old price")
+        return None
+    recent = prices[:12]
+    s = sorted(recent)
+    if len(s) >= 5:
+        s = s[1:-1]
+    cad = round(statistics.median(s) * USD_TO_CAD, 2)
+    print(query, "->", len(recent), "comps, trimmed median CAD", cad)
     return cad
 
 def main():
