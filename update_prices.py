@@ -48,5 +48,21 @@ def main():
         json.dump(data, f, indent=2, ensure_ascii=False)
     print("done")
 
+def log_history():
+    import json, datetime, pathlib
+    p = pathlib.Path(__file__).parent / "data.json"
+    d = json.loads(p.read_text())
+    total = round(sum(h.get("now", 0) for h in d.get("holdings", [])))
+    today = datetime.date.today().strftime("%b %d %Y")
+    hist = d.get("history", [])
+    if hist and hist[-1].get("d") == today:
+        hist[-1]["v"] = total
+    else:
+        hist.append({"d": today, "v": total})
+    d["history"] = hist
+    p.write_text(json.dumps(d, indent=2, ensure_ascii=False))
+    print("logged history", today, total)
+
 if __name__ == "__main__":
     main()
+    log_history()
