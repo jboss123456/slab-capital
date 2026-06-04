@@ -1,112 +1,53 @@
-import os
-import re
-import json
-import time
-import statistics
-import requests
+import os, re, json, time, statistics, requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 
 SCRAPER_API_KEY = os.environ["SCRAPER_API_KEY"]
-USD_TO_CAD = 1.36 # update this value periodically or fetch live if you prefer
+USD_TO_CAD = 1.36
 
-def get_comp(query: str) -> float | None:
-    """
-    Returns the MEDIAN of the 10 most recent eBay SOLD prices for `query`, in CAD.
-    Adapted from card-briefing/main.py -> get_ebay_graded_price().
-    """
-    encoded_query = query.replace(" ", "+")
-    ebay_url = (
-        "https://www.ebay.com/sch/i.html"
-        "?_nkw=" + encoded_query +
-        "&LH_Sold=1&LH_Complete=1&LH_ItemCondition=3000&_sop=13"
-    )
-    params = {
-        "api_key": SCRAPER_API_KEY,
-        "url": ebay_url,
-        "render": "false",
-    }
-
-    print(f" [{query}] fetching eBay sold listings via ScraperAPI...")
+def get_comp(query, floor=10):
+    url = "https://www.ebay.com/sch/i.html?_nkw=" + query.replace(" ", "+") + "&LH_Sold=1&LH_Complete=1&LH_ItemCondition=3000&_sop=13"
     try:
-        resp = requests.get("http://api.scraperapi.com/", params=params, timeout=30)
-        print(f" [{query}] status={resp.status_code} len={len(resp.text)}")
+        resp = requests.get("http://api.scraperapi.com/", params={"api_key": SCRAPER_API_KEY, "url": url, "render": "false"}, timeout=30)
         if resp.status_code != 200:
-            raise ValueError(f"ScraperAPI returned {resp.status_code}")
+            return None
     except Exception as e:
-        print(f" [WARN] Request failed for '{query}': {e}")
-        return None
-
+        print("request failed:", e); return None
     html = resp.text
     soup = BeautifulSoup(html, "html.parser")
-
-    price_elements = (
-        soup.select(".s-item__price") or
-        soup.select("[class*=price]") or
-        soup.select(".item__price") or
-        []
-    )
-
-    prices_usd = []
-    for tag in price_elements:
-        text = tag.get_text(strip=True)
-        text = text.split(" to ")[0]
-        m = re.search(r"[$]([\d,]+\.\d{2})", text)
+    prices = []
+    for tag in (soup.select(".s-item__price") or soup.select("[class*=price]") or []):
+        m = re.search(r"[$]([\d,]+\.\d{2})", tag.get_text(strip=True).split(" to ")[0])
         if m:
-            val = float(m.group(1).replace(",", ""))
-            if 10 < val < 5000 and val != 20.00:
-                prices_usd.append(val)
-
-    if not prices_usd:
-        raw_prices = re.findall(r'"soldPrice"\s*:\s*\{[^}]*"value"\s*:\s*"([\d.]+)"', html)
-        if not raw_prices:
-            raw_prices = re.findall(r'"price"\s*:\s*"([\d.]+)"', html)
-        if not raw_prices:
-            raw_prices = re.findall(r'US\s*\$([\d,]+\.\d{2})', html)
-        for p in raw_prices[:20]:
+            v = float(m.group(1).replace(",", ""))
+            if floor < v < 5000:
+                prices.append(v)
+    if not prices:
+        for p in re.findall(r'US\s*\$([\d,]+\.\d{2})', html)[:30]:
             try:
-                val = float(str(p).replace(",", ""))
-                if 10 < val < 5000 and val != 20.00:
-                    prices_usd.append(val)
-            except Exception:
-                pass
-
-    print(f" [{query}] raw USD prices found: {prices_usd[:10]}")
-
-    if not prices_usd:
-        print(f" [WARN] No sold comps found for '{query}'")
-        return None
-
-    sample = prices_usd[:10]
-    median_usd = statistics.median(sample)
-    median_cad = round(median_usd * USD_TO_CAD, 2)
-
-    print(f" [{query}] {len(sample)} comps -> median USD ${median_usd:.2f} -> CAD ${median_cad:.2f}")
-    return median_cad
+                v = float(p.replace(",", ""))
+                if floor < v < 5000: prices.append(v)
+            except: pass
+    if not prices:
+        print("no comps above floor for", query); return None
+    cad = round(statistics.median(prices[:10]) * USD_TO_CAD, 2)
+    print(query, "->", len(prices[:10]), "comps -> CAD", cad)
+    return cad
 
 def main():
-    with open("data.json", "r") as f:
+    with open("data.json") as f:
         data = json.load(f)
-
     for card in data["holdings"]:
         if card.get("lock"):
-            print(f"\nSkipping locked (manual) price: {card['name']}")
-            continue
-        print(f"\nProcessing: {card['name']}")
-        price = get_comp(card["query"])
+            print("skip locked", card["name"]); continue
+        price = get_comp(card["query"], card.get("floor", 10))
         if price is not None:
-            card["prev"] = card["now"]
-            card["now"] = price
-        else:
-            print(f" Keeping existing price: {card['now']}")
+            card["prev"] = card["now"]; card["now"] = price
         time.sleep(1)
-
     data["updated"] = datetime.utcnow().strftime("%b %d %Y")
-
     with open("data.json", "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
-
-    print(f"\nOK data.json updated at {datetime.utcnow().isoformat()}Z")
+    print("done")
 
 if __name__ == "__main__":
     main()
