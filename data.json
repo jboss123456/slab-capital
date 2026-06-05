@@ -1,7 +1,16 @@
 {
-  "updated": "Jun 04 2026",
+  "updated": "Jun 05 2026",
   "currency": "C$",
-  "history": [ { "d": "Jun 04 2026", "v": 1665 } ],
+  "history": [
+    {
+      "d": "Jun 04 2026",
+      "v": 1665
+    },
+    {
+      "d": "Jun 05 2026",
+      "v": 1644
+    }
+  ],
   "holdings": [
     {
       "ticker": "$LUFFY",
@@ -9,7 +18,7 @@
       "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
       "cost": 261,
       "prev": 730,
-      "now": 730,
+      "now": 680.0,
       "color": "#28f5a8",
       "floor": 300
     },
@@ -18,7 +27,7 @@
       "query": "Mega Gardevoir ex MEP 032 PSA 10",
       "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
       "cost": 160,
-      "prev": 345,
+      "prev": 353.6,
       "now": 353.6,
       "color": "#b07cff",
       "floor": 150
@@ -48,8 +57,8 @@
       "query": "Eevee 074 131 Pokemon Day 2025 promo stamp PSA 10",
       "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
       "cost": 150,
-      "prev": 140,
-      "now": 180.88,
+      "prev": 180.88,
+      "now": 160.72,
       "color": "#ffcb52",
       "floor": 60
     }
