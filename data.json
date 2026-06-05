@@ -18,9 +18,10 @@
       "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
       "cost": 261,
       "prev": 730,
-      "now": 680.0,
+      "now": 730,
       "color": "#28f5a8",
-      "floor": 300
+      "floor": 300,
+      "lock": true
     },
     {
       "ticker": "$GARDV",
