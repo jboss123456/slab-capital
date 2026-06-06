@@ -1,5 +1,5 @@
 {
-  "updated": "Jun 05 2026",
+  "updated": "Jun 06 2026",
   "currency": "C$",
   "history": [
     {
@@ -9,6 +9,10 @@
     {
       "d": "Jun 05 2026",
       "v": 1644
+    },
+    {
+      "d": "Jun 06 2026",
+      "v": 1712
     }
   ],
   "holdings": [
