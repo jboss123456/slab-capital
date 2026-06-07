@@ -11,7 +11,7 @@
       "v": 1644
     },
     {
-      "d": "Jun 06 2026",
+      "d": "Jun 06 2026",h
       "v": 1712
     }
   ],
@@ -24,8 +24,7 @@
       "prev": 730,
       "now": 730,
       "color": "#28f5a8",
-      "floor": 300,
-      "lock": true
+      "floor": 600
     },
     {
       "ticker": "$GARDV",
@@ -55,8 +54,7 @@
       "prev": 188,
       "now": 188,
       "color": "#ffcb52",
-      "floor": 60,
-      "lock": true
+      "floor": 120
     },
     {
       "ticker": "$DEOXYS",
@@ -66,8 +64,7 @@
       "prev": 200,
       "now": 200,
       "color": "#2a6b54",
-      "floor": 90,
-      "lock": true
+      "floor": 150
     }
   ]
 }
