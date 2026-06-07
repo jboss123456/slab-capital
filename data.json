@@ -18,13 +18,13 @@
 
     {"ticker": "$DEOXYS", "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 200, "now": 200, "color": "#2a6b54", "floor": 150, "lock": true},
 
-    {"ticker": "$ESP", "query": "Espeon Neo 2 196 Promo Japanese PSA 8", "name": "Espeon · JP Neo 2 #196 Promo · PSA 8", "cost": 136, "prev": 41, "now": 41, "color": "#c084fc", "floor": 20, "lock": true},
+    {"ticker": "$ESP", "query": "Espeon Neo 2 196 Promo Japanese PSA 8", "name": "Espeon · JP Neo 2 #196 Promo · PSA 8", "cost": 136, "prev": 41, "now": 41, "color": "#c084fc", "floor": 20},
 
-    {"ticker": "$LUFFY26", "query": "Monkey D Luffy ST26-005 SR One Piece", "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat", "cost": 0, "prev": 7, "now": 7, "color": "#f87171", "floor": 1, "lock": true},
+    {"ticker": "$LUFFY26", "query": "Monkey D Luffy ST26-005 SR One Piece", "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat", "cost": 0, "prev": 7, "now": 7, "color": "#f87171", "floor": 1},
 
-    {"ticker": "$FLAR", "query": "Flareon 1999 Jungle Holo 3 PSA 7", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 95, "now": 95, "color": "#fb923c", "floor": 30, "lock": true},
+    {"ticker": "$FLAR", "query": "Flareon 1999 Jungle Holo 3 PSA 7", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 95, "now": 95, "color": "#fb923c", "floor": 30},
 
-    {"ticker": "$ROBIN", "query": "Nico Robin ST26-003 SR One Piece", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4, "now": 4, "color": "#818cf8", "floor": 1, "lock": true}
+    {"ticker": "$ROBIN", "query": "Nico Robin ST26-003 SR One Piece", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4, "now": 4, "color": "#818cf8", "floor": 1}
 
   ]
 
