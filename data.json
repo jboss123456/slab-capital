@@ -40,7 +40,7 @@
     },
     {
       "ticker": "$GARDV",
-      "query": "Mega Gardevoir ex 032 Ascended Heroes PSA 10 -lot -charizard -lucario",
+      "query": "Mega Gardevoir ex 032 PSA 10 -lot -charizard",
       "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
       "cost": 160,
       "prev": 353.6,
@@ -88,7 +88,7 @@
     },
     {
       "ticker": "$EEVEE",
-      "query": "Eevee 074/131 Pokemon Day promo PSA 10 -lot -prismatic -leafeon -jolteon",
+      "query": "Eevee Pokemon Day stamp PSA 10 -lot",
       "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
       "cost": 150,
       "prev": 188,
