@@ -2,15 +2,24 @@
   "updated": "Jun 07 2026",
   "currency": "C$",
   "history": [
-    { "d": "Jun 04 2026", "v": 1665 },
-    { "d": "Jun 05 2026", "v": 1644 },
-    { "d": "Jun 06 2026", "v": 1712 },
+    {
+      "d": "Jun 04 2026",
+      "v": 1665
+    },
+    {
+      "d": "Jun 05 2026",
+      "v": 1644
+    },
+    {
+      "d": "Jun 06 2026",
+      "v": 1712
+    },
     {
       "d": "Jun 07 2026",
-      "v": 1712,
+      "v": 1754,
       "cards": {
         "Luffy OP13-118 SP": 730,
-        "Mega Gardevoir ex MEP 032": 354,
+        "Mega Gardevoir ex MEP 032": 396,
         "Mega Hawlucha ex 268/217": 240,
         "Eevee 074/131": 188,
         "Deoxys VSTAR GG46": 200
@@ -18,10 +27,90 @@
     }
   ],
   "holdings": [
-    { "ticker": "$LUFFY", "query": "Luffy OP13-118 SP Wanted Japanese CGC Pristine 10", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 730, "now": 730, "color": "#28f5a8", "floor": 600, "lock": true },
-    { "ticker": "$GARDV", "query": "Mega Gardevoir ex MEP 032 PSA 10", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 353.6, "now": 353.6, "color": "#b07cff", "floor": 150 },
-    { "ticker": "$HAWL", "query": "Mega Hawlucha ex 268 217 Ascended Heroes PSA 10", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 240, "now": 240, "color": "#ff8a5d", "floor": 100 },
-    { "ticker": "$EEVEE", "query": "Eevee 074 131 Pokemon Day 2025 promo stamp PSA 10", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 188, "now": 188, "color": "#ffcb52", "floor": 120 },
-    { "ticker": "$DEOXYS", "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 200, "now": 200, "color": "#2a6b54", "floor": 150 }
+    {
+      "ticker": "$LUFFY",
+      "query": "Luffy OP13-118 SP Wanted Japanese CGC Pristine 10",
+      "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
+      "cost": 261,
+      "prev": 730,
+      "now": 730,
+      "color": "#28f5a8",
+      "floor": 600,
+      "lock": true
+    },
+    {
+      "ticker": "$GARDV",
+      "query": "Mega Gardevoir ex MEP 032 PSA 10",
+      "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
+      "cost": 160,
+      "prev": 353.6,
+      "now": 395.66,
+      "color": "#b07cff",
+      "floor": 150,
+      "listings": [
+        {
+          "t": "PSA 10 Mega Charizard ex 023 and Oricorio ex 024 MEP Black Star PromoOpens in a new window",
+          "p": 442,
+          "u": "https://www.ebay.com/itm/227366603276?_skw=Mega+Gardevoir+ex+MEP+032+PSA+10&itmmeta=01KTJ2V5X0S6F5NMSPS43F4YJS&hash=item34f01b0a0c%3Ag%3A1AwAAeSwY41qHLK-&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDRKdGN5caiZmFilFa6XvZa39SKgPtkBWvNPqJFaTZPoFaGYAL4qpSr8fXisgCqts0ePOi27Xutz%2BmbxeUZ4iJ%2Fh9s3Y0dW6TIzIQ6dmdaqHmJgQN4g87v6anT9Zk8lh%2BrqAwFu9XoVyGyg19Hz1GoTdNgRH3Kxof5cWIyr6xUI%2F7AeOjC5LO7A9WvqyOHmMEZ5J%2BfogOt7BZJQxnCMLgD%2FS%2Fd9ofNnNrpwCVdznn4QEc41pMa3LdiUwEJKNjo3XCowh%2FEKQKNK3i8qIC8OL6vvtvbSm4%2Ff99neqSIvWRGeEXoE5ae%2BMbUJpVUEKLshFFM%3D%7Ctkp%3ABk9SR-De7MLUZw&LH_ItemCondition=3000",
+          "img": ""
+        },
+        {
+          "t": "Pokémon Mega Lucario EX And Mega Gardevoir Ex MEP 032 033 Promo Lot Of 30Opens in a new wi",
+          "p": 571,
+          "u": "https://www.ebay.com/itm/306933151211?_skw=Mega+Gardevoir+ex+MEP+032+PSA+10&itmmeta=01KTJ2V5X0CQ9ZZNTPZ0J3TTVE&hash=item4776a435eb%3Ag%3AS4gAAeSw-BhqAnBW&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xDZGs9HY3pOkvGqjCPuHhmRUdS2UrfjTDCbpzS5C4%2B4YIJeaIpj4LyzOkxghTGSe63vz9MzhBURlsuvRYrs9RiCXlGeiA3okbbBH400Vx8XzQgRHaP3by4b8%2F1%2FzQE5MzeDD8vJQAhp%2ByIlV3dTLTpM0bct7YSNtOPs9GyHXGsU2%2Fqbh9ay27J2Ftzvv%2BqdxRNnPc7u11BFtTFOMP6vLKjSZRl0iDeD3C3A0Epwb5XpQNYSJNa2KAD1jeFBrQhLk0fAdigAbENt4iJK4ewaKWvs%7Ctkp%3ABk9SR-De7MLUZw&LH_ItemCondition=3000",
+          "img": ""
+        },
+        {
+          "t": "Pokemon Ascended Heroes MEP EN 032 Mega Gardevoir ex Poster promo 59 CARD LOTOpens in a ne",
+          "p": 796,
+          "u": "https://www.ebay.com/itm/157924288502?_skw=Mega+Gardevoir+ex+MEP+032+PSA+10&itmmeta=01KTJ2V5X0WSG5EV8WR8ZFE4SW&hash=item24c50567f6%3Ag%3AxwAAAeSw9cNqDLSL&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xD7ITQv6IfvCFeKWlOLqbsXV1sgV0AmO1bbPJ7nK6yjoxxBiICTo7Zzdspz%2BL8Z1yVj3t9mfuuqdU4970hW2iTN%2BSx5baa68gqOtRLQVV96a2l%2FbL9HTZZ1Nocjcc01G4lhku4p%2BypwSqq--R5V1Ue2wjI--xQoWqp6Uq34fBC4ONpP2%2FUT3JKcXVc8OFWS8m%2BonYaozDuSttutNeSt5jY069vGmE4Tq5wC1TX7IrnL%2FDBxxe5Hz4Wt41KXLl2hrMbZ3rIFw7hXhAdJTDO4XC890Z%2BPLQ%2FQtx99GMtEJrf%2Bde3jGyivnqDQae5miudy4ok%3D%7Ctkp%3ABk9SR-De7MLUZw&LH_ItemCondition=3000",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "ticker": "$HAWL",
+      "query": "Mega Hawlucha ex 268 217 Ascended Heroes PSA 10",
+      "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
+      "cost": 160,
+      "prev": 240,
+      "now": 240,
+      "color": "#ff8a5d",
+      "floor": 100
+    },
+    {
+      "ticker": "$EEVEE",
+      "query": "Eevee 074 131 Pokemon Day 2025 promo stamp PSA 10",
+      "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
+      "cost": 150,
+      "prev": 188,
+      "now": 188,
+      "color": "#ffcb52",
+      "floor": 120,
+      "listings": [
+        {
+          "t": "Pokémon leafeon ex and jolteon ex psa 10 Prismatic Evolutions x2Opens in a new window or t",
+          "p": 181,
+          "u": "https://www.ebay.com/itm/278022952032?_skw=Eevee+074+131+Pokemon+Day+2025+promo+stamp+PSA+10&itmmeta=01KTJ2VDNNBNKXD8YAGM10EE98&hash=item40bb759460%3Ag%3Ax40AAeSwUg1qAUCM&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xB2bmOSCSmz8e8vzgio2miAa51HDLA6%2Bclpr4OHXuEuhBgKZPNGjx8FpyqCP65OZXu1OQLhvXJvhBB6UcZT1%2BWxQRYnTOrW7WGrQk21MYVCyLAdr9wc8q6lByv00rPkSkhUWt6R3GcjY0WPEq6fIFHwMUIjaFjY0aKyduNMJImSvOKolkuoOZY7GCgsPGO8WRyG9pFNmkMuMabEVbYsam17bvCQfXqbYgRr%2By0Thx3%2BjbV8%2FJanm6LgzszNgI9vSS6WK%2F8GAT4qHtlaTd%2F2bzvW4orKqvW9t7WO4D1xkHTwWg%3D%3D%7Ctkp%3ABk9SR_Ta7cLUZw&LH_ItemCondition=3000",
+          "img": ""
+        },
+        {
+          "t": "Pokémon Prismatic Evolutions Lot Must See And ReadOpens in a new window or tab",
+          "p": 204,
+          "u": "https://www.ebay.com/itm/267577489034?_skw=Eevee+074+131+Pokemon+Day+2025+promo+stamp+PSA+10&itmmeta=01KTJ2VDNNMXE49EM559XQ29ME&hash=item3e4cdc768a%3Ag%3AZ08AAeSwfX1pknE2&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xDveM0sNYf%2BfGy08ME%2B45v4mCIVPAHKfaqIiLtqn9nX6bnS9QzQ%2FsQOOfrfrXKPP5LZWNEkl5h2GiVjGxbE8unTNnnHF8IxrCywH5reSnyJKYwq6ONJrFSIcg5o3Alt66KA4AnCZBIUze6qoS%2BiZ6CcvzJ1RHeubuMZggSFaqld1ZaZYJVesNJlD48%2B48KIoFCsZc5SHXjH87%2FuNn7tnez9iaXHDQ3s71Os4QJ7juWQbJ388JSiKizWA%2FOJOECwFy28OQu41wZVr5mxjQBGx%2BDmPcyGTvcGBgEYAzuzSR14I4s%2FmrFGjp%2BCLs8cXlSON4Y0LMQKJgVYoC7f2Z19Udxn%7Ctkp%3ABk9SR_Ta7cLUZw&LH_ItemCondition=3000",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "ticker": "$DEOXYS",
+      "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10",
+      "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10",
+      "cost": 205,
+      "prev": 200,
+      "now": 200,
+      "color": "#2a6b54",
+      "floor": 150
+    }
   ]
 }
