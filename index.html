@@ -312,7 +312,7 @@ function renderPortfolio(d){
 
     +'<div class="row"><span class="pill '+(allTime>=0?'g':'r')+'">'+(allTime>=0?'\u25B2':'\u25BC')+' '+fmtPct(allTime)+'</span>'
 
-    +'<span class="day">'+(dayChg>=0?'+':'\u2212')+CUR(Math.abs(dayChg))+' today ('+fmtPct(dayPct)+')</span></div>'
+    +'<span class="day" style="font-size:16px;font-weight:700;color:'+(dayChg>=0?'var(--green)':'var(--red)')+'">'+(dayChg>=0?'+':'\u2212')+CUR(Math.abs(dayChg))+' today ('+fmtPct(dayPct)+')</span></div>'
 
     +'<div class="cost">COST BASIS '+CUR(cost)+' '+DOT+' '+h.length+' POSITIONS</div></div>'
 
