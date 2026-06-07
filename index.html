@@ -14,7 +14,7 @@
 
 <meta name="theme-color" content="#04070a">
 
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">h
 
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -566,6 +566,44 @@ function miniChart(series,col){
 
 }
 
+function esc(s){return (''+s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function cardExtras(p){
+
+  var h='';
+
+  if(p.img){
+
+    h+='<div style="margin-top:18px;text-align:center"><img src="'+esc(p.img)+'" alt="" style="max-width:170px;width:58%;border-radius:12px;border:1px solid var(--line);box-shadow:0 12px 34px -14px #000" onerror="this.parentNode.style.display='none'"></div>';
+
+  }
+
+  if(p.listings && p.listings.length){
+
+    h+='<div class="lab" style="margin:22px 0 10px">RECENT SOLD &middot; EBAY</div>';
+
+    p.listings.forEach(function(l){
+
+      h+='<a href="'+esc(l.u||'#')+'" target="_blank" rel="noopener" style="display:flex;gap:11px;align-items:center;text-decoration:none;border:1px solid var(--line);border-radius:11px;padding:9px 11px;margin-bottom:8px;background:var(--panel)">'
+
+        +(l.img?'<img src="'+esc(l.img)+'" alt="" style="width:44px;height:44px;border-radius:7px;object-fit:cover;flex-shrink:0" onerror="this.style.display='none'">':'')
+
+        +'<span style="flex:1;min-width:0;font-size:10.5px;color:var(--text);line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(l.t)+'</span>'
+
+        +'<span style="font-family:'Chakra Petch',sans-serif;font-weight:700;font-size:14px;color:var(--green);white-space:nowrap">C$'+l.p+'</span></a>';
+
+    });
+
+  } else {
+
+    h+='<div class="note" style="margin-top:18px">Recent sold listings will appear here after the next price update.</div>';
+
+  }
+
+  return h;
+
+}
+
 function openCard(idx){
 
   const p=DATA.holdings[idx]; if(!p) return;
@@ -590,7 +628,7 @@ function openCard(idx){
 
     +'<div class="row" style="margin:6px 0 18px"><span class="pill '+(ret>=0?'g':'r')+'">'+(ret>=0?'&#9650;':'&#9660;')+' '+fmtPct(ret)+'</span><span class="day">cost C$'+p.cost+' &middot; '+(p.now/p.cost).toFixed(1)+'&times; cost</span></div>'
 
-    +chart;
+    +chart+cardExtras(p);
 
   document.getElementById('sheet').classList.add('on');
 
