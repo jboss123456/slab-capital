@@ -53,12 +53,14 @@ def log_history():
     p = pathlib.Path(__file__).parent / "data.json"
     d = json.loads(p.read_text())
     total = round(sum(h.get("now", 0) for h in d.get("holdings", [])))
+    cards = {h.get("name", "").split(" · ")[0].strip(): round(h.get("now", 0)) for h in d.get("holdings", [])}
     today = datetime.date.today().strftime("%b %d %Y")
     hist = d.get("history", [])
+    entry = {"d": today, "v": total, "cards": cards}
     if hist and hist[-1].get("d") == today:
-        hist[-1]["v"] = total
+        hist[-1] = entry
     else:
-        hist.append({"d": today, "v": total})
+        hist.append(entry)
     d["history"] = hist
     p.write_text(json.dumps(d, indent=2, ensure_ascii=False))
     print("logged history", today, total)
