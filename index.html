@@ -278,6 +278,10 @@ document.addEventListener('touchend',e=>{
 
 let DATA=null;
 
+let CPTS=[];
+
+let MPTS=[];
+
 async function load(){
 
   try{ DATA = await (await fetch('data.json?t='+Date.now())).json(); }
@@ -476,15 +480,29 @@ function renderChart(d){
 
     +'<div class="row" style="margin-bottom:14px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'\u25B2':'\u25BC')+' '+fmtPct(chg)+'</span><span class="day">since '+hist[0].d+'</span></div>'
 
-    +'<svg viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(40,245,168,.28)"/><stop offset="1" stop-color="rgba(40,245,168,0)"/></linearGradient></defs>'
+    +'<div id="chartwrap" style="position:relative;touch-action:none"><svg id="chartsvg" viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(40,245,168,.28)"/><stop offset="1" stop-color="rgba(40,245,168,0)"/></linearGradient></defs>'
 
-    +'<path d="'+area+'" fill="url(#ag)"/><path d="'+line+'" fill="none" stroke="#28f5a8" stroke-width="2.5"/></svg>'+why+'</div>';
+    +'<path d="'+area+'" fill="url(#ag)"/><path d="'+line+'" fill="none" stroke="#28f5a8" stroke-width="2.5"/></svg>'
+
+    +'<div id="cguide" style="position:absolute;top:0;bottom:0;width:1px;background:rgba(226,237,242,.45);display:none;pointer-events:none"></div>'
+
+    +'<div id="cdot" style="position:absolute;width:9px;height:9px;border-radius:50%;background:#28f5a8;box-shadow:0 0 8px #28f5a8;display:none;pointer-events:none;transform:translate(-50%,-50%)"></div>'
+
+    +'<div id="ctip" style="position:absolute;top:2px;display:none;pointer-events:none;transform:translateX(-50%);background:#0a1015;border:1px solid var(--line);border-radius:7px;padding:5px 9px;white-space:nowrap;text-align:center;line-height:1.4"></div>'
+
+    +'</div>'+why+'</div>';
+
+  CPTS=hist.map((p,i)=>({d:p.d,v:p.v,fx:xy[i][0]/W,fy:xy[i][1]/H}));
+
+  wireScrub('chartwrap',{svg:'chartsvg',guide:'cguide',dot:'cdot',tip:'ctip'},CPTS);
 
 }
 
 function miniChart(series,col){
 
-  const vals=series.map(p=>p.v), mn=Math.min(...vals), mx=Math.max(...vals), W=300, H=120, pad=8;
+  const W=300,H=120,pad=8;
+
+  const vals=series.map(p=>p.v), mn=Math.min(...vals), mx=Math.max(...vals);
 
   const span=(mx-mn)||1;
 
@@ -496,11 +514,21 @@ function miniChart(series,col){
 
   const f=series[0].v, l=series[series.length-1].v, chg=pct(l,f), rgb=hex2rgb(col);
 
+  MPTS=series.map((p,i)=>({d:p.d,v:p.v,fx:xy[i][0]/W,fy:xy[i][1]/H,col:col}));
+
   return '<div class="row" style="margin-bottom:10px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'&#9650;':'&#9660;')+' '+fmtPct(chg)+'</span><span class="day">since '+series[0].d+'</span></div>'
 
-    +'<svg viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+rgba(rgb,.30)+'"/><stop offset="1" stop-color="'+rgba(rgb,0)+'"/></linearGradient></defs>'
+    +'<div id="mwrap" style="position:relative;touch-action:none"><svg id="msvg" viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+rgba(rgb,.30)+'"/><stop offset="1" stop-color="'+rgba(rgb,0)+'"/></linearGradient></defs>'
 
-    +'<path d="'+area+'" fill="url(#cg)"/><path d="'+ln+'" fill="none" stroke="'+col+'" stroke-width="2.5"/></svg>';
+    +'<path d="'+area+'" fill="url(#cg)"/><path d="'+ln+'" fill="none" stroke="'+col+'" stroke-width="2.5"/></svg>'
+
+    +'<div id="mguide" style="position:absolute;top:0;bottom:0;width:1px;background:rgba(226,237,242,.45);display:none;pointer-events:none"></div>'
+
+    +'<div id="mdot" style="position:absolute;width:9px;height:9px;border-radius:50%;background:'+col+';box-shadow:0 0 8px '+col+';display:none;pointer-events:none;transform:translate(-50%,-50%)"></div>'
+
+    +'<div id="mtip" style="position:absolute;top:2px;display:none;pointer-events:none;transform:translateX(-50%);background:#0a1015;border:1px solid var(--line);border-radius:7px;padding:5px 9px;white-space:nowrap;text-align:center;line-height:1.4"></div>'
+
+    +'</div>';
 
 }
 
@@ -532,11 +560,63 @@ function openCard(idx){
 
   document.getElementById('sheet').classList.add('on');
 
+  if(series.length>=2) wireScrub('mwrap',{svg:'msvg',guide:'mguide',dot:'mdot',tip:'mtip'},MPTS);
+
 }
 
 function closeCard(e){
 
   if(!e || e.target.id==='sheet' || e.target.id==='sheetclose') document.getElementById('sheet').classList.remove('on');
+
+}
+
+function scrubAt(clientX,ids,pts){
+
+  if(!pts||!pts.length) return;
+
+  const svg=document.getElementById(ids.svg); if(!svg) return;
+
+  const r=svg.getBoundingClientRect(); if(!r.width) return;
+
+  let f=(clientX-r.left)/r.width; f=f<0?0:f>1?1:f;
+
+  let best=pts[0],bd=2;
+
+  pts.forEach(p=>{const dd=Math.abs(p.fx-f); if(dd<bd){bd=dd;best=p;}});
+
+  const L=best.fx*100;
+
+  const g=document.getElementById(ids.guide),dt=document.getElementById(ids.dot),tp=document.getElementById(ids.tip);
+
+  if(!g||!dt||!tp) return;
+
+  g.style.left=L+'%'; g.style.display='block';
+
+  dt.style.left=L+'%'; dt.style.top=(best.fy*100)+'%'; dt.style.display='block';
+
+  tp.style.left=(L<12?12:L>88?88:L)+'%'; tp.style.display='block';
+
+  tp.innerHTML='<b style="color:'+(best.col||'var(--green)')+'">C$'+Math.round(best.v).toLocaleString()+'</b><br><span style="color:var(--mute);font-size:9px">'+best.d+'</span>';
+
+}
+
+function hideScrubIds(ids){[ids.guide,ids.dot,ids.tip].forEach(id=>{const e=document.getElementById(id); if(e) e.style.display='none';});}
+
+function wireScrub(wrapId,ids,pts){
+
+  const cw=document.getElementById(wrapId); if(!cw) return;
+
+  const mv=e=>{const t=e.touches?e.touches[0]:e; scrubAt(t.clientX,ids,pts); e.stopPropagation(); if(e.cancelable)e.preventDefault();};
+
+  cw.addEventListener('touchstart',mv,{passive:false});
+
+  cw.addEventListener('touchmove',mv,{passive:false});
+
+  cw.addEventListener('touchend',e=>{hideScrubIds(ids); e.stopPropagation();});
+
+  cw.addEventListener('mousemove',mv);
+
+  cw.addEventListener('mouseleave',()=>hideScrubIds(ids));
 
 }
 
