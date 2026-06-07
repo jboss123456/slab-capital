@@ -88,7 +88,7 @@
     },
     {
       "ticker": "$ESP",
-      "query": "Espeon Neo 2 196 Promo Japanese PSA 8",
+      "query": "Espeon 196 Neo 2 PSA 8 -1st -gold -star -ex -gx -vmax -lot",
       "name": "Espeon · JP Neo 2 #196 Promo · PSA 8",
       "cost": 136,
       "prev": 41,
@@ -99,7 +99,7 @@
     },
     {
       "ticker": "$LUFFY26",
-      "query": "Monkey D Luffy ST26-005 SR One Piece",
+      "query": "Monkey D Luffy ST26-005 -PSA -CGC -BGS -graded -SP -lot",
       "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat",
       "cost": 0,
       "prev": 7,
@@ -110,7 +110,7 @@
     },
     {
       "ticker": "$FLAR",
-      "query": "Flareon 1999 Jungle Holo 3 PSA 7",
+      "query": "Flareon Jungle Holo 3 PSA 7 -1st -lot",
       "name": "Flareon · 1999 Jungle #3 Holo · PSA 7",
       "cost": 109,
       "prev": 95,
@@ -121,7 +121,7 @@
     },
     {
       "ticker": "$ROBIN",
-      "query": "Nico Robin ST26-003 SR One Piece",
+      "query": "Nico Robin ST26-003 -PSA -CGC -BGS -graded -lot",
       "name": "Nico Robin ST26-003 · SR raw · Straw Hat",
       "cost": 0,
       "prev": 4,
