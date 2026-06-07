@@ -1,5 +1,5 @@
 {
-  "updated": "Jun 06 2026",
+  "updated": "Jun 07 2026",
   "currency": "C$",
   "history": [
     {
@@ -13,6 +13,17 @@
     {
       "d": "Jun 06 2026",
       "v": 1712
+    },
+    {
+      "d": "Jun 07 2026",
+      "v": 4887,
+      "cards": {
+        "Luffy OP13-118 SP": 1496,
+        "Mega Gardevoir ex MEP 032": 389,
+        "Mega Hawlucha ex 268/217": 2614,
+        "Eevee 074/131": 188,
+        "Deoxys VSTAR GG46": 200
+      }
     }
   ],
   "holdings": [
@@ -22,7 +33,7 @@
       "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
       "cost": 261,
       "prev": 730,
-      "now": 730,
+      "now": 1495.99,
       "color": "#28f5a8",
       "floor": 600
     },
@@ -32,7 +43,7 @@
       "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
       "cost": 160,
       "prev": 353.6,
-      "now": 353.6,
+      "now": 388.86,
       "color": "#b07cff",
       "floor": 150
     },
@@ -42,7 +53,7 @@
       "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
       "cost": 160,
       "prev": 240,
-      "now": 240,
+      "now": 2614.11,
       "color": "#ff8a5d",
       "floor": 100
     },
