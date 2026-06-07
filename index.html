@@ -224,6 +224,10 @@ const pct = (n,b) => b ? (n-b)/b*100 : 0;
 
 const fmtPct = p => (p>=0?'+':'') + p.toFixed(p>=100?0:1) + '%';
 
+function ord(n){const s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[v]||s[0]);}
+
+function fmtDate(s){if(!s)return s;const p=(''+s).split(' ');return p.length<2?s:p[0]+' '+ord(parseInt(p[1],10));}
+
 const PALETTE = ['#28f5a8','#b07cff','#ff8a5d','#2a6b54','#ffcb52','#3fe0ff','#ff5d6c'];
 
 const SPARK = {up:'M0,32 L20,30 L40,26 L60,22 L80,15 L100,9 L120,4',flat:'M0,19 L20,21 L40,18 L60,20 L80,18 L100,19 L120,18',down:'M0,12 L20,14 L40,15 L60,18 L80,20 L100,22 L120,24'};
@@ -281,6 +285,8 @@ let DATA=null;
 let CPTS=[];
 
 let MPTS=[];
+
+let CWIN=7;
 
 async function load(){
 
@@ -408,11 +414,27 @@ function renderBook(d){
 
 }
 
+function setWin(n){CWIN=n; if(DATA) renderChart(DATA);}
+
 function renderChart(d){
 
   const {now}=totals(d);
 
-  const hist=(d.history||[]).slice();
+  const histAll=(d.history||[]).slice();
+
+  let hist=histAll;
+
+  if(histAll.length>1 && CWIN<99999){
+
+    const latest=new Date(histAll[histAll.length-1].d).getTime();
+
+    const cutoff=latest-CWIN*86400000;
+
+    const win=histAll.filter(p=>new Date(p.d).getTime()>=cutoff);
+
+    hist = win.length>=2 ? win : histAll.slice(-2);
+
+  }
 
   const box=document.getElementById('v-ch');
 
@@ -456,7 +478,7 @@ function renderChart(d){
 
     const dayChg=b.v-a.v;
 
-    why='<div style="border-top:1px solid var(--line);margin-top:16px;padding-top:14px"><div class="lab">WHAT MOVED &middot; '+a.d+' &rarr; '+b.d+'</div>';
+    why='<div style="border-top:1px solid var(--line);margin-top:16px;padding-top:14px"><div class="lab">WHAT MOVED &middot; '+fmtDate(a.d)+' &rarr; '+fmtDate(b.d)+'</div>';
 
     if(diffs.length){
 
@@ -474,11 +496,21 @@ function renderChart(d){
 
   }
 
+  const winLabel = CWIN>=99999?('since '+fmtDate(hist[0].d)) : CWIN===1?'since yesterday' : 'past '+CWIN+' days';
+
+  const WINS=[['1D',1],['7D',7],['30D',30],['ALL',99999]];
+
+  let btns='<div style="display:flex;gap:6px;margin:12px 0 14px">';
+
+  WINS.forEach(w=>{const on=CWIN===w[1]; btns+='<button onclick="setWin('+w[1]+')" style="flex:1;background:'+(on?'linear-gradient(160deg,#10391f,#0a2417)':'var(--panel)')+';border:1px solid '+(on?'rgba(40,245,168,.3)':'var(--line)')+';color:'+(on?'var(--green)':'var(--mute)')+';font-family:inherit;font-weight:600;font-size:10px;letter-spacing:1px;padding:7px 4px;border-radius:7px;cursor:pointer">'+w[0]+'</button>';});
+
+  btns+='</div>';
+
   box.innerHTML='<div class="chartbox"><div class="lab">BOOK VALUE OVER TIME</div>'
 
     +'<div class="val" style="font-size:40px"><span class="cur">C$</span>'+Math.round(last).toLocaleString()+'</div>'
 
-    +'<div class="row" style="margin-bottom:14px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'\u25B2':'\u25BC')+' '+fmtPct(chg)+'</span><span class="day">since '+hist[0].d+'</span></div>'
+    +'<div class="row" style="margin-bottom:14px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'\u25B2':'\u25BC')+' '+fmtPct(chg)+'</span><span class="day">'+winLabel+'</span></div>'+btns
 
     +'<div id="chartwrap" style="position:relative;touch-action:none"><svg id="chartsvg" viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="ag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(40,245,168,.28)"/><stop offset="1" stop-color="rgba(40,245,168,0)"/></linearGradient></defs>'
 
@@ -516,7 +548,7 @@ function miniChart(series,col){
 
   MPTS=series.map((p,i)=>({d:p.d,v:p.v,fx:xy[i][0]/W,fy:xy[i][1]/H,col:col}));
 
-  return '<div class="row" style="margin-bottom:10px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'&#9650;':'&#9660;')+' '+fmtPct(chg)+'</span><span class="day">since '+series[0].d+'</span></div>'
+  return '<div class="row" style="margin-bottom:10px"><span class="pill '+(chg>=0?'g':'r')+'">'+(chg>=0?'&#9650;':'&#9660;')+' '+fmtPct(chg)+'</span><span class="day">since '+fmtDate(series[0].d)+'</span></div>'
 
     +'<div id="mwrap" style="position:relative;touch-action:none"><svg id="msvg" viewBox="0 0 '+W+' '+H+'" width="100%" preserveAspectRatio="none"><defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+rgba(rgb,.30)+'"/><stop offset="1" stop-color="'+rgba(rgb,0)+'"/></linearGradient></defs>'
 
@@ -596,7 +628,7 @@ function scrubAt(clientX,ids,pts){
 
   tp.style.left=(L<12?12:L>88?88:L)+'%'; tp.style.display='block';
 
-  tp.innerHTML='<b style="color:'+(best.col||'var(--green)')+'">C$'+Math.round(best.v).toLocaleString()+'</b><br><span style="color:var(--mute);font-size:9px">'+best.d+'</span>';
+  tp.innerHTML='<b style="color:'+(best.col||'var(--green)')+'">C$'+Math.round(best.v).toLocaleString()+'</b><br><span style="color:var(--mute);font-size:9px">'+fmtDate(best.d)+'</span>';
 
 }
 
