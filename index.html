@@ -13,7 +13,7 @@
 <link rel="manifest" href="manifest.json">
 
 <meta name="theme-color" content="#04070a">
-
+h
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -334,7 +334,7 @@ function renderPortfolio(d){
 
     const ret=pct(p.now,p.cost), c=trend(ret), col=p.color, rgb=hex2rgb(col);
 
-    const rc = ret>5?'var(--green)':ret<-5?'var(--red)':'var(--amber)';
+    const rc = ret>5?'var(--green)':ret<-5?'var(--red)':'var(--amber)'; const pl = p.now - p.cost;
 
     html+='<div class="pos" style="cursor:pointer" onclick="openCard('+idx+')"><div class="accent" style="background:'+col+';box-shadow:0 0 14px '+rgba(rgb,.6)+'"></div>'
 
@@ -344,7 +344,7 @@ function renderPortfolio(d){
 
       +'<div class="name">'+smallName(p.name)+'</div></div>'
 
-      +'<div class="ret" style="color:'+rc+'">'+fmtPct(ret)+'<span class="x">'+(p.now/p.cost).toFixed(1)+'\u00D7 cost</span></div></div>'
+      +'<div class="ret" style="color:'+rc+'">'+fmtPct(ret)+'<span class="x"><span style="color:'+(pl>=0?'var(--green)':'var(--red)')+'">'+(pl>=0?'+':'\u2212')+CUR(Math.abs(pl))+'</span> '+DOT+' '+(p.now/p.cost).toFixed(1)+'\u00D7</span></div></div>'
 
       +'<div class="mid"><div class="spark"><svg viewBox="0 0 120 38" width="100%" height="38" preserveAspectRatio="none"><path d="'+SPARK[c]+'" fill="none" stroke="'+col+'" stroke-width="2.2"/></svg></div>'
 
