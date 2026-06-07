@@ -12,6 +12,49 @@ CONFIRM_TOL = 0.20
 def bigger_img(u):
     return re.sub(r"s-l\d+", "s-l500", u) if u else u
 
+def get_listings(soup, floor):
+    out = []
+    seen = set()
+    for a in soup.select('a[href*="/itm/"]'):
+        if len(out) >= 3:
+            break
+        href = a.get("href") or ""
+        key = href.split("?")[0]
+        if not key or key in seen:
+            continue
+        cont = None
+        node = a
+        for _ in range(4):
+            node = node.parent
+            if node is None:
+                break
+            if re.search(r"[$][\d,]+\.\d{2}", node.get_text(" ", strip=True)):
+                cont = node
+                break
+        if cont is None:
+            continue
+        m = re.search(r"[$]([\d,]+\.\d{2})", cont.get_text(" ", strip=True))
+        if not m:
+            continue
+        v = float(m.group(1).replace(",", ""))
+        if not (floor < v < 5000):
+            continue
+        title = a.get_text(strip=True)
+        if not title:
+            te = cont.select_one(".s-item__title")
+            title = te.get_text(strip=True) if te else ""
+        title = re.sub(r"[$][\d,]+\.\d{2}.*", "", title)
+        title = title.replace("New Listing", "").strip()
+        if not title or title.lower() == "shop on ebay":
+            continue
+        ie = cont.select_one("img")
+        img = ""
+        if ie:
+            img = ie.get("src") or ie.get("data-src") or ""
+        seen.add(key)
+        out.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": href, "img": bigger_img(img)})
+    return out
+
 def get_comp(query, floor=10):
     url = "https://www.ebay.com/sch/i.html?_nkw=" + query.replace(" ", "+") + "&LH_Sold=1&LH_Complete=1&LH_ItemCondition=3000&_sop=13"
     try:
@@ -28,31 +71,7 @@ def get_comp(query, floor=10):
             v = float(m.group(1).replace(",", ""))
             if floor < v < 5000:
                 prices.append(v)
-    listings = []
-    for it in soup.select("li.s-item, div.s-item"):
-        if len(listings) >= 3:
-            break
-        pe = it.select_one(".s-item__price")
-        if not pe:
-            continue
-        m = re.search(r"[$]([\d,]+\.\d{2})", pe.get_text(strip=True).split(" to ")[0])
-        if not m:
-            continue
-        v = float(m.group(1).replace(",", ""))
-        if not (floor < v < 5000):
-            continue
-        le = it.select_one("a.s-item__link") or it.select_one('a[href*="/itm/"]') 
-        href = le.get("href") if le else ""
-        te = it.select_one(".s-item__title")
-        title = te.get_text(strip=True) if te else (le.get_text(strip=True) if le else query)
-        title = title.replace("New Listing", "").strip() or query
-        if title.lower() == "shop on ebay":
-            continue
-        ie = it.select_one(".s-item__image img") or it.select_one("img")
-        img = ""
-        if ie:
-            img = ie.get("src") or ie.get("data-src") or ""
-        listings.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": href, "img": bigger_img(img)})
+    listings = get_listings(soup, floor)
     print(query, "| listings parsed:", len(listings), "| price comps:", len(prices))
     if len(prices) < MIN_COMPS:
         print(query, "- only", len(prices), "comps - holding old price")
