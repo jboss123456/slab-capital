@@ -228,6 +228,8 @@ function ord(n){const s=['th','st','nd','rd'],v=n%100;return n+(s[(v-20)%10]||s[
 
 function fmtDate(s){if(!s)return s;const p=(''+s).split(' ');return p.length<2?s:p[0]+' '+ord(parseInt(p[1],10));}
 
+function fmtHeader(s){if(!s)return s;const p=(''+s).split(' ');return p.length<3?(''+s).toUpperCase():p[0].toUpperCase()+' '+ord(parseInt(p[1],10))+' '+p[2];}
+
 const PALETTE = ['#28f5a8','#b07cff','#ff8a5d','#2a6b54','#ffcb52','#3fe0ff','#ff5d6c'];
 
 const SPARK = {up:'M0,32 L20,30 L40,26 L60,22 L80,15 L100,9 L120,4',flat:'M0,19 L20,21 L40,18 L60,20 L80,18 L100,19 L120,18',down:'M0,12 L20,14 L40,15 L60,18 L80,20 L100,22 L120,24'};
@@ -294,7 +296,7 @@ async function load(){
 
   catch(e){ document.getElementById('v-pf').innerHTML='<div class="loading">Could not load data.json.</div>'; return; }
 
-  document.getElementById('updated').textContent=(DATA.updated||'').toUpperCase();
+  document.getElementById('updated').textContent=fmtHeader(DATA.updated);
 
   renderPortfolio(DATA); renderBook(DATA); renderChart(DATA);
 
