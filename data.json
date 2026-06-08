@@ -8,23 +8,23 @@
 
   "holdings": [
 
-    {"ticker": "$LUFFY", "query": "Luffy OP13-118 SP Wanted Japanese CGC Pristine 10", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 730, "now": 730, "color": "#28f5a8", "floor": 600, "lock": true},
+    {"ticker": "$LUFFY", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 730, "now": 730, "color": "#28f5a8", "floor": 600, "queries": ["luffy OP13-118 CGC 10 -lot", "monkey d luffy OP13-118 -lot"]},
 
-    {"ticker": "$GARDV", "query": "Mega Gardevoir ex 032 PSA 10 -lot -charizard", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 353.6, "now": 353.6, "color": "#b07cff", "floor": 150, "lock": true},
+    {"ticker": "$GARDV", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 353.6, "now": 353.6, "color": "#b07cff", "floor": 250, "queries": ["mega gardevoir ex 032 PSA 10 -lot -charizard", "gardevoir ex MEP 032 PSA 10 -lot"]},
 
-    {"ticker": "$HAWL", "query": "Mega Hawlucha ex 268 217 Ascended Heroes PSA 10", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 240, "now": 240, "color": "#ff8a5d", "floor": 100, "lock": true},
+    {"ticker": "$HAWL", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 240, "now": 240, "color": "#ff8a5d", "floor": 150, "queries": ["mega hawlucha ex 268/217 PSA 10 -lot", "hawlucha ex 268 PSA 10 -lot"]},
 
-    {"ticker": "$EEVEE", "query": "Eevee Pokemon Day stamp PSA 10 -lot", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 188, "now": 188, "color": "#ffcb52", "floor": 120, "lock": true},
+    {"ticker": "$EEVEE", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 188, "now": 188, "color": "#ffcb52", "floor": 150, "queries": ["2025 eevee pokemon day psa 10 -lot", "eevee 074/131 pokemon day psa 10 -lot"]},
 
-    {"ticker": "$DEOXYS", "query": "Deoxys VSTAR GG46 Crown Zenith CGC Pristine 10", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 200, "now": 200, "color": "#2a6b54", "floor": 150, "lock": true},
+    {"ticker": "$DEOXYS", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 200, "now": 200, "color": "#2a6b54", "floor": 130, "queries": ["deoxys vstar GG46 CGC 10 -lot", "deoxys vstar GG46 crown zenith 10 -lot"]},
 
-    {"ticker": "$ESP", "query": "Espeon 196 Neo 2 PSA 8 -1st -gold -star -ex -gx -vmax -lot", "name": "Espeon · JP Neo 2 #196 Promo · PSA 8", "cost": 136, "prev": 41, "now": 41, "color": "#c084fc", "floor": 20, "lock": true},
+    {"ticker": "$ESP", "name": "Espeon · JP Neo 2 #196 Promo · PSA 8", "cost": 136, "prev": 41, "now": 41, "color": "#c084fc", "floor": 20, "queries": ["espeon 196 PSA 8 -1st -lot", "espeon neo PSA 8 japanese -lot", "espeon promo 196 PSA 8 -lot"]},
 
-    {"ticker": "$LUFFY26", "query": "Monkey D Luffy ST26-005 -PSA -CGC -BGS -graded -SP -lot", "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat", "cost": 0, "prev": 7, "now": 7, "color": "#f87171", "floor": 1, "lock": true},
+    {"ticker": "$LUFFY26", "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat", "cost": 0, "prev": 7, "now": 7, "color": "#f87171", "floor": 1, "queries": ["luffy ST26-005 -PSA -CGC -lot", "luffy ST26-005 SR -lot"]},
 
-    {"ticker": "$FLAR", "query": "Flareon Jungle Holo 3 PSA 7 -1st -lot", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 95, "now": 95, "color": "#fb923c", "floor": 30, "lock": true},
+    {"ticker": "$FLAR", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 95, "now": 95, "color": "#fb923c", "floor": 40, "queries": ["flareon jungle holo PSA 7 -1st -lot", "flareon 3/64 PSA 7 -1st -lot", "flareon jungle PSA 7 unlimited -lot"]},
 
-    {"ticker": "$ROBIN", "query": "Nico Robin ST26-003 -PSA -CGC -BGS -graded -lot", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4, "now": 4, "color": "#818cf8", "floor": 1, "lock": true}
+    {"ticker": "$ROBIN", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4, "now": 4, "color": "#818cf8", "floor": 1, "queries": ["nico robin ST26-003 -PSA -CGC -lot", "nico robin ST26-003 SR -lot"]}
 
   ]
 
