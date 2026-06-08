@@ -1,279 +1,31 @@
 {
+
   "updated": "Jun 08 2026",
+
   "currency": "C$",
-  "history": [
-    {
-      "d": "Jun 04 2026",
-      "v": 1665
-    },
-    {
-      "d": "Jun 05 2026",
-      "v": 1644
-    },
-    {
-      "d": "Jun 06 2026",
-      "v": 1712
-    },
-    {
-      "d": "Jun 07 2026",
-      "v": 1859,
-      "cards": {
-        "Luffy OP13-118 SP": 730,
-        "Mega Gardevoir ex MEP 032": 354,
-        "Mega Hawlucha ex 268/217": 240,
-        "Eevee 074/131": 188,
-        "Deoxys VSTAR GG46": 200,
-        "Espeon": 41,
-        "Monkey D. Luffy ST26-005": 7,
-        "Flareon": 95,
-        "Nico Robin ST26-003": 4
-      }
-    },
-    {
-      "d": "Jun 08 2026",
-      "v": 2084,
-      "cards": {
-        "Luffy OP13-118 SP": 730,
-        "Mega Gardevoir ex MEP 032": 354,
-        "Mega Hawlucha ex 268/217": 231,
-        "Eevee 074/131": 238,
-        "Deoxys VSTAR GG46": 364,
-        "Espeon": 41,
-        "Monkey D. Luffy ST26-005": 7,
-        "Flareon": 116,
-        "Nico Robin ST26-003": 4
-      }
-    }
-  ],
+
+  "history": [{"d": "Jun 04 2026", "v": 1665}, {"d": "Jun 05 2026", "v": 1644}, {"d": "Jun 06 2026", "v": 1712}, {"d": "Jun 07 2026", "v": 1859, "cards": {"Luffy OP13-118 SP": 730, "Mega Gardevoir ex MEP 032": 354, "Mega Hawlucha ex 268/217": 240, "Eevee 074/131": 188, "Deoxys VSTAR GG46": 200, "Espeon": 41, "Monkey D. Luffy ST26-005": 7, "Flareon": 95, "Nico Robin ST26-003": 4}}, {"d": "Jun 08 2026", "v": 1951, "cards": {"Luffy OP13-118 SP": 730, "Mega Gardevoir ex MEP 032": 354, "Mega Hawlucha ex 268/217": 231, "Eevee 074/131": 238, "Deoxys VSTAR GG46": 230, "Espeon": 41, "Monkey D. Luffy ST26-005": 7, "Flareon": 116, "Nico Robin ST26-003": 4}}],
+
   "holdings": [
-    {
-      "ticker": "$LUFFY",
-      "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
-      "cost": 261,
-      "prev": 730,
-      "now": 730,
-      "color": "#28f5a8",
-      "floor": 600,
-      "queries": [
-        "luffy OP13-118 CGC pristine -lot -box -case -sealed",
-        "luffy OP13-118 SP japanese CGC -lot -sealed"
-      ],
-      "listings": [
-        {
-          "t": "One Piece CGC 10 PRISTINE Monkey D. Luffy Manga Alt Art 2025 OP13-118 JapaneseOpens in a n",
-          "p": 2191,
-          "u": "https://www.ebay.com/itm/389946344989?_skw=luffy+OP13-118+CGC+pristine+-lot+-box+-case+-sealed&itmmeta=01KTMSCTE0Y57YW4HJRAQJZ9XX&hash=item5aca9d061d:g:-vkAAeSwisJp8Baf&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDvT3YiNbTUvBYsJBz9L%2BFU8b6zRRAgxW5qGNeTAiQCOSNNg4d3z50m6edMVGl9f8O4i8WvyVH49P2F8PralvA86C%2FRcuNFMC%2BXvavIouZm9G4JL1RKgS5Sw7LnVcd8Zp9sbZpyZbOf5DPKlxjQVBPUKsmOYSPOxbrQr3lW3c4hMcYRjIDiDKhshaviGn9zg3QsOPoqWmHU13x3JSq8Fvv8uyKuyE35CWSowFv9wehRz5JHzNB7objQRhcsqCCk5huNNbGaLQfrJ2VdaNrhT0zE5C6PW0sVEukjFlBSd7jzbg%3D%3D%7Ctkp%3ABk9SR7yns5nVZw",
-          "img": ""
-        },
-        {
-          "t": "2025 One Piece Manga Alternate Art OP13-118 Monkey D Luffy CGC 10 PRISTINEOpens in a new w",
-          "p": 3944,
-          "u": "https://www.ebay.com/itm/389924347201?_skw=luffy+OP13-118+CGC+pristine+-lot+-box+-case+-sealed&epid=25086849085&itmmeta=01KTMSCTE0BTCAC68M3PBRRT8Y&hash=item5ac94d5d41:g:7KoAAeSwANdp6O2O&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xAkAtCwaHwV5LZ8FDOrEoRLvZGqs6AnT8%2FtVxAqjFsWHOpGIEYTK%2Bk%2F2Knbi6NOS0XJwIuPS2P0mQhym5MiAeuIKEGF3oIiX4tuqT5%2Fpi7SfGTyscXW3HRYHQu1qwkNxyF0rXqcN93y4QpmBSkSwubtESEU3vfobgtW8895Av8MPHcFrE1slOxT8GP9Z47IWm7LBihhz%2Blroya8y09dQweTyEiHwAxLdvVBa9hwQmL9Ee0CZF2%2Bnm2MqoK8pMfk1BW%2FHQ9jWrpdfOGh96%2Fv8O3qVPaV4K4osmUiMiD%2BPNhuYaeVXXIMMGXCc6nbhNhQmPY%2Bh9S7JwmrxbYKEU7Utn2B%7Ctkp%3ABk9SR7yns5nVZw",
-          "img": "https://i.ebayimg.com/00/z/4O8AAeSw4atnvLaW/$_13.png"
-        }
-      ]
-    },
-    {
-      "ticker": "$GARDV",
-      "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
-      "cost": 160,
-      "prev": 353.6,
-      "now": 353.6,
-      "color": "#b07cff",
-      "floor": 250,
-      "queries": [
-        "mega gardevoir ex 032 PSA 10 -lot -charizard",
-        "gardevoir ex MEP 032 PSA 10 -lot"
-      ]
-    },
-    {
-      "ticker": "$HAWL",
-      "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
-      "cost": 160,
-      "prev": 222.69,
-      "now": 231.19,
-      "color": "#ff8a5d",
-      "floor": 150,
-      "queries": [
-        "mega hawlucha ex 268/217 PSA 10 -lot",
-        "hawlucha ex 268 PSA 10 -lot"
-      ],
-      "listings": [
-        {
-          "t": "Pokemon TCG Mega Hawlucha ex 268/217 Ascended Heroes Holofoil PSA 10 MINT ATTACKOpens in a",
-          "p": 231,
-          "u": "https://www.ebay.com/itm/188383316986?_skw=mega+hawlucha+ex+268%2F217+PSA+10+-lot&epid=26090323694&itmmeta=01KTMSDJVZ37FDC9EW4Q8PD21G&hash=item2bdc854bfa:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xAneb5TkZC2KpFIKqXnaSdVI%2FOWHyQCbvvOi3OK74lPP91%2BDcLL%2FXfsUQmk%2FunqngcKq2yaT%2FCMHg4vGnIlhngpJnZPdgAVe2ypGjaDIGQBRx1%2Fnn4t1DjQHnJTN3ksMZiPzij3at9ZkH4hbArpiHU3Y9QR%2BPluKmI0t9kMFCcfh0s3HjdpbBjPsTryxWFVOAswzL8%2FsTRKrY%2BNzUkvZxJkhLqS%2FnkoefM3D5fffv41P1aALx%2BOMm4AFS455oG%2B0LkFSxJOtjydYqIppV99X8ym%7Ctkp%3ABk9SR4iutpnVZw",
-          "img": ""
-        },
-        {
-          "t": "Pokemon TCG Mega Hawlucha ex 268/217 Ascended Heroes Holofoil PSA 10 MINT ATTACKOpens in a",
-          "p": 272,
-          "u": "https://www.ebay.com/itm/188370125212?_skw=mega+hawlucha+ex+268%2F217+PSA+10+-lot&epid=26090323694&itmmeta=01KTMSDJVZJ6FZ1HAFZ6X96KTP&hash=item2bdbbc019c:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCiWrQqBwlTTU3f4WL3wBmKONlJnlXNBpnSnu4Du2lcbl6glVEZy0uMZdQYIe3erHaVfx2z3RKae8IbwHs9ml8ZkhqfAwPUtbJfkVhOL09KCfMNFYGT0WR2luvxKZ1MZhTi4mdgsfahNl834caFnF8heeuElr2czosxkxccQ141lKGxj8gJa9F4sOdiSDGf%2BN%2F8iux6WPY%2FyIYgwsTKwOyhw6Pu5tz3N3Xgpo%2FcOKMvT%2F4k1YHZdD8N1tNj1SDV295MDB67PkyDD%2BD2%2BvcmSP6y%7Ctkp%3ABk9SR4iutpnVZw",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "ticker": "$EEVEE",
-      "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
-      "cost": 150,
-      "prev": 238.14,
-      "now": 238.14,
-      "color": "#ffcb52",
-      "floor": 150,
-      "queries": [
-        "2025 eevee pokemon day psa 10 -lot",
-        "eevee 074/131 pokemon day psa 10 -lot"
-      ],
-      "listings": [
-        {
-          "t": "Pokemon TCG Prismatic Evolutions - Pokemon Day 2025 Eevee #074 - PSA 10Opens in a new wind",
-          "p": 240,
-          "u": "https://www.ebay.com/itm/188430452105?_skw=2025+eevee+pokemon+day+psa+10+-lot&itmmeta=01KTMSDT38KQHTMF9B6S9RDTZY&hash=item2bdf548589:g:8wEAAeSwVKVqFsVz&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xAjp0hIjgWAgX%2FqfRNKJCMOD%2F7F2a%2BrIgAEEaZsWGDlvvCWTelZihNzO28gUOURAYZXuMjfImENz%2FaEOU4JjkDer9TmPQ7wzUEJKxXkQLCNuagt0DxW4QjE9RTwJPU8cNU9Gi%2B6aAd5bmsv0lq2r2ten7Py1PXawxZFKPCtMiZleF4MK%2FrxlKdSVeJOnLRxy2QtPelecbjTNKBKWxnW7fMii2XZOaFmfJwLJhjrsv%2Bqjr8dluHGHyIHY3dh%2BkFZw7PdUUkNzE9xbl30t1f%2BYsGwVW%2FMkN%2BPz%2FnEr7d831yUA9SxUWloP%2B9lyBvNqg%2BjQ2U%3D%7Ctkp%3ABk9SR-Cht5nVZw",
-          "img": ""
-        },
-        {
-          "t": "Pokemon TCG Prismatic Evolutions - Pokemon Day 2025 Eevee #074 - PSA 10Opens in a new wind",
-          "p": 211,
-          "u": "https://www.ebay.com/itm/188466207616?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KTMSDT380S6VMY1W6HR94TSB&hash=item2be1761b80:g:080AAeSw9WJqIXk5&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xA2rubKHR%2B08QWNkPmTclrkDbAFFAgxx1g4BVroo%2BsXvT2Jc5SraMBOCzvKTGQ7qhCLISANUz7odkljE0apSgJg9f2%2FJk7wci%2B7ChQ6Cc4xtkEnwTBgVc3qyhGODr1%2F%2BNiV%2BW8n%2BOuPdApwJujF30VChUfeuoRvnDXcsu9CWRyO3pYzpFWeoVxyWmlNVRIl8shITpwqxnjK6FUs72nu1k943M9fMeeBz%2BIFe4VXjtxSlUNGIUkCpf7n%2B5saV6UxTO3EESi%2BoQY72m%2FkJ1Sqc6on%7Ctkp%3ABk9SR-Cht5nVZw",
-          "img": ""
-        },
-        {
-          "t": "2025 POKEMON PRE EN-PRISMATIC EVOLUTIONS POKEMON DAY 2025 #074 EEVEE PSA 10Opens in a new ",
-          "p": 209,
-          "u": "https://www.ebay.com/itm/306942931705?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KTMSDT38MD1K02Z0EVN98EVN&hash=item47773972f9:g:XhoAAeSwrmVqCLaV&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xAESxmI5phsHp1P5f6rSpnqW6wtlre1IoAYktK4UmIFPU9oRvabM03bUw%2BT2KZL6LDrX4P59EvaxfCPWjGE%2BDm6rzCQ1mYufnHHinCdM%2BuBeoNqWMXx0ajmTQmX27M%2F1tSOfmU%2FLvJB3eEq%2Fso2xL0r9qmqojLiZMN%2BAdCyPSFRaUfvr3eWZi9%2FW8P71EshL9iPuy4EGdCJkV9xwCX00byYCzyCRqdMRHj%2B9iOkBzvMHZ7--5ojLqpXPGO2VGvB0UgAxW%2FBGO8Wou3o2VEFWI9P%7Ctkp%3ABk9SR-Kht5nVZw",
-          "img": "https://i.ebayimg.com/00/z/u68AAOSwKhlmcLcT/$_13.png"
-        }
-      ]
-    },
-    {
-      "ticker": "$DEOXYS",
-      "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10",
-      "cost": 205,
-      "prev": 256.69,
-      "now": 363.8,
-      "color": "#2a6b54",
-      "floor": 130,
-      "queries": [
-        "deoxys vstar GG46 CGC 10 -lot",
-        "deoxys vstar GG46 crown zenith 10 -lot"
-      ],
-      "listings": [
-        {
-          "t": "2023 POKEMON CROWN ZENITH #GG46/GG70 DEOXYS VSTAR CGC 10 PRISTINEOpens in a new window or ",
-          "p": 282,
-          "u": "https://www.ebay.com/itm/306957272768?_skw=deoxys+vstar+GG46+CGC+10+-lot&epid=8058547964&itmmeta=01KTMSE2WRQ2E0K5K58S457TJ4&hash=item47781446c0:g:ZXwAAeSwkuZqEba6&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBdCGf1h8DnJkP4MYN5nzP4qC%2BqfQ%2BBZlnJYQ2wIV7FghxGkQ2%2BIrWtaJ64NgH2WQPeEiQxgjM7%2By%2BmWxW0HsW0tLrh6PudpVURmc7Pld3bffEWuguO5znTySbmSmLh%2BX23h4t6rerFzCcM3rTUYXAq7X79toXeXan8tzB3UmdIvv4WYszlIshi42XPvQ%2FeS7hxkYDJZnKQ20ISxPtflo0WbtGJob2dcS0k7BKrMnbsVuWCZYe6Bmazwvx%2FI%2FzFYuhJT7ju5lLa8NbpBX8jNSNX%7Ctkp%3ABk9SR76uuJnVZw",
-          "img": "https://i.ebayimg.com/00/z/u68AAOSwKhlmcLcT/$_13.png"
-        },
-        {
-          "t": "Pokémon TCG Crown Zenith Galarian Gallery Deoxys VSTAR GG46/GG70 CGC 10 PSA 10Opens in a n",
-          "p": 218,
-          "u": "https://www.ebay.com/itm/318250487344?_skw=deoxys+vstar+GG46+CGC+10+-lot&epid=8058547964&itmmeta=01KTMSE2WRMZE3D51PM4EEDSJF&hash=item4a19350e30:g:9cUAAeSwuqdp-Unv&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCLtzaoySRGIx706Pp8siQABLOmZCrW1ymcs8wR2l5M8n3mMUfBJXO5WcHLEg%2FpvB%2BOu4CR4I%2Ffk%2BwPUxUkJOXU8QA1r58mcfH0Xd1N3Sg7yoayppl4rOk9QU3oE68r6BenY22Qp5wwSiJSv7pwrAX%2F4MhZ2on0Y8obAQ5XUFXEt1FIhjTSVuLU5A2wazDwza5aQ695ZHFItaCCG%2FoLMH4KPRAmbwszNtPJYecMQ7rj%2BS1fY6lBBJCJ864YT3E70Zj3L2aEp5GMVhMJxgo%2BCbX5%7Ctkp%3ABk9SR8CuuJnVZw",
-          "img": ""
-        },
-        {
-          "t": "Deoxys VSTAR GG46/GG70 Crown Zenith: Galarian Gallery Holo CGC 10 PristineOpens in a new w",
-          "p": 401,
-          "u": "https://www.ebay.com/itm/287230105716?_skw=deoxys+vstar+GG46+CGC+10+-lot&epid=8058547964&itmmeta=01KTMSE2WRHHW7GKSA6QQC38A5&hash=item42e03f9874:g:wJUAAeSwYXZpwwF8&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xDf0YmWwsqj8SVTaSLLwW6z%2BC%2FyS8KlEihNbTRwfPQxCC85dssN4oqAxTudzzOP7BN%2FKMwXbcsmJnbnIqPsn33ay%2BdNCc9xqYzAnm1fme5ugYDClD3Ll8eFGl36%2BXZWndXj1JM%2BKen89nT9iqSeKLHVL91%2BmRXGKcTVBMyFmleUk5LUzoW%2Bmz9tCmHmcP0Nl68%2Bsk6lVd3v0kLItN2PgKCqDGGUPSpOK8Mm3xPFnluNFxJXh3zb3TwQ5%2BYMxpg0F1siI00U85SRaBq8hBfVwlLA%7Ctkp%3ABk9SR8CuuJnVZw",
-          "img": ""
-        }
-      ],
-      "img": "https://i.ebayimg.com/00/z/u68AAOSwKhlmcLcT/$_13.png"
-    },
-    {
-      "ticker": "$ESP",
-      "name": "Espeon · JP Neo 2 #196 Promo · PSA 8",
-      "cost": 136,
-      "prev": 41,
-      "now": 41,
-      "color": "#c084fc",
-      "floor": 20,
-      "queries": [
-        "espeon 196 PSA 8 -1st -gold -star -lot",
-        "espeon promo 196 PSA 8 japanese -lot"
-      ],
-      "pending": 204.0
-    },
-    {
-      "ticker": "$LUFFY26",
-      "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat",
-      "cost": 0,
-      "prev": 7,
-      "now": 7,
-      "color": "#f87171",
-      "floor": 1,
-      "queries": [
-        "luffy ST26-005 -PSA -CGC -BGS -graded -lot",
-        "monkey d luffy ST26-005 raw -lot"
-      ],
-      "pending": 78.54
-    },
-    {
-      "ticker": "$FLAR",
-      "name": "Flareon · 1999 Jungle #3 Holo · PSA 7",
-      "cost": 109,
-      "prev": 108.8,
-      "now": 115.6,
-      "color": "#fb923c",
-      "floor": 40,
-      "queries": [
-        "flareon jungle holo PSA 7 -1st -lot",
-        "flareon 3/64 PSA 7 -1st -lot",
-        "flareon jungle PSA 7 unlimited -lot"
-      ],
-      "listings": [
-        {
-          "t": "Pokémon TCG Flareon 3/64 Jungle Holo Rare - PSA 7 NMOpens in a new window or tab",
-          "p": 76,
-          "u": "https://www.ebay.com/itm/236845619033?_skw=flareon+3%2F64+PSA+7+-1st+-lot&epid=13052752224&itmmeta=01KTMSF3N6EJPRN08VRMHP2JAW&hash=item3725195759:g:2UEAAeSwRbFqGgPi&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xA78O3Hl7OKk6%2FbchZef6egKiU6wvCiPZXctYB6W4orNhquLObupH2WGzWwqvq2RGNZ4sA4D6lZesdZcRuvc4EZglOQy%2FJ8%2FXtHxKqEppPt9BS9OzPyTrIW%2BLP%2BL0Cz%2FcIl02C9axaf8p1qwIXQs%2BqICqEBM7NMvkH3sMETC7ttv8MymtIvez7MEPglkQJkcIO7PFKzACy8jo0fXJtcwiwZNXbg0iwIZDbBmsBfkuGSkzkt%2FVfiGYeeutRq9Myp3aW7zbN2WXXD4SSVLkuEOcI5%7Ctkp%3ABk9SR9i6vJnVZw",
-          "img": ""
-        },
-        {
-          "t": "Vintage Pokemon Flareon Holo 3/64 Jungle 1999 PSA 7 NMOpens in a new window or tab",
-          "p": 120,
-          "u": "https://www.ebay.com/itm/358559335526?_skw=flareon+3%2F64+PSA+7+-1st+-lot&epid=13052752224&itmmeta=01KTMSF3N6MXC13CA2NRMG8DZ7&hash=item537bcd4466:g:imUAAeSwldpqB0yi&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xACpgbjkN1P4SjZKrXA5%2BiknvTlsrNHKuMjkmfAxtSS0pHt7O0YVlLDcoXIb37%2FIbp3rOwhgUvwgjsytu7jmjY7Ng2aRp14AvEzBq%2Fdn2j%2FTgPm2T%2FWCPlHrdpP336D3eAfd8LNKzsvKzg0iy14Hp6LJfRxni4ZWwhHCaoicgg3uwxpbjtYt8I8us7nmN0GV7jC%2Bq%2Bsgl8ubWH1SLtd3v4zBOHPQa%2BI6LItfmN9Mi1UqBERYKP1myRW4kpN%2FhxZk6gISFnBaia4dXoqopqPlWFCWwPYV0DlOkeWq4qiWwnc%2Ffduq7DbM5f%2BE3MRO8q8RIw%3D%7Ctkp%3ABk9SR9i6vJnVZw",
-          "img": ""
-        },
-        {
-          "t": "Pokémon TCG Flareon Jungle 3/64 Holo Unlimited Holo Rare PSA 7 NMOpens in a new window or ",
-          "p": 82,
-          "u": "https://www.ebay.com/itm/800115095998?_skw=flareon+3%2F64+PSA+7+-1st+-lot&epid=8043378169&itmmeta=01KTMSF3N6CJ0FJ4T58QFYTTXF&hash=itemba4a9379be:g:jRUAAeSwmhpqH8Zv&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBTeV6AerlLmKA3ANFkpK%2B2LIZy1pYT9tIlUxE6xh3a3uhvx0MGbHlbaqXDHtUa7gAAJLz%2B7Kct2WZ6CcYis%2FWEHAjucTteB90g5p5kUbxEn0jDksst8cCi7EIcTDTQVrpeK9auIbWI1JFQkTmJGH%2Fi%2BUL2j4f8roWVMhoNxl91c4TP%2BBo7QQKJSkMu6%2FYGG5Q99wXOLb12SZJfMSkVLSFmNyFMVWzhcCGVg0L5RxDg9VFwyHv6IF7OVwk%2Fegs7xfbef6zrke2VSLkI9RlBwcs4%7Ctkp%3ABk9SR9i6vJnVZw",
-          "img": ""
-        }
-      ]
-    },
-    {
-      "ticker": "$ROBIN",
-      "name": "Nico Robin ST26-003 · SR raw · Straw Hat",
-      "cost": 0,
-      "prev": 4.2,
-      "now": 4.14,
-      "color": "#818cf8",
-      "floor": 1,
-      "queries": [
-        "nico robin ST26-003 -PSA -CGC -lot",
-        "nico robin ST26-003 SR -lot"
-      ],
-      "listings": [
-        {
-          "t": "One Piece CCG Starter Deck Nico Robin SR Holo Card ST26-003 NMOpens in a new window or tab",
-          "p": 3,
-          "u": "https://www.ebay.com/itm/167990027498?_skw=nico+robin+ST26-003+-PSA+-CGC+-lot&itmmeta=01KTMSF9T4NV9WX1NZZPFHQMHM&hash=item271cfc64ea:g:vl8AAeSwCmlpN2d6&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDdm8yFQetbXtVNLYORac2sG2oxQLUkx3RaP65SIaOKPB55NSQxM9lxmmU0OQFupIOWKpTyoC%2BjctS4JeJ0S0ONJrqPPayLXMn2QwT7%2F4Bm%2Fd7CL0HbrsH460LVfm5%2BDvfuntyAVpAYbhiT%2BJTUQWgcWzpRXvqwxjUsAqxF1Dd2SFeyUVaILKjZgJfm1PrQ2WeTMX3QuV8KeYTCg%2FxG6a3g71IyTOE8wso667YM615Cw0wV8%2FEFgkWBj1Hky4HKGT71uM6R%2Fyegl7zFzCRJDEdlfS4b1XhI6tZL4jGYo5Wy32kcJW5ua5RV6WYVqG4J2xo%3D%7Ctkp%3ABk9SR6CdvZnVZw",
-          "img": ""
-        },
-        {
-          "t": "One Piece TCG Card Game SR's - Choose Your Card!Opens in a new window or tab",
-          "p": 2,
-          "u": "https://www.ebay.com/itm/198141532254?_skw=nico+robin+ST26-003+-PSA+-CGC+-lot&epid=26079341447&itmmeta=01KTMSF9T4B15VNE4G1Q686165&hash=item2e2227d85e:g:Ya4AAeSwFK5poYOK&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xCl7a9YNbn9Dabt1nK4h2fZW0q5gXr9tEXjVadLDauU9P7d5yHx7bKJVCh5COXWItrVwQImXjnGF5Svmrglkw1mNqm1UT5FkFiBTYT%2BBeWSvgWXQb%2Frg6ClQcgwCXFILWORbmDbnwpQOUc0lPVPyNpcI9jlZKvWMPO6kyJwhMIyuDzTBHfu1jx86Pcp6hkIFSkLW8TKv872Ifi%2FtZMviesaOua52rAx3s%2FccN5NJGOr2GQRkoVGDXEQlG%2Fcj9tzoZS%2BANEmL5tG8FvznxQK%2BWvXdqxpN%2Bj4B1QAbR74oi7Jl8x9iH6IlcZuDClGyJ4WVVc%3D%7Ctkp%3ABk9SR6CdvZnVZw",
-          "img": ""
-        },
-        {
-          "t": "Nico Robin ST26-003 SR Stard Deck (Purple/Black Monkey D. Luffy) - ONE PIECEOpens in a new",
-          "p": 4,
-          "u": "https://www.ebay.com/itm/317678269407?_skw=nico+robin+ST26-003+-PSA+-CGC+-lot&itmmeta=01KTMSF9T4DNHWYVJ0WC38AG3S&hash=item49f719b3df:g:q5gAAeSwaSZpRkyH&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBYuIkjpdrhPKnWyBj1srbZazsaN6DP4m0jyQS%2BiiPFRzhOtXcOyB8jdbI%2BQJcESG5WzITnJbDHaU5Ad1yqioF2PEorKe8miOKMIyJfmynrolhck4LV%2BMvgiUNge3HWI8pKHSZxjeXP4I3b47BaVhsmFWqaTlv6GS5U3hGiDUoMW1qg3MJVA5e9tfZID384OfFBe0YJFP64fOjEmKODGhpoebTLVn3b8sfypLQnq%2F9Etzcf%2FdPsiLQH2MUCioXNdNluknNQUzOICdhcXjBaNoAcf0L8%2FdxpYNm5n%2Fjdg09X49N9xsq%2FNYZ%2BdczWBHuJstM%3D%7Ctkp%3ABk9SR6CdvZnVZw",
-          "img": ""
-        }
-      ]
-    }
+
+    {"ticker": "$LUFFY", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 730, "now": 730, "color": "#28f5a8", "floor": 600, "queries": ["luffy OP13-118 CGC pristine -lot -box -case -sealed", "luffy OP13-118 SP japanese CGC -lot -sealed"]},
+
+    {"ticker": "$GARDV", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 353.6, "now": 353.6, "color": "#b07cff", "floor": 250, "queries": ["mega gardevoir ex 032 PSA 10 -lot -charizard", "gardevoir ex MEP 032 PSA 10 -lot"]},
+
+    {"ticker": "$HAWL", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 222.69, "now": 231.19, "color": "#ff8a5d", "floor": 150, "queries": ["mega hawlucha ex 268/217 PSA 10 -lot", "hawlucha ex 268 PSA 10 -lot"]},
+
+    {"ticker": "$EEVEE", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 238.14, "now": 238.14, "color": "#ffcb52", "floor": 150, "queries": ["2025 eevee pokemon day psa 10 -lot", "eevee 074/131 pokemon day psa 10 -lot"]},
+
+    {"ticker": "$DEOXYS", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 230, "now": 230, "color": "#2a6b54", "floor": 130, "queries": ["deoxys vstar GG46 CGC pristine -lot -PSA", "deoxys GG46 GG70 CGC 10 -lot -PSA"]},
+
+    {"ticker": "$ESP", "name": "Espeon · JP Neo 2 #196 Promo · PSA 8", "cost": 136, "prev": 41, "now": 41, "color": "#c084fc", "floor": 20, "queries": ["espeon 196 PSA 8 -1st -gold -star -lot", "espeon promo 196 PSA 8 japanese -lot"], "lock": true},
+
+    {"ticker": "$LUFFY26", "name": "Monkey D. Luffy ST26-005 · SR raw · Straw Hat", "cost": 0, "prev": 7, "now": 7, "color": "#f87171", "floor": 1, "queries": ["luffy ST26-005 -PSA -CGC -BGS -graded -lot", "monkey d luffy ST26-005 raw -lot"], "lock": true},
+
+    {"ticker": "$FLAR", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 108.8, "now": 115.6, "color": "#fb923c", "floor": 40, "queries": ["flareon jungle holo PSA 7 -1st -lot", "flareon 3/64 PSA 7 -1st -lot", "flareon jungle PSA 7 unlimited -lot"]},
+
+    {"ticker": "$ROBIN", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4.2, "now": 4.14, "color": "#818cf8", "floor": 1, "queries": ["nico robin ST26-003 -PSA -CGC -lot", "nico robin ST26-003 SR -lot"]}
+
   ]
+
 }
