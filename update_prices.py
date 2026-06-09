@@ -20,91 +20,7 @@ def bigger_img(u):
 
     return re.sub(r"s-l\d+", "s-l500", u) if u else u
 
-def get_listings(soup, floor):
-
-    out = []
-
-    seen = set()
-
-    for a in soup.select('a[href*="/itm/"]'):
-
-        if len(out) >= 3:
-
-            break
-
-        href = a.get("href") or ""
-
-        key = href.split("?")[0]
-
-        if not key or key in seen:
-
-            continue
-
-        cont = None
-
-        node = a
-
-        for _ in range(4):
-
-            node = node.parent
-
-            if node is None:
-
-                break
-
-            if re.search(r"[$][\d,]+\.\d{2}", node.get_text(" ", strip=True)):
-
-                cont = node
-
-                break
-
-        if cont is None:
-
-            continue
-
-        m = re.search(r"[$]([\d,]+\.\d{2})", cont.get_text(" ", strip=True))
-
-        if not m:
-
-            continue
-
-        v = float(m.group(1).replace(",", ""))
-
-        if not (floor < v < 5000):
-
-            continue
-
-        title = a.get_text(strip=True)
-
-        if not title:
-
-            te = cont.select_one(".s-item__title")
-
-            title = te.get_text(strip=True) if te else ""
-
-        title = re.sub(r"[$][\d,]+\.\d{2}.*", "", title)
-
-        title = title.replace("New Listing", "").strip()
-
-        if not title or title.lower() == "shop on ebay":
-
-            continue
-
-        ie = cont.select_one("img")
-
-        img = ""
-
-        if ie:
-
-            img = ie.get("src") or ie.get("data-src") or ""
-
-        seen.add(key)
-
-        out.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": href, "img": bigger_img(img)})
-
-    return out
-
-def fetch_one(query, floor):
+def fetch_one(query, floor, ceil):
 
     url = "https://www.ebay.com/sch/i.html?_nkw=" + query.replace(" ", "+") + "&LH_Sold=1&LH_Complete=1&_sop=13"
 
@@ -114,51 +30,75 @@ def fetch_one(query, floor):
 
         if resp.status_code != 200:
 
-            print("  bad status", resp.status_code, "for", query); return [], []
+            print("  bad status", resp.status_code, "for", query); return []
 
     except Exception as e:
 
-        print("  request failed:", e); return [], []
+        print("  request failed:", e); return []
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    prices = []
+    items = []
 
-    for tag in (soup.select(".s-item__price") or soup.select("[class*=price]") or []):
+    for it in soup.select(".s-item"):
 
-        m = re.search(r"[$]([\d,]+\.\d{2})", tag.get_text(strip=True).split(" to ")[0])
+        pe = it.select_one(".s-item__price")
 
-        if m:
+        if pe is None:
 
-            v = float(m.group(1).replace(",", ""))
+            continue
 
-            if floor < v < 5000:
+        m = re.search(r"[$]([\d,]+\.\d{2})", pe.get_text(strip=True).split(" to ")[0])
 
-                prices.append(v)
+        if not m:
 
-    listings = get_listings(soup, floor)
+            continue
 
-    print("  variation:", query, "| comps:", len(prices), "| listings:", len(listings))
+        v = float(m.group(1).replace(",", ""))
 
-    return prices[:10], listings
+        if not (floor < v < ceil):
 
-def get_comp(queries, floor=10):
+            continue
+
+        te = it.select_one(".s-item__title")
+
+        title = te.get_text(strip=True) if te else ""
+
+        title = title.replace("New Listing", "").strip()
+
+        if not title or title.lower() == "shop on ebay":
+
+            continue
+
+        le = it.select_one("a.s-item__link") or it.select_one('a[href*="/itm/"]')
+
+        link = le.get("href") if le else ""
+
+        ie = it.select_one(".s-item__image img") or it.select_one("img")
+
+        img = ""
+
+        if ie is not None:
+
+            img = ie.get("src") or ie.get("data-src") or ""
+
+        items.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": link, "img": bigger_img(img), "usd": v})
+
+    print("  variation:", query, "| qualifying sold items:", len(items))
+
+    return items[:10]
+
+def get_comp(queries, floor=10, ceil=5000):
 
     pool = []
 
-    listings = []
-
     for q in queries:
 
-        ps, ls = fetch_one(q, floor)
-
-        pool.extend(ps)
-
-        if not listings:
-
-            listings = ls
+        pool.extend(fetch_one(q, floor, ceil))
 
         time.sleep(1)
+
+    listings = [{"t": i["t"], "p": i["p"], "u": i["u"], "img": i["img"]} for i in pool[:3]]
 
     if len(pool) < MIN_COMPS:
 
@@ -166,17 +106,17 @@ def get_comp(queries, floor=10):
 
         return None, listings
 
-    s = sorted(pool)
+    prices = sorted(i["usd"] for i in pool)
 
-    if len(s) >= 5:
+    if len(prices) >= 5:
 
-        cut = max(1, len(s) // 10)
+        cut = max(1, len(prices) // 10)
 
-        s = s[cut:len(s) - cut]
+        prices = prices[cut:len(prices) - cut]
 
-    cad = round(operator.mul(statistics.median(s), USD_TO_CAD), 2)
+    cad = round(operator.mul(statistics.median(prices), USD_TO_CAD), 2)
 
-    print("  pooled", len(pool), "comps from", len(queries), "variations -> CAD", cad)
+    print("  pooled", len(pool), "sold items ->", cad, "CAD (showing", len(listings), "recent)")
 
     return cad, listings
 
@@ -198,9 +138,7 @@ def main():
 
         print("CARD", card["name"])
 
-        price, listings = get_comp(qs, card.get("floor", 10))
-
-        staged = False
+        price, listings = get_comp(qs, card.get("floor", 10), card.get("ceil", 5000))
 
         if price is not None:
 
@@ -226,11 +164,9 @@ def main():
 
                     card["pending"] = round(price, 2)
 
-                    print("  STAGED big move", prev, "->", price, "(needs next run to confirm)")
+                    print("  STAGED big move", prev, "->", price)
 
-                    staged = True
-
-        if listings and not staged:
+        if listings:
 
             card["listings"] = listings
 
