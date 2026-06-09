@@ -344,7 +344,7 @@ function renderPortfolio(d){
 
       +'<div class="name">'+smallName(p.name)+'</div></div>'
 
-      +'<div class="ret" style="color:'+rc+'">'+fmtPct(ret)+'<span class="x"><span style="font-size:14px;font-weight:700;color:'+(pl>=0?'var(--green)':'var(--red)')+'">'+(pl>=0?'+':'\u2212')+CUR(Math.abs(pl))+'</span> '+DOT+' '+(p.now/p.cost).toFixed(1)+'\u00D7</span></div></div>'
+      +'<div class="ret" style="color:'+rc+'">'+fmtPct(ret)+'<span class="x"><span style="font-size:14px;font-weight:700;color:'+(Math.round(pl)<0?'var(--red)':'var(--green)')+'">'+(Math.round(pl)<0?'\u2212':'+')+CUR(Math.abs(pl))+'</span> '+DOT+' '+(p.now/p.cost).toFixed(1)+'\u00D7</span></div></div>'
 
       +'<div class="mid"><div class="spark"><svg viewBox="0 0 120 38" width="100%" height="38" preserveAspectRatio="none"><path d="'+SPARK[c]+'" fill="none" stroke="'+col+'" stroke-width="2.2"/></svg></div>'
 
@@ -408,7 +408,7 @@ function renderBook(d){
 
     html+='<div class="pos" style="padding:13px 16px"><div class="top"><div class="lft"><div class="tkr" style="font-size:14px">'+bigName(p.name)+'</div></div>'
 
-      +'<div class="ret" style="font-size:17px;color:'+(pl>=0?'var(--green)':'var(--red)')+'">'+(pl>=0?'+':'\u2212')+CUR(Math.abs(pl))+'</div></div></div>';
+      +'<div class="ret" style="font-size:17px;color:'+(Math.round(pl)<0?'var(--red)':'var(--green)')+'">'+(Math.round(pl)<0?'\u2212':'+')+CUR(Math.abs(pl))+'</div></div></div>';
 
   });
 
