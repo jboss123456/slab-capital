@@ -1,14 +1,153 @@
 {
   "updated": "Jun 09 2026",
   "currency": "C$",
-  "history": [{"d": "Jun 04 2026", "v": 1665}, {"d": "Jun 05 2026", "v": 1644}, {"d": "Jun 06 2026", "v": 1712}, {"d": "Jun 07 2026", "v": 1859, "cards": {"Luffy OP13-118 SP": 730, "Mega Gardevoir ex MEP 032": 354, "Mega Hawlucha ex 268/217": 240, "Eevee 074/131": 188, "Deoxys VSTAR GG46": 200, "Espeon": 41, "Monkey D. Luffy ST26-005": 7, "Flareon": 95, "Nico Robin ST26-003": 4}}, {"d": "Jun 08 2026", "v": 1903, "cards": {"Luffy OP13-118 SP": 730, "Mega Gardevoir ex MEP 032": 354, "Mega Hawlucha ex 268/217": 231, "Eevee 074/131": 238, "Deoxys VSTAR GG46": 230, "Flareon": 116, "Nico Robin ST26-003": 4}}, {"d": "Jun 09 2026", "v": 1929, "cards": {"Luffy OP13-118 SP": 730, "Mega Gardevoir ex MEP 032": 354, "Mega Hawlucha ex 268/217": 231, "Eevee 074/131": 238, "Deoxys VSTAR GG46": 263, "Flareon": 109, "Nico Robin ST26-003": 4}}],
+  "history": [
+    {
+      "d": "Jun 04 2026",
+      "v": 1665
+    },
+    {
+      "d": "Jun 05 2026",
+      "v": 1644
+    },
+    {
+      "d": "Jun 06 2026",
+      "v": 1712
+    },
+    {
+      "d": "Jun 07 2026",
+      "v": 1859,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Mega Gardevoir ex MEP 032": 354,
+        "Mega Hawlucha ex 268/217": 240,
+        "Eevee 074/131": 188,
+        "Deoxys VSTAR GG46": 200,
+        "Espeon": 41,
+        "Monkey D. Luffy ST26-005": 7,
+        "Flareon": 95,
+        "Nico Robin ST26-003": 4
+      }
+    },
+    {
+      "d": "Jun 08 2026",
+      "v": 1903,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Mega Gardevoir ex MEP 032": 354,
+        "Mega Hawlucha ex 268/217": 231,
+        "Eevee 074/131": 238,
+        "Deoxys VSTAR GG46": 230,
+        "Flareon": 116,
+        "Nico Robin ST26-003": 4
+      }
+    },
+    {
+      "d": "Jun 09 2026",
+      "v": 1929,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Mega Gardevoir ex MEP 032": 354,
+        "Mega Hawlucha ex 268/217": 231,
+        "Eevee 074/131": 238,
+        "Deoxys VSTAR GG46": 263,
+        "Flareon": 109,
+        "Nico Robin ST26-003": 4
+      }
+    }
+  ],
   "holdings": [
-    {"ticker": "$LUFFY", "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10", "cost": 261, "prev": 730, "now": 730, "color": "#28f5a8", "floor": 600, "queries": ["luffy OP13-118 SP wanted CGC -manga -alt -english -lot", "monkey d luffy OP13-118 japanese CGC pristine -manga -alt -lot"]},
-    {"ticker": "$GARDV", "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10", "cost": 160, "prev": 354, "now": 354, "color": "#b07cff", "floor": 250, "queries": ["mega gardevoir ex 032 PSA 10 -lot -charizard -lucario", "gardevoir ex MEP 032 PSA 10 -lot -lucario"]},
-    {"ticker": "$HAWL", "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10", "cost": 160, "prev": 231.19, "now": 231.19, "color": "#ff8a5d", "floor": 150, "queries": ["mega hawlucha ex 268/217 PSA 10 -lot", "hawlucha ex 268 PSA 10 -lot"]},
-    {"ticker": "$EEVEE", "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10", "cost": 150, "prev": 238.14, "now": 238.09, "color": "#ffcb52", "floor": 150, "queries": ["2025 eevee pokemon day psa 10 -lot", "eevee 074/131 pokemon day psa 10 -lot"]},
-    {"ticker": "$DEOXYS", "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10", "cost": 205, "prev": 230, "now": 262.82, "color": "#2a6b54", "floor": 130, "queries": ["deoxys vstar GG46 CGC pristine -lot -PSA", "deoxys GG46 GG70 CGC 10 -lot -PSA"]},
-    {"ticker": "$FLAR", "name": "Flareon · 1999 Jungle #3 Holo · PSA 7", "cost": 109, "prev": 115.6, "now": 108.8, "color": "#fb923c", "floor": 40, "queries": ["flareon jungle holo PSA 7 -1st -lot", "flareon 3/64 PSA 7 -1st -lot", "flareon jungle PSA 7 unlimited -lot"]},
-    {"ticker": "$ROBIN", "name": "Nico Robin ST26-003 · SR raw · Straw Hat", "cost": 0, "prev": 4.14, "now": 4.08, "color": "#818cf8", "floor": 1, "queries": ["nico robin ST26-003 -PSA -CGC -lot", "nico robin ST26-003 SR -lot"]}
+    {
+      "ticker": "$LUFFY",
+      "name": "Luffy OP13-118 SP · JP Wanted · CGC Pristine 10",
+      "cost": 261,
+      "prev": 730,
+      "now": 730,
+      "color": "#28f5a8",
+      "floor": 600,
+      "queries": [
+        "luffy OP13-118 SP wanted CGC -manga -alt -english -lot",
+        "monkey d luffy OP13-118 japanese CGC pristine -manga -alt -lot"
+      ]
+    },
+    {
+      "ticker": "$GARDV",
+      "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
+      "cost": 160,
+      "prev": 354,
+      "now": 354,
+      "color": "#b07cff",
+      "floor": 250,
+      "queries": [
+        "mega gardevoir ex 032 PSA 10 -lot -charizard -lucario",
+        "gardevoir ex MEP 032 PSA 10 -lot -lucario"
+      ]
+    },
+    {
+      "ticker": "$HAWL",
+      "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
+      "cost": 160,
+      "prev": 231.19,
+      "now": 231.19,
+      "color": "#ff8a5d",
+      "floor": 150,
+      "queries": [
+        "mega hawlucha ex 268/217 PSA 10 -lot",
+        "hawlucha ex 268 PSA 10 -lot"
+      ]
+    },
+    {
+      "ticker": "$EEVEE",
+      "name": "Eevee 074/131 · Pokémon Day 2025 Stamp · PSA 10",
+      "cost": 150,
+      "prev": 238.14,
+      "now": 238.09,
+      "color": "#ffcb52",
+      "floor": 150,
+      "queries": [
+        "2025 eevee pokemon day psa 10 -lot",
+        "eevee 074/131 pokemon day psa 10 -lot"
+      ]
+    },
+    {
+      "ticker": "$DEOXYS",
+      "name": "Deoxys VSTAR GG46 · Crown Zenith · CGC Pristine 10",
+      "cost": 205,
+      "prev": 230,
+      "now": 262.82,
+      "color": "#2a6b54",
+      "floor": 130,
+      "queries": [
+        "deoxys vstar GG46 CGC pristine -lot -PSA",
+        "deoxys GG46 GG70 CGC 10 -lot -PSA"
+      ]
+    },
+    {
+      "ticker": "$FLAR",
+      "name": "Flareon · 1999 Jungle #3 Holo · PSA 7",
+      "cost": 109,
+      "prev": 115.6,
+      "now": 108.8,
+      "color": "#fb923c",
+      "floor": 40,
+      "queries": [
+        "flareon jungle holo PSA 7 -1st -lot",
+        "flareon 3/64 PSA 7 -1st -lot",
+        "flareon jungle PSA 7 unlimited -lot"
+      ]
+    },
+    {
+      "ticker": "$ROBIN",
+      "name": "Nico Robin ST26-003 · SR raw · Straw Hat",
+      "cost": 0,
+      "prev": 4.14,
+      "now": 4.08,
+      "color": "#818cf8",
+      "floor": 1,
+      "queries": [
+        "nico robin ST26-003 -PSA -CGC -lot",
+        "nico robin ST26-003 SR -lot"
+      ]
+    }
   ]
 }
