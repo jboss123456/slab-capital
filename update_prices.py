@@ -1,4 +1,4 @@
-import os, re, json, time, statistics, operator, requests
+import os, re, json, sys, time, statistics, operator, requests
 
 from bs4 import BeautifulSoup
 
@@ -126,6 +126,14 @@ def main():
 
         data = json.load(f)
 
+    today = datetime.utcnow().strftime("%b %d %Y")
+
+    if data.get("updated") == today and os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+
+        print("already updated for", today, "- skipping scheduled run")
+
+        sys.exit(0)
+
     for card in data["holdings"]:
 
         if card.get("lock"):
@@ -188,7 +196,7 @@ def log_history():
 
     total = round(sum(h.get("now", 0) for h in d.get("holdings", [])))
 
-    cards = {h.get("name", "").split(" · ")[0].strip(): round(h.get("now", 0)) for h in d.get("holdings", [])}
+    cards = {h.get("name", "").split(" \u00b7 ")[0].strip(): round(h.get("now", 0)) for h in d.get("holdings", [])}
 
     today = datetime.today().strftime("%b %d %Y")
 
