@@ -1,5 +1,5 @@
 {
-  "updated": "Jun 10 2026",
+  "updated": "Jun 11 2026",
   "currency": "C$",
   "history": [
     {
@@ -57,6 +57,19 @@
     },
     {
       "d": "Jun 10 2026",
+      "v": 1929,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Mega Gardevoir ex MEP 032": 354,
+        "Mega Hawlucha ex 268/217": 231,
+        "Eevee 074/131": 238,
+        "Deoxys VSTAR GG46": 263,
+        "Flareon": 109,
+        "Nico Robin ST26-003": 4
+      }
+    },
+    {
+      "d": "Jun 11 2026",
       "v": 1929,
       "cards": {
         "Luffy OP13-118 SP": 730,
