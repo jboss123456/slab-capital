@@ -82,7 +82,8 @@ def fetch_one(query, floor, ceil):
 
             img = ie.get("src") or ie.get("data-src") or ""
 
-        items.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": link, "img": bigger_img(img), "usd": v})
+        dm = re.search(r"Sold\s+([A-Z][a-z]{2}\s+\d{1,2},?\s+\d{4})", txt)
+        items.append({"t": title[:90], "p": round(operator.mul(v, USD_TO_CAD)), "u": link, "img": bigger_img(img), "usd": v, "sd": dm.group(1) if dm else ""})
 
     print("  variation:", query, "| qualifying sold items:", len(items))
 
@@ -98,7 +99,7 @@ def get_comp(queries, floor=10, ceil=5000):
 
         time.sleep(1)
 
-    listings = [{"t": i["t"], "p": i["p"], "u": i["u"], "img": i["img"]} for i in pool[:3]]
+    listings = [{"t": i["t"], "p": i["p"], "u": i["u"], "img": i["img"], "sd": i.get("sd", "")} for i in pool[:3]]
 
     if len(pool) < MIN_COMPS:
 
