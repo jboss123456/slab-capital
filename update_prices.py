@@ -26,7 +26,7 @@ def fetch_one(query, floor, ceil):
 
     try:
 
-        resp = requests.get("http://api.scraperapi.com/", params={"api_key": SCRAPER_API_KEY, "url": url, "render": "false"}, timeout=30)
+        resp = requests.get("http://api.scraperapi.com/", params={"api_key": SCRAPER_API_KEY, "url": url, "render": "false", "premium": "true"}, timeout=30)
 
         if resp.status_code != 200:
 
