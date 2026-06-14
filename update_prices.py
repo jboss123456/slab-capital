@@ -26,7 +26,7 @@ def fetch_one(query, floor, ceil):
 
     try:
 
-        resp = requests.get("http://api.scraperapi.com/", params={"api_key": SCRAPER_API_KEY, "url": url, "render": "false", "premium": "true"}, timeout=30)
+        resp = requests.get("http://api.scraperapi.com/", params={"api_key": SCRAPER_API_KEY, "url": url, "render": "false"}, timeout=30)
 
         if resp.status_code != 200:
 
@@ -40,15 +40,11 @@ def fetch_one(query, floor, ceil):
 
     items = []
 
-    for it in soup.select(".s-item"):
+    for it in soup.select(".s-item, .s-card"):
 
-        pe = it.select_one(".s-item__price")
+        txt = it.get_text(" ", strip=True)
 
-        if pe is None:
-
-            continue
-
-        m = re.search(r"[$]([\d,]+\.\d{2})", pe.get_text(strip=True).split(" to ")[0])
+        m = re.search(r"[$]([\d,]+\.\d{2})", txt)
 
         if not m:
 
@@ -60,21 +56,25 @@ def fetch_one(query, floor, ceil):
 
             continue
 
-        te = it.select_one(".s-item__title")
+        le = it.select_one('a[href*="/itm/"]')
+
+        if le is None:
+
+            continue
+
+        link = le.get("href") or ""
+
+        te = it.select_one(".s-item__title") or it.select_one(".s-card__title") or it.select_one('[role="heading"]') or le
 
         title = te.get_text(strip=True) if te else ""
 
-        title = title.replace("New Listing", "").strip()
+        title = title.replace("New Listing", "").replace("Opens in a new window or tab", "").strip()
 
         if not title or title.lower() == "shop on ebay":
 
             continue
 
-        le = it.select_one("a.s-item__link") or it.select_one('a[href*="/itm/"]')
-
-        link = le.get("href") if le else ""
-
-        ie = it.select_one(".s-item__image img") or it.select_one("img")
+        ie = it.select_one("img")
 
         img = ""
 
@@ -196,7 +196,7 @@ def log_history():
 
     total = round(sum(h.get("now", 0) for h in d.get("holdings", [])))
 
-    cards = {h.get("name", "").split(" \u00b7 ")[0].strip(): round(h.get("now", 0)) for h in d.get("holdings", [])}
+    cards = {h.get("name", "").split(" · ")[0].strip(): round(h.get("now", 0)) for h in d.get("holdings", [])}
 
     today = datetime.today().strftime("%b %d %Y")
 
