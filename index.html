@@ -154,7 +154,7 @@
 
   .sheet.on{display:flex;animation:fade .2s}
 
-  .sheetcard{width:100%;max-width:530px;background:linear-gradient(155deg,var(--panel2),var(--panel) 70%);border:1px solid var(--line);border-top-left-radius:20px;border-top-right-radius:20px;padding:22px 20px calc(28px + env(safe-area-inset-bottom));position:relative;animation:slideup .28s;box-shadow:0 -20px 60px -20px #000}
+  .sheetcard{width:100%;max-width:530px;background:linear-gradient(155deg,var(--panel2),var(--panel) 70%);border:1px solid var(--line);border-top-left-radius:20px;border-top-right-radius:20px;padding:22px 20px calc(28px + env(safe-area-inset-bottom));position:relative;max-height:88vh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;animation:slideup .28s;box-shadow:0 -20px 60px -20px #000}
 
   .sheetclose{position:absolute;top:15px;right:16px;width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:var(--panel);color:var(--mute);font-size:16px;cursor:pointer;line-height:1;padding:0}
 
@@ -590,7 +590,7 @@ function cardExtras(p){
 
         +'<span style="flex:1;min-width:0;font-size:10.5px;color:var(--text);line-height:1.4;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">'+esc(l.t)+'</span>'
 
-        +'<span style="font-weight:700;font-size:14px;color:var(--green);white-space:nowrap">C$'+l.p+'</span></a>';
+        +'<span style="display:flex;flex-direction:column;align-items:flex-end;white-space:nowrap"><span style="font-weight:700;font-size:14px;color:var(--green)">C$'+l.p+'</span>'+(l.sd?'<span style="font-size:9px;color:var(--mute);margin-top:2px">'+esc(l.sd)+'</span>':'')+'</span></a>';
 
     });
 
