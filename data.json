@@ -14,7 +14,7 @@
       "d": "Jun 06 2026",
       "v": 1712
     },
-    {
+    {h
       "d": "Jun 07 2026",
       "v": 1859,
       "cards": {
@@ -215,7 +215,7 @@
       "queries": [
         "2025 eevee pokemon day psa 10 -lot",
         "eevee 074/131 pokemon day psa 10 -lot"
-      ],
+      ],h
       "listings": [
         {
           "t": "Pokemon TCG Prismatic Evolutions - Pokemon Day 2025 Eevee #074 - PSA 10",
@@ -281,16 +281,16 @@
     },
     {
       "ticker": "$LUCARIO",
-      "name": "Mega Lucario ex MEP 033 · Poster Coll · raw",
+      "name": "Mega Lucario ex MEP 033 · Poster Coll · PSA 10",
       "cost": 210,
-      "prev": 27.19,
-      "now": 27.15,
+      "prev": 582,
+      "now": 582,
       "color": "#3b7dd8",
-      "floor": 8,
-      "ceil": 70,
+      "floor": 350,
+      "ceil": 900,
       "queries": [
-        "mega lucario ex 033 -PSA -CGC -lot -gardevoir",
-        "mega lucario ex MEP 033 -PSA -CGC -lot"
+        "mega lucario ex 033 PSA 10 -lot -gardevoir",
+        "mega lucario ex MEP 033 PSA 10 -lot"
       ],
       "listings": [
         {
