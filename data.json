@@ -1,5 +1,5 @@
 {
-  "updated": "Jun 14 2026",
+  "updated": "Jun 15 2026",
   "currency": "C$",
   "history": [
     {
@@ -121,6 +121,21 @@
         "Luffy OP16-034": 58,
         "Dark Magneton 11/82": 102
       }
+    },
+    {
+      "d": "Jun 15 2026",
+      "v": 2756,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Marshadow & Machamp GX 199": 401,
+        "Mega Gardevoir ex MEP 032": 367,
+        "Mega Hawlucha ex 268/217": 231,
+        "Eevee 074/131": 237,
+        "Flareon": 109,
+        "Mega Lucario ex MEP 033": 510,
+        "Luffy OP16-034": 69,
+        "Dark Magneton 11/82": 102
+      }
     }
   ],
   "holdings": [
@@ -141,8 +156,8 @@
       "ticker": "$MCHAMP",
       "name": "Marshadow & Machamp GX 199 · Unbroken Bonds FA · PSA 9",
       "cost": 350,
-      "prev": 404.55,
-      "now": 390.95,
+      "prev": 390.95,
+      "now": 401.1,
       "color": "#c0392b",
       "floor": 100,
       "ceil": 600,
@@ -152,35 +167,35 @@
       ],
       "listings": [
         {
-          "t": "Pokemon TCG - Marshadow & Machamp GX #199 - Unbroken Bonds - PSA 9 Mint",
-          "p": 437,
-          "u": "https://www.ebay.com/itm/187794740585?_skw=marshadow+machamp+GX+unbroken+bonds+199+PSA+9+-lot&epid=16052749236&itmmeta=01KV458ADMHK029PSSX3CKTYD8&hash=item2bb9705569:g:BYYAAeSwpcppLJTC&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xBRfuJjPv7QmiDSQUPK5QYKw6JGMS3SbZAqXUd4vNDNwtfu4bLutzEnmDgQ3ks4lS1ZYLOEQiNWq7BXTKYTcstWhbpqdjmRd2LXeR%2FtMUVX9dwk38iR7NVde%2BKjqFA0PaNeCe2b8Qwx9Ao2DryY2b2xFJA7K5DMKRMaVSgKkHuMfafl%2FlvcZUmX70OsrPTrNKjBmLVBAnj%2FS%2FEnNw3iWJTwgDVE4o%2Feg2mpwQ0tPB9AuLcal4C28FsF9kPsxdft9xrCsaYqafOntUnQYZWRN4ILqCp%2F3sNsI7qBN8he1ATCNg%3D%3D%7Ctkp%3ABk9SR_SmoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/BYYAAeSwpcppLJTC/s-l500.webp",
-          "sd": "Jun 6, 2026"
-        },
-        {
           "t": "Pokémon Marshadow & Machamp GX 199/214 Unbroken Bonds Full Art Holo PSA 9",
           "p": 408,
-          "u": "https://www.ebay.com/itm/277810238019?_skw=marshadow+machamp+GX+unbroken+bonds+199+PSA+9+-lot&epid=9065727749&itmmeta=01KV458ADMYAERZ8TSVWVG2CDR&hash=item40aec7d243:g:FMQAAeSwpZxpuNDO&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDWqFXrRj3LKdFLykzsNX4aVHSfCnQf1V1Nb656MDY15or5DtR7m9x1SVerALOs8hsTaOHfrpyRSlODJoOWKuSCvGDwV%2BvjhjreXFY7iyeldE5kHlbtQ2K5Ua7DDaWmtmi5Au%2FAWVxoN43ZO8l4tflXqFOiTUK4Y47moIWxxNt0G1p4VJy8eU7uLBb6YpV0wXuj%2BqwEi9za1c90lVQAZ5TdKsgMU9DJfLst1QEWiqIfFl7THoAfQKMqcm7FUhx6m%2FDbVEkLpR%2B5tM5T6B1sdzSv7%2BHxsU5oIk6qJKko999Daw%3D%3D%7Ctkp%3ABk9SR_SmoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/FMQAAeSwpZxpuNDO/s-l500.webp",
+          "u": "https://www.ebay.com/itm/277810238019?_skw=marshadow+machamp+GX+199+full+art+PSA+9+-lot+-secret+-rainbow&epid=9065727749&itmmeta=01KV5JF8WBMP2268HRR6CED7Z5&hash=item40aec7d243:g:FMQAAeSwpZxpuNDO&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDWqFXrRj3LKdFLykzsNX4aVHSfCnQf1V1Nb656MDY15qu6zGnhvln6ghHNQaM%2FrCnJZurxNYvcy2urNnszgjaHn8Z6g16jejSywoFLoyXByrJal5gedWDcgFDPVG43yoSApMCY0HTYiebwCZ0fVb7iatTqkaPRA22pHSS3%2F5xvA83LcVApignMQ3QD4eS36Xi67nZge7MJTz9xpj%2F%2BH%2FBGJK%2FCcniKwYchO0z7uBLKOhTWTLla9yefsrDs9TDjRDxhSCF22caKRUxr9gpUMIe8QoMrIbyy0xxcZEXBIF4sZdv57BsZ8buYcxfH7Km4ygo%3D%7Ctkp%3ABk9SR6qOvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/FMQAAeSwpZxpuNDO/s-l500.jpg",
           "sd": "Jun 6, 2026"
         },
         {
-          "t": "Marshadow & Machamp GX (Full Art) 199/214 Sm-Unbroken Bonds Holo PSA 9",
-          "p": 381,
-          "u": "https://www.ebay.com/itm/198180255421?_skw=marshadow+machamp+GX+unbroken+bonds+199+PSA+9+-lot&epid=9065727749&itmmeta=01KV458ADM2TRK7SC9QJ74Q8JY&hash=item2e2476b6bd:g:2EAAAeSwk6Rps0iU&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xAMI2TS2P4G%2BlOwGXMrzqRe%2Fl0H%2FFxVQDbOi%2FJHanhMK70%2B%2BOwhWg1lYtVjecOt2zyr4RdqKJQv6PCtGMTJnoG4hleHf1Aht47En2kRigE9dI%2FReoDdrDDkQEZ5qlN2eLWISVBe5VafZDFbtcaSq%2BfvkK0QsJKOR7vKkjWCWi3%2F14dQEI392GoBX4R9PQtrDkwpU3CEnYJ2Ac7ac8AWtPQvRdCsVddFrL9lTBNqxbDRdXd2wClWeb9Tsx4BRtbolJrxOClN8E%2BZN2W7kKDry1mKIDDimWm82KKC6RB3pjJeng%3D%3D%7Ctkp%3ABk9SR_SmoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/2EAAAeSwk6Rps0iU/s-l500.webp",
-          "sd": "May 13, 2026"
+          "t": "Marshadow & Machamp GX (Full Art) 199/214 Sm-Unbroken Bonds Holo BGS 9!! PSA 10!",
+          "p": 442,
+          "u": "https://www.ebay.com/itm/278012264811?_skw=marshadow+machamp+GX+199+full+art+PSA+9+-lot+-secret+-rainbow&epid=9065727749&itmmeta=01KV5JF8WBMGJCRP0S08FN38TB&hash=item40bad2816b:g:eTAAAeSw5ptqEHzr&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBwMtWcmkkFHisXrbaqv48t7Rf2sNCH1tfPmVon0oHqQg7wYtKCT69syTcVXNoeiFazrf66bf%2F5JC1BbnGG6jFlYpKFyzXCcrVT%2FqIQVF3i1SFGzLLuwTxMJbrG6tJN0WCalF7wqJMg0G7NYa6YPTO%2BJ5XK0uLDr0KMHoG33UHsP7HzzUwebimQ74QLJC9%2BgeOd7MPwLg5tzR7hgZQAsNzV%2BK01qwAezrIFMN8DHRJP5%2FkbXMfsZzMn%2FkvWcoerBio78jDpIOF%2FrsXfsXU%2BF5dAvaqmntpMcZPKg0z2iD3PsYGQ8gqyhwdHDuYQPkXpFFI%3D%7Ctkp%3ABk9SR6qOvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/eTAAAeSw5ptqEHzr/s-l500.jpg",
+          "sd": "Jun 2, 2026"
+        },
+        {
+          "t": "Marshadow & Machamp GX Full Art Ultra Rare Holo 199/214 Unbroken Bonds PSA 9",
+          "p": 408,
+          "u": "https://www.ebay.com/itm/277843221196?_skw=marshadow+machamp+GX+199+full+art+PSA+9+-lot+-secret+-rainbow&epid=9065727749&itmmeta=01KV5JF8WBEKDDVR6G089DP0JV&hash=item40b0bf1acc:g:NZgAAeSw47FpyAMp&itmprp=enc%3AAQALAAABIGfYFPkwiKCW4ZNSs2u11xBYyJS7EHG6NaVtlY--mlU8450zmQANzAl7f6sIWmNlvve39GmQeok2tu2h9ntBQiIW%2FNfLFmgDc0DP9x9uHVHgpfdvdZ3PsfwID2F4hgvpCcIYakfP1oeowlF2D8MhGN2hd1M0WAyFXr619F1xYFNAfDwz7xAYtHk80M3wDWZ4Z0t3znoYwZ%2FfPXbW5JipCWd3yJ9wJzyl14ju1vBfyr1CiKeRBEqv1jswy1vN1lBY6aZlrthwvYcxk4T05JghWn5K%2BPtMfy0goyWDqBE8U90QTvFlZHtNaSY%2B4niTqD%2Fa2V34t%2BdWAOvTx7VOZVHimq2sX%2BrTQ%2FsOxVY%2BShZREFkE54WqtCZuvm9YPXJ8FYxNqg%3D%3D%7Ctkp%3ABk9SR6yOvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/NZgAAeSw47FpyAMp/s-l500.jpg",
+          "sd": "May 17, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/BYYAAeSwpcppLJTC/s-l500.webp"
+      "img": "https://i.ebayimg.com/images/g/FMQAAeSwpZxpuNDO/s-l500.jpg"
     },
     {
       "ticker": "$GARDV",
       "name": "Mega Gardevoir ex MEP 032 · Poster Coll · PSA 10",
       "cost": 160,
       "prev": 367.87,
-      "now": 367.87,
+      "now": 367.19,
       "color": "#b07cff",
       "floor": 250,
       "queries": [
@@ -191,33 +206,33 @@
         {
           "t": "2026 POKEMON MEP EN-ME BLACK STAR PROMO #032 MEGA GARDEVOIR EX PSA 10",
           "p": 352,
-          "u": "https://www.ebay.com/itm/298415366863?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV458F3FQ7MCEPWFVFF2DHHB&hash=item457af122cf:g:fecAAeSw~4xqLqhA&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xCO6N2RisgwkAnCZgRZclAMNjSPXmssv2hlWTMCApOWBYEaH4OQ7lOP8c3GkcdCK9oUhIxnzdrRwvfQHJj%2B%2BodAiqKy8ApkD1AeE5kJRIlvZRRSt5ziNB56YFJhtK9zFaa8idG9IwHHZhHRszDb7JXtIij0YsnfzoGGntTGcmizwB69ShA5f9pxtkMWL%2FgqTPKD%2BRlcyWEp%2BCPJw5FrUbQ6pi50TBSYBiWjDg2b4KxHIXZthCK7Y0U6yECR%2F8CqNWRIgegpXeCDVjgBejFgW1ru4wYzaBhxmmF3JkhaNwf%2FrCByr0siZEUOvsQ6FA8Y3FZNLogo4znm8Mr1zaAGWtRG%7Ctkp%3ABk9SR-zxoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/fecAAeSw~4xqLqhA/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/298415366863?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV5JFF7B2H5K3ZW5SS0YY533&hash=item457af122cf:g:fecAAeSw~4xqLqhA&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xCO6N2RisgwkAnCZgRZclAMNjSPXmssv2hlWTMCApOWBYEaH4OQ7lOP8c3GkcdCK9oUhIxnzdrRwvfQHJj%2B%2BodAiqKy8ApkD1AeE5kJRIlvZRRSt5ziNB56YFJhtK9zFaa1lfX07%2F2%2BcAHUMLFy49d3Bmw6V8OFf0q50qoXfYWpB00eYYXkov8T5jYRUss445vigQ2Sv4MFPCLYZGZAaoN4n6NBR9M%2F5xIo%2BHcDlE5J%2FbStSd5IuhuWFlqa72Gp7NBOqnWZIOWz%2B1boKJw3Zg2hRV6JmQTvJHNA9zi9dt%2FNkWsWm2PTcpuM64Z4M9jPHy%2FpNze2xikbQHeWGarJAvOY%7Ctkp%3ABk9SR-LzvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/fecAAeSw~4xqLqhA/s-l500.webp",
           "sd": "Jun 14, 2026"
         },
         {
           "t": "2026 POKEMON MEP EN-ME BLACK STAR PROMO #032 MEGA GARDEVOIR EX PSA 10",
           "p": 347,
-          "u": "https://www.ebay.com/itm/306971412900?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV458F3FNXSESZEW6M626F4N&hash=item4778ec09a4:g:5h0AAeSwbGpqGm0n&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xBt2W9rGw3CrJYKxGzmWqtNB0BJ9CzoJIRZZWVBHCrr7%2FnVI%2BkKy143JyBEYEKCmac4M1KXoLPWAOvaK8o4mgVTZjUJvNB64XzX5jcWbLCJ8ZeKLPobWeSL40LgH6Ae%2FJcJqsQ6dX0EPEK35CxkvFtWA%2FZsusjOxzvYlrRyQm6pjKeJk%2FXMPO6EKu3PpQh8VOzNPEpIme4HtC7%2B13a50ANpl%2BvRViqY2Fo75gapDeCS4ocq%2F9AaMgUF2TjjN6fvLf82qX57XGFQ%2By2LKO0iVHOT5NoEarth46hbUrw7vJ%2BRILXhafU8woL2lCdRD8%2FNQ96hLsk5CcxHgSIcBtGJkG%2Bs%7Ctkp%3ABk9SR-zxoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/5h0AAeSwbGpqGm0n/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/306971412900?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV5JFF7BBEVZVM1EEHDHSBWV&hash=item4778ec09a4:g:5h0AAeSwbGpqGm0n&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xDp%2FzJv8ShVyUkFTfZRQC9hbM0fYwSJWUMIBnATwIRegXERRzmv47vEhPz1IjxoYbgqDfbWftRvzd10uATgytRyB1z%2FRTPdW45oYZjhXp3ABc8%2BCborupUrIwL7sUfpR8eRF%2BS0JzlmQ5BxsUAJqqEIhTUQ57Byh7OoeIjVs3jXsmo7u9VrKXTdO5lIYMy8X7LK%2BFzXCwY%2FQITXQzgK9uoaDQzx%2BvigwX%2Fa7w4kcNfsFM%2FemrZFvZWPLVFtuT013%2FuKURCbyj2hAkJEOFqc3eOmFJUWSPA5D6vbkJWi93aRrg%3D%3D%7Ctkp%3ABk9SR-LzvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/5h0AAeSwbGpqGm0n/s-l500.webp",
           "sd": "Jun 7, 2026"
         },
         {
           "t": "2026 POKEMON MEP EN-ME BLACK STAR PROMO #032 MEGA GARDEVOIR EX PSA 10",
           "p": 347,
-          "u": "https://www.ebay.com/itm/117204154237?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV458F3F9Q1VHZP8A4RW3K32&hash=item1b49e9777d:g:kN0AAeSwbHFqDM5p&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xCizToM5tAMVuwwkydwBGGV09SUvGOFp2%2FCTUESQWNoX%2BsuQv6DtNBOzKQJKwz412tb%2FlJhqF9HFxPi1rEeAotbQWddeX64FWJY6Kk4NCC4Ar8IQ03IVqHN%2F84kd9LJHCuikRzrxg1tnp5jQDwOmtDGHFyASGxLID8J%2BsjiHGCpy6klbf7hkJYLsatEH690tYIcYgYfknlmCFSq4eB0m3B35JpLUGpEmUR7n1SQCFedOpKBBb0Ii%2FT9eh9yJihH0HFJOwgqYLv44tlQyU2Ui8vwlAB48juHRqxnOMy7vt7nat655mB0B5y5pYci%2FToEDfZMgaJrJlxKhbiE4v8lpBh8%7Ctkp%3ABk9SR-zxoYXZZw",
-          "img": "https://i.ebayimg.com/images/g/kN0AAeSwbHFqDM5p/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/117204154237?_skw=mega+gardevoir+ex+032+PSA+10+-lot+-charizard+-lucario&epid=17091916586&itmmeta=01KV5JFF7BHM41VFF3APDR4BQQ&hash=item1b49e9777d:g:kN0AAeSwbHFqDM5p&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xAux%2BG1xWt1R8DVZ3QnUZ8xZBLQliNmoKf6jimKsbZX43VMsm1N3A0ONPN3ZrnaTPY7pBLyw6gYycXvHjZsr4Y25WamKEtwUV342YvCfIyz5HDRZ2ShqhBSe0r7eih4GG4DV3OEzzAESIra7DBRUzfgK%2FiQDMhV4AwlANFJLJCOvLuNXkoAaH%2FPA84snYiK6JgLN03N3xTURMbyAY%2BqIbvQcAve9zLacji%2FAmnUuikX7DystTZKdaCVmmJnprMf7BvvMURIjTisGnlX%2FwwcWWmAxR9mZAu16xvOMsGf8laYhg%3D%3D%7Ctkp%3ABk9SR-TzvbLZZw",
+          "img": "https://i.ebayimg.com/images/g/kN0AAeSwbHFqDM5p/s-l500.webp",
           "sd": "May 27, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/fecAAeSw~4xqLqhA/s-l500.jpg"
+      "img": "https://i.ebayimg.com/images/g/fecAAeSw~4xqLqhA/s-l500.webp"
     },
     {
       "ticker": "$HAWL",
       "name": "Mega Hawlucha ex 268/217 · Ascended Heroes · PSA 10",
       "cost": 160,
-      "prev": 231.19,
-      "now": 222.69,
+      "prev": 222.69,
+      "now": 231.19,
       "color": "#ff8a5d",
       "floor": 150,
       "queries": [
@@ -226,28 +241,28 @@
       ],
       "listings": [
         {
-          "t": "2026 Pokemon Asc En-Ascended Heroes 268 Mega Hawlucha Ex Mega Attack Rare PSA 10",
-          "p": 265,
-          "u": "https://www.ebay.com/itm/358591562232?_skw=hawlucha+ex+268+PSA+10+-lot&epid=26090323694&itmmeta=01KV458R5AK8N1MYVNH8EZA4RA&hash=item537db901f8:g:zrYAAeSwYudqEliO&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xDf1gIRM%2FyR5IczXJOPcCv%2BcqnrkYMvpOkGMOKXZ58H3mtGITxSnfx4rzK69As7piiyBxkhe19GjCB5R7VNTMuVZwiOEBHLI4GRQwPNcYv%2FHF7eSBzbtLzHpKH7z6cFO9yFae6zAvllqXLlsj9f5VINHk0vfAeUWGzPNMW9NDXdzrTPtuCEswnZ2SLggNmFFRlTHAyE%2FKRPAMquQsRtDuRaGexurE7kGmOYqyN%2FpzKs8vIcwNySWn24Oy7G%2BlD4Fy35zsrXXFMa5qdyshLAABdw%7Ctkp%3ABk9SR-yCo4XZZw",
-          "img": "https://i.ebayimg.com/images/g/zrYAAeSwYudqEliO/s-l500.jpg",
-          "sd": "May 26, 2026"
-        },
-        {
           "t": "Pokemon TCG Mega Hawlucha ex 268/217 Ascended Heroes Holofoil PSA 10 MINT ATTACK",
           "p": 231,
-          "u": "https://www.ebay.com/itm/188383316986?_skw=hawlucha+ex+268+PSA+10+-lot&epid=26090323694&itmmeta=01KV458R5AD29KGW555WYRJYPJ&hash=item2bdc854bfa:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBEJgop2pBw4ZvIb6OO9IjM9TmDazz5mt1v6sNnNsnQJKJGkLnnLrfvsLa0Mk6eP10wasTEQKat82pTi1SI49T4LTT5PHyd4k0n%2B8cc9R2tw5RvVnpUYQmR7PWj30fCxSUEzcnbup0B0hzRiWvf61JuESu6YJKF%2BDAk8Y3XnS1ITJ18PDocv%2BqwXD6I2ZcMvvJMO1RUMzUtE1UbrdUmjlZ3IUXfB3542d56cgKhUcZ7eZKANv4Pat38LXUHQiMcuFazrYJwRmzNQhj4iPwWebjZbgRJMNOnaB6xowkGKoTJkEShoC1jnj6iqJpzl1GsmHI%3D%7Ctkp%3ABk9SR-yCo4XZZw",
+          "u": "https://www.ebay.com/itm/188383316986?_skw=mega+hawlucha+ex+268%2F217+PSA+10+-lot&epid=26090323694&itmmeta=01KV5JFR6TBW6X2QYJFR3WBZCM&hash=item2bdc854bfa:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBEJgop2pBw4ZvIb6OO9IjM9TmDazz5mt1v6sNnNsnQJKJGkLnnLrfvsLa0Mk6eP10wasTEQKat82pTi1SI49T4LTT5PHyd4k0n%2B8cc9R2tw5RvVnpUYQmR7PWj30fCxSXAV%2FbdIT1orUtjxrrsjkf3hgGcvWCbekY7simTFblgCubQau%2Bh6pWUCBsMw7e2E7%2BCm7fuK7sHf27S0rlUAFiSmgxTRrIAHAp9sakyEG7rHU2yTj4xSfmUpJqkp2VbPKkn18r6eb8DRCr5jA8eqLkHHSl%2FEEFNu9gq6ED13BjNc1c%2BIKIWRx%2FgS8lBx2vq5bM%3D%7Ctkp%3ABk9SR76Dv7LZZw",
           "img": "https://i.ebayimg.com/images/g/zQYAAeSweUpqAT6b/s-l500.jpg",
           "sd": "May 14, 2026"
         },
         {
           "t": "Pokemon TCG Mega Hawlucha ex 268/217 Ascended Heroes Holofoil PSA 10 MINT ATTACK",
           "p": 272,
-          "u": "https://www.ebay.com/itm/188370125212?_skw=hawlucha+ex+268+PSA+10+-lot&epid=26090323694&itmmeta=01KV458R5AKWDR3S4E7DBBHR73&hash=item2bdbbc019c:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCiWrQqBwlTTU3f4WL3wBmKONlJnlXNBpnSnu4Du2lcbuw%2Fx%2FYm4f6nH38ii1DgLD7FQZuYoWCzv83e4eo6st%2BP2w5jKWDi8tYIzEhrvL5Obbdry9vi0ALRWXdbY8otEmSlCEcVyPgFwc7e95AjtLq%2FWpzNPuN1C0Uxv8kMZ%2BO5Cl%2B22stB0NRCmo3wuQeoAc0Qx%2FkfMZ%2BMViDn7zGqfhz2fmDhiff0WjSpdi36My0HnGfzovchPu08yW5%2FMT10O3QsEpfkUeV5lmBZXl5BRyf%2B%7Ctkp%3ABk9SR-yCo4XZZw",
+          "u": "https://www.ebay.com/itm/188370125212?_skw=mega+hawlucha+ex+268%2F217+PSA+10+-lot&epid=26090323694&itmmeta=01KV5JFR6TFGYK74M5036M3AJ4&hash=item2bdbbc019c:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCiWrQqBwlTTU3f4WL3wBmKONlJnlXNBpnSnu4Du2lcbnj1CFMscINJghjrOnPoehgOlZkNVj%2Be1d1Vwzdb0a6nV%2BYkNXkMuLY2hgawk4Bu2NhEbbqShlAPhHGv1NyvLDxm19VxjUyHQU7uZZ21TRet4aS%2FYgjsFnAnlQ%2FI2r6eQi2IRRK0tEFehXOqcnDnYkK%2Fw2rTKrk4%2BCidZtuIqvS2Nwwq6QRBdJsH2eroBhSU5r1jd4qIjtmJnVTXBF4bCIyAhfWN1Ani%2FlxQGdXV3mBl%7Ctkp%3ABk9SR76Dv7LZZw",
           "img": "https://i.ebayimg.com/images/g/zQYAAeSweUpqAT6b/s-l500.jpg",
           "sd": "May 13, 2026"
+        },
+        {
+          "t": "Pokemon TCG Mega Hawlucha ex 268/217 Ascended Heroes Holofoil PSA 10 MINT ATTACK",
+          "p": 231,
+          "u": "https://www.ebay.com/itm/188383316986?_skw=hawlucha+ex+268+PSA+10+-lot&epid=26090323694&itmmeta=01KV5JFXD9N6EB61DN5D2YSF26&hash=item2bdc854bfa:g:zQYAAeSweUpqAT6b&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBEJgop2pBw4ZvIb6OO9IjM9TmDazz5mt1v6sNnNsnQJKJGkLnnLrfvsLa0Mk6eP10wasTEQKat82pTi1SI49T4LTT5PHyd4k0n%2B8cc9R2tw5RvVnpUYQmR7PWj30fCxSVnz77vwkGfi7qZdJXimODnZgoGMhwcbL1TS3rqmVzgoIy5MUYBiKap75aiZTk4n2fwy9j7nYnkf2FspPh0BfAguK3gEPf2e%2BWboYOU4mgN5aatVzx7d6%2FdPp5Oa4RPcNaJEZRk2BtBZanpcikB%2Buqs6OHhIdwfr66hDNrBw9cYebRhWpzXL36p17x5WB2hFBM%3D%7Ctkp%3ABk9SR97Wv7LZZw",
+          "img": "https://i.ebayimg.com/images/g/zQYAAeSweUpqAT6b/s-l500.webp",
+          "sd": "May 14, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/zrYAAeSwYudqEliO/s-l500.jpg"
+      "img": "https://i.ebayimg.com/images/g/zQYAAeSweUpqAT6b/s-l500.jpg"
     },
     {
       "ticker": "$EEVEE",
@@ -265,21 +280,21 @@
         {
           "t": "Pokemon TCG Prismatic Evolutions - Pokemon Day 2025 Eevee #074 - PSA 10",
           "p": 240,
-          "u": "https://www.ebay.com/itm/188430452105?_skw=2025+eevee+pokemon+day+psa+10+-lot&itmmeta=01KV458VKW5N9W4446Q469DHHQ&hash=item2bdf548589:g:8wEAAeSwVKVqFsVz&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xAJsDGVq7F28VHivYjRLtPjUBRW%2FojbSjMD%2F3zvVpFiyYMl3PjO3vMfO6YkAEsuGOKEKJ0xDlcTBmpIvwGaYmE721kCP21CGgAlFdH8gMei%2FeNazBLKUGAykp8n5x7cPTMbF2GXkkMzjOkuyvz%2B2dpmFNfjVOmBcMbGvBGEXNeSmtm6PxljDAt1KkKuzjjQaYNy6X0f25AOeAkqh7spWJpqbGpdDqRWIi1qi88XZo0b2gOqN9INZHA1yzQu1ueRXL85zzOzDKLPEN3wQifNHS8m%7Ctkp%3ABk9SR5a6o4XZZw",
+          "u": "https://www.ebay.com/itm/188430452105?_skw=2025+eevee+pokemon+day+psa+10+-lot&itmmeta=01KV5JG18CM4HWB2098WBN4TTC&hash=item2bdf548589:g:8wEAAeSwVKVqFsVz&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xAjp0hIjgWAgX%2FqfRNKJCMOD%2F7F2a%2BrIgAEEaZsWGDlvvCWTelZihNzO28gUOURAYZXuMjfImENz%2FaEOU4JjkDer9TmPQ7wzUEJKxXkQLCNuagt0DxW4QjE9RTwJPU8cNWiA5QAkqWDlMaVL2J4MtrwDG6SJOjjj5MiMWSYfX6H%2Bw1VRp8xSBoGoLl5hx4BMuaZrEtM%2FuzcDUkwZWya0lJzFh6RyiNJfFAmbU8giSzIcWISOG3VCA3AYM8ZqlApLqJKN1gfAPJ1Qx%2F8cBY73r7RNrwuuQBBFpM0Ptk4jxrF7j0Z%2BA2qWlbSgkiqHVtyCPg%3D%7Ctkp%3ABk9SR6qUwLLZZw",
           "img": "https://i.ebayimg.com/images/g/8wEAAeSwVKVqFsVz/s-l500.webp",
           "sd": "Jun 6, 2026"
         },
         {
           "t": "Pokemon TCG Prismatic Evolutions - Pokemon Day 2025 Eevee #074 - PSA 10",
           "p": 211,
-          "u": "https://www.ebay.com/itm/188466207616?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KV458VKWJVTWRDEVASFQVPVG&hash=item2be1761b80:g:080AAeSw9WJqIXk5&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xD65vrsxA4LcVL0%2FBt0HGjm8NNxjfKHERF9DeimymbkmyUN59LFiPqEQ4MPFnhB4PrqnRfy8ZX6OpanMbreM618D%2F9P66b5PPhHKEAKYj0EuF9N9cHczcMXPj359DEZ6r%2FQxUTpoQjOWWn4mpfEV9QyReRP2ecIQf%2BM1DN61Bycddp4K5wXOApuW4RJUQ73g%2FbfhFzw9ZeImkqItJ4ge9BY%2FEzgQxwWw6L2kmxxoV0l%2B5y3wQRFOPj2aj%2BP6Vq0c1qMzFnUXnzlvWO%2Fbh9igjfqwsZrSgGMzqtes2Bxkcd7FX6CsPGtr8JRkNyS%2Bo5nbpQ%3D%7Ctkp%3ABk9SR5a6o4XZZw",
+          "u": "https://www.ebay.com/itm/188466207616?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KV5JG18CYG1HVHQ2AXB0Q3AG&hash=item2be1761b80:g:080AAeSw9WJqIXk5&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xD65vrsxA4LcVL0%2FBt0HGjm8NNxjfKHERF9DeimymbkmyUN59LFiPqEQ4MPFnhB4PrqnRfy8ZX6OpanMbreM618D%2F9P66b5PPhHKEAKYj0EuF9N9cHczcMXPj359DEZ6r%2Fln4A13d6kI8G1O3J5qlx950hnDpXDrOfRdmir4Zodg7EKpXTZvRzLYw7z2WdfeGUEhcoFLJuBS9A0ylgVOgkfkA9%2FeuPChmY9KM6Buvfr5%2BeJ0myu7D4zfQTbi8GtN5%2FvM8ppf5rfAkMs16BNSsWaYxzl%2F7shEq3cQEpsMvV%2BQntePL5NKgtaPkdxr5SgZl8%3D%7Ctkp%3ABk9SR6yUwLLZZw",
           "img": "https://i.ebayimg.com/images/g/080AAeSw9WJqIXk5/s-l500.webp",
           "sd": "Jun 5, 2026"
         },
         {
           "t": "2025 POKEMON PRE EN-PRISMATIC EVOLUTIONS POKEMON DAY 2025 #074 EEVEE PSA 10",
           "p": 209,
-          "u": "https://www.ebay.com/itm/306942931705?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KV458VKWT63K9Q6GBR0P357M&hash=item47773972f9:g:XhoAAeSwrmVqCLaV&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDMewEVgP4mRsN5fK4v6XiIrXQLjK%2Fpock7a1g9HWJ%2F4Uf3Hp6r3v5UwvApb6XHmG5wbXEhXM%2BLfOoeSYBycTtcvLZCjM1xm3897m7a7kgPkwgynUn5oHM4iZ1CarxJ3Yl85jfmrGaNSlUZiTpNvReLJL8r9DWv6YRZP0xCnc1xvV%2F9MrZ76Ynj7kC4NpsWrSPwAxFV%2Baui8BQNfIiN%2BM%2BGc6auFSquwZldSwm8xCViF4XQg%2FLvi9asyUkDsD5afZtwPlpkO88FYgBGPqboW1R%2F4F36f%2BZBsasmNWjZqqDfqUTra07SPfFJqq7IA%2BLAT54%3D%7Ctkp%3ABk9SR5a6o4XZZw",
+          "u": "https://www.ebay.com/itm/306942931705?_skw=2025+eevee+pokemon+day+psa+10+-lot&epid=26074372836&itmmeta=01KV5JG18C4S0D18ZK3SGGTSP3&hash=item47773972f9:g:XhoAAeSwrmVqCLaV&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDMewEVgP4mRsN5fK4v6XiIrXQLjK%2Fpock7a1g9HWJ%2F4Uf3Hp6r3v5UwvApb6XHmG5wbXEhXM%2BLfOoeSYBycTtcvLZCjM1xm3897m7a7kgPkwgynUn5oHM4iZ1CarxJ3YnnheFtMF9Vl8pxeGNa2JmhF7tSqpmITRkfTLoyu6busm4ghXLaoE6Ul2e6FU%2FsDsh89O4YGF1ePMmVyboBw0hncTRxXNaP1gXrvAWDh0Hly7J5i%2B8hCA0EBJV%2FqJaQLdkzUiQgGm5jKDKdpYP6gfJO%2B5O0RDGh%2FU4TfCZwTz5xxVFqfNl3UxpuK%2BH077WWPBU%3D%7Ctkp%3ABk9SR6yUwLLZZw",
           "img": "https://i.ebayimg.com/images/g/XhoAAeSwrmVqCLaV/s-l500.webp",
           "sd": "May 28, 2026"
         }
@@ -303,33 +318,33 @@
         {
           "t": "Pokémon TCG Flareon Jungle 3/64 Holo Unlimited Holo Rare PSA 7 NM",
           "p": 109,
-          "u": "https://www.ebay.com/itm/366409923954?_skw=flareon+jungle+holo+PSA+7+-1st+-lot&epid=8043378169&itmmeta=01KV4592DRTJT3S6NJC94RHERG&hash=item554fbbbd72:g:EMgAAeSw8iBqAldz&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBB792amUMt76MPUtx%2F6UINSo9izhidOOC2u8LloNoNh0sgqjwyvs%2FNWWmD8x1VMLkvdHSVIBRYztNPUXxnZprego4tFhZCPrubUiWtyMfaeYy4KDmRjShv9UByRe6cBacSkzvnPueeIKBPqjBdDIwbCWCcN17m0SCl2baD0z1kB%2F9Me145lrVGj%2FJHvRy9uxcHmSXfc%2F3egZpiWhh%2BEvbkFDSs1GIWWTDRzTyyO8IRtF2wKKnB1JQl%2FmJf3CJo1imkKQeQgrHV--Clp%2FC0ersw%7Ctkp%3ABk9SR_6mpIXZZw",
-          "img": "https://i.ebayimg.com/images/g/EMgAAeSw8iBqAldz/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/366409923954?_skw=flareon+jungle+PSA+7+unlimited+-lot&epid=8043378169&itmmeta=01KV5JGK8KV61EBHE1R3YRNR42&hash=item554fbbbd72:g:EMgAAeSw8iBqAldz&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBB792amUMt76MPUtx%2F6UINSo9izhidOOC2u8LloNoNh0HEoGOHGhtA7UX4nbH3RL5lswd0ACcFbXom5n3jG2%2FcMa2lFM2SDQtKUm9bzitpvD9hUFeaGkIeNgbgHGLD5oLQbrQlGa8b89Z4QojbeVwTH7gR3eWRkvLvJGdQ%2B6PkN%2BK4eth5p023JU3%2BFeZ%2BSsJjS2WrKwiQxk1GdBZWmGNFOSilkjQg6qT8xoYEd2TA%2FMB6i%2Bn9JZfYuKLXg2A0A1CwpNPwCu%2Bxv6tKkbVClPvq%7Ctkp%3ABk9SR7K0wrLZZw",
+          "img": "https://i.ebayimg.com/images/g/EMgAAeSw8iBqAldz/s-l500.webp",
           "sd": "Jun 13, 2026"
         },
         {
           "t": "1999 Pokemon Unlimited Jungle Flareon Holo 3/64 PSA 7",
           "p": 122,
-          "u": "https://www.ebay.com/itm/306983769601?_skw=flareon+jungle+holo+PSA+7+-1st+-lot&epid=13043374721&itmmeta=01KV4592DRWQDXVKJ4NX8CX8KQ&hash=item4779a89601:g:UXgAAeSwDftqIkmK&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xDSldpH%2FNhILQS3HbAQflYKycrOR4yEg2G8rXH91G4Z2JwE2tAU0hioJYUP9mj%2FlWVF3p2iYmdWhSaTU9tevA7mqFLP7nnPYhDIR7SaBPdklmVB0th1QKs4OHgt5%2Bxh7%2Fw7DkwnsAn3X6DEX7imxriKiqdXJjApGHLZJ4vniTKO31NHUNolsdNFxfVk3CEI8LGn%2BdDCoRIGVM3%2FyyeGbNw1FkAyYBRp7FPojNLrLE4IiJQEa6I5epAAJrq6GVKFUaJaKuZJawiddgVCIfh1rYhCjhu%2BgxvzCekRgVsyKsqLpDZF8Os94c9gfGLzgtKeeR4%3D%7Ctkp%3ABk9SR_6mpIXZZw",
-          "img": "https://i.ebayimg.com/images/g/UXgAAeSwDftqIkmK/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/306983769601?_skw=flareon+jungle+PSA+7+unlimited+-lot&epid=13043374721&itmmeta=01KV5JGK8KM5TBTHDAMCXKK0QV&hash=item4779a89601:g:UXgAAeSwDftqIkmK&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBxu0e14HfNcQXo9dAnhjYdXIe0WelhItThO5LYlbBJefCguz9np58H8rBEDb4UAUhV8ELK7CVbHCgy8F%2FFQ%2BRQ3RI3d6Az93yd6NnSSMPF9U7Niep8n7ekiD1macU9EkdCDRVHvCfYealTkKay5j6Z7ZcDAdmKxRwFxFX3XkWJUX9RWlikS2MfrBdN4h6DY4ut%2BLGLCsRKU0ATUH%2B7GzFuyMyKvLqHEoSYdl%2FVtyzkBLxxG3yKmwp9DTxKG8rMtytJxrdFzpVuB4hEfPU5UaxG%7Ctkp%3ABk9SR7K0wrLZZw",
+          "img": "https://i.ebayimg.com/images/g/UXgAAeSwDftqIkmK/s-l500.webp",
           "sd": "Jun 9, 2026"
         },
         {
           "t": "Pokémon TCG Flareon Jungle 3/64 Holo Unlimited Holo Rare PSA 7 NM",
           "p": 82,
-          "u": "https://www.ebay.com/itm/800115095998?_skw=flareon+jungle+holo+PSA+7+-1st+-lot&epid=8043378169&itmmeta=01KV4592DR2K9A1RXSNNWD8DR0&hash=itemba4a9379be:g:jRUAAeSwmhpqH8Zv&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBTeV6AerlLmKA3ANFkpK%2B2LIZy1pYT9tIlUxE6xh3a3tA4YXrUfBUAAYfrjbB%2BngREAL9uGg9xvxA%2BZsgKs59s8Qm9xHlXgXPBXfQvIZXgSp9ZhJbcMA6BlsPSb6IxW%2B%2FNi3nu%2FveJgJC6%2BkmOZkob4etzcFPB%2FpG%2FqM7J9dVgwPU6De1U8cBSzw018tAJX9B9yUPIGlgQj1xXjfrwKVUR%2FDwmCr5i1f8qx9o1%2FXT8ULTxpe0RtHdsnA9IXA1uY5pxDJPLIzDTTbaIkJ7G1vXS%7Ctkp%3ABk9SR_6mpIXZZw",
-          "img": "https://i.ebayimg.com/images/g/jRUAAeSwmhpqH8Zv/s-l500.jpg",
-          "sd": "Jun 5, 2026"
+          "u": "https://www.ebay.com/itm/800115095998?_skw=flareon+jungle+PSA+7+unlimited+-lot&epid=8043378169&itmmeta=01KV5JGK8KXG85E0RPH04S62K4&hash=itemba4a9379be:g:jRUAAeSwmhpqH8Zv&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xBTeV6AerlLmKA3ANFkpK%2B2LIZy1pYT9tIlUxE6xh3a3nhgLAxTRxjUKeJtyX7XKLMNKo79xoKSceTiS9AcxlwvW3RuD5o47jABUC4szHarqYIlTUgleZ8WZnR8BsSLm4P%2F1TtAsEskIvKwBhdY6LEZ3V3kNYXq4HP3o8Vva53Ev6gXB8adLBoqpFu1w5eQAyqUaXk5IxUoRuV4iMkZ2Uw%2Bi83Wbgau4GcDL6nTzPaR9Z32ltyoTzVjXaEL3FNTmdplpmN1gNP4SYJ4hub9fXj5%7Ctkp%3ABk9SR7K0wrLZZw",
+          "img": "https://i.ebayimg.com/images/g/jRUAAeSwmhpqH8Zv/s-l500.webp",
+          "sd": "Jun 6, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/EMgAAeSw8iBqAldz/s-l500.jpg"
+      "img": "https://i.ebayimg.com/images/g/EMgAAeSw8iBqAldz/s-l500.webp"
     },
     {
       "ticker": "$LUCARIO",
       "name": "Mega Lucario ex MEP 033 · Poster Coll · PSA 10",
       "cost": 210,
-      "prev": 509.99,
-      "now": 509.91,
+      "prev": 509.91,
+      "now": 509.9,
       "color": "#3b7dd8",
       "floor": 350,
       "ceil": 900,
@@ -341,33 +356,33 @@
         {
           "t": "2026 POKEMON MEP EN-ME BLACK STAR PROMO #033 MEGA LUCARIO EX PSA 10",
           "p": 510,
-          "u": "https://www.ebay.com/itm/117236513181?_skw=mega+lucario+ex+033+PSA+10+-lot+-gardevoir&epid=17091916394&itmmeta=01KV459CHD5XNS9GSZAMCR07W1&hash=item1b4bd7399d:g:IDYAAeSwYJNqJbGX&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xC5J%2B%2F0vh5WFLqfa9wCvNZATMvn0HZjGhYzlt2guum4SutANpq9NYesBoPGRYnsbIUr5jZh4HyzhCaPcHA2MVptqylFn6gmS6kSGqrEDUn1JcIbJgYqrugFvcOqUvwvrckFb9msTBUe9opo5YEerHFU6KhE%2BX6zbGFjIAZgauSAaLpVXsx4uw2WfjF7uqu51QDzmFNc9WTBq8GsdpLTHSsrTl8AOH668V3UaGTPiVPgLOJooNwsIGteuLotvf6T06F9pm2oz5FqC%2F1k1xHhO4Nj0iuHlAvhy4pe322YTk3MEA%3D%3D%7Ctkp%3ABk9SR-TIpYXZZw",
-          "img": "https://i.ebayimg.com/images/g/IDYAAeSwYJNqJbGX/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/117236513181?_skw=mega+lucario+ex+MEP+033+PSA+10+-lot&epid=17091916394&itmmeta=01KV5JGXHMXXZW66A144YWPFPG&hash=item1b4bd7399d:g:IDYAAeSwYJNqJbGX&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xC5J%2B%2F0vh5WFLqfa9wCvNZATMvn0HZjGhYzlt2guum4SovrSWK40kttmYRYyMBJ3qxxPehOIC0E0VV%2Fd9LG9%2BvU%2F6LkjZvCCByRXG%2B1%2FJsPbs84BJV%2FZU7Bbi20Q3h0rLtelVSM%2FFdKAE6cX8PSEqQqJJq592HmNDb%2FdcZK90PHSTuGgEadcB8yH9E8syZjiyjEzkSFFOfKhkI%2B2fh52N%2BBKBxwOX6GzsYmJnXxBBS%2Bj3WGKpFEqFm42qUIspq6%2BL08IzPmJyqA6D8Dw3Gp%2BbIF%7Ctkp%3ABk9SR_jYw7LZZw",
+          "img": "https://i.ebayimg.com/images/g/IDYAAeSwYJNqJbGX/s-l500.webp",
           "sd": "Jun 11, 2026"
         },
         {
           "t": "2026 POKEMON MEP PROMO PREMIUM POSTER COLLECTION #033 MEGA LUCARIO EX PSA 10",
           "p": 544,
-          "u": "https://www.ebay.com/itm/336628152669?_skw=mega+lucario+ex+033+PSA+10+-lot+-gardevoir&epid=17091916394&itmmeta=01KV459CHDW09PB1ZG74Z7TSZ8&hash=item4e6099f95d:g:63EAAeSw4sRqJvaZ&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xBgjB5uxEVYkFsxprsvmdED%2FBY%2FuCkrdr7B6ZQ6L84C%2BRwqSC5CVXH1DWnJI%2BTA2ItbxFXew9lUaSUQ86VzCa%2FmE0kS44elEaGh4dTGoSlwAtBvZ5cVfw8Xm490Nm7MjDLuvm6KVsRu3pvR6ZQjYCv4Gh5z5I69GOTMd%2FVl1%2FMQVLMs3cr5F4CFkVKqwYdpl24%2B%2FaI0cZnmOGrkuPFHjl7vxg0QztmKY2RO4GT0NNNrfsBwVnCGXfEyQ%2Bu65lPno4566JlGdqM01ZQZQW1C0yC1Id%2FrznoIbG2e9G3h4%2FoipwXbK512ruAtzzuwqk939rhSwdJW9%2FCHbe73ATOEFmwy%7Ctkp%3ABk9SR-TIpYXZZw",
-          "img": "https://i.ebayimg.com/images/g/63EAAeSw4sRqJvaZ/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/336628152669?_skw=mega+lucario+ex+MEP+033+PSA+10+-lot&epid=17091916394&itmmeta=01KV5JGXHMC9NQ6SFQ3FYQMN5S&hash=item4e6099f95d:g:63EAAeSw4sRqJvaZ&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xBgjB5uxEVYkFsxprsvmdED%2FBY%2FuCkrdr7B6ZQ6L84C%2BRwqSC5CVXH1DWnJI%2BTA2ItbxFXew9lUaSUQ86VzCa%2FmE0kS44elEaGh4dTGoSlwAtBvZ5cVfw8Xm490Nm7MjDJN%2B1msQYhgtQ%2F%2BFZs%2FQmiuLy06sFu8KTEi3bjM92y89j2EyK1hXmF%2FTYBJsQnEsmRYC2x5oByBRfdiBS%2FNQHSatg2w%2B56I7V%2FWkFilbqrOT504EzrDIYW1Dp4W%2FoOl6ArXDjYbOFBu9LcizHEhPIWhJecK%2FEygNFEQs8pBbb6t5ktyfMrJ7ITpjNmjkZsJKJY%3D%7Ctkp%3ABk9SR_jYw7LZZw",
+          "img": "https://i.ebayimg.com/images/g/63EAAeSw4sRqJvaZ/s-l500.webp",
           "sd": "Jun 9, 2026"
         },
         {
           "t": "2026 POKEMON MEP EN-ME BLACK STAR PROMO #033 MEGA LUCARIO EX PSA 10",
           "p": 483,
-          "u": "https://www.ebay.com/itm/298375107847?_skw=mega+lucario+ex+033+PSA+10+-lot+-gardevoir&epid=17091916394&itmmeta=01KV459CHDDYMA1DFCXAN4G6PN&hash=item45788ad507:g:HlEAAeSwwYFqHbhy&itmprp=enc%3AAQALAAABEGfYFPkwiKCW4ZNSs2u11xB8iaiMlHzN8yAHubuiyTQFIrtu8VPEgJi5HHg2kUbU71T3MvHcdyabDajhInFBTBZw6ganSUTZQRVPMh8qTSWXyxX733hSY3lw2luQJJeoDL3ZrOy%2BWk%2FMXmgN%2FDpSRndtWlxhNwtF5v2L7zFKgBTrMR1Kkt3TbJ8upSI%2BOzO3pZ5l9Pz1CxARQ%2F0l%2BidTHUvujZutRIwDYS7CQmJmCaGTJVsaR6SUD1saJaZ6ZZNsvjSUgI%2F%2B%2FwyaEuGOsPa640ZtF%2FMtUFKOtTLj748Fd%2FfvuY8O4QYa82tCuucDWsgi8YNRg3o0K4iVmrgcN2F%2B1rKfcyH5Khw7xS1C8u17vrbk%7Ctkp%3ABk9SR-bIpYXZZw",
-          "img": "https://i.ebayimg.com/images/g/HlEAAeSwwYFqHbhy/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/298375107847?_skw=mega+lucario+ex+MEP+033+PSA+10+-lot&epid=17091916394&itmmeta=01KV5JGXHMDE0KW1YEGF0YDF92&hash=item45788ad507:g:HlEAAeSwwYFqHbhy&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xB8iaiMlHzN8yAHubuiyTQFIrtu8VPEgJi5HHg2kUbU71T3MvHcdyabDajhInFBTBZw6ganSUTZQRVPMh8qTSWXyxX733hSY3lw2luQJJeoDL3ZrOy%2BWk%2FMXmgN%2FDpSRnf5OQH7IyqqNp17qUpxxY3hcyRF2MAG6uEMsPQ%2FHYUptEw5P9ssvy5kM11%2Bbxg%2BYmkh0mAM70oJV3MfHYBGwd%2BB4VssMCNuOiRR8gj57GQyB%2B94VJonOEj8Awwjvrs2YGM%2FENmgvXmSxhobT7tIDoFNADVdqGgirt2aFkYaZvBeNxdN0R4FkXUo%2FTfvMjeuVrQ%3D%7Ctkp%3ABk9SR_jYw7LZZw",
+          "img": "https://i.ebayimg.com/images/g/HlEAAeSwwYFqHbhy/s-l500.webp",
           "sd": "Jun 9, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/IDYAAeSwYJNqJbGX/s-l500.jpg"
+      "img": "https://i.ebayimg.com/images/g/IDYAAeSwYJNqJbGX/s-l500.webp"
     },
     {
       "ticker": "$LUFFY16",
       "name": "Luffy OP16-034 · Time of Battle · Alt Art raw",
       "cost": 0,
-      "prev": 69.08,
-      "now": 58.47,
+      "prev": 58.47,
+      "now": 69.08,
       "color": "#2eaa5e",
       "floor": 40,
       "ceil": 200,
@@ -379,32 +394,32 @@
         {
           "t": "2x Monkey.D.Luffy Alt Art (OP16-034) | OP16 - The Time of Battle | ENGLISH",
           "p": 102,
-          "u": "https://www.ebay.com/itm/188489956619?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&epid=18094779118&itmmeta=01KV459JRN3KT077JX7NMPGANJ&hash=item2be2e07d0b:g:MD4AAeSw5sZqKKCp&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xCltltrpWxj11PbluWGLawRr9A4AI9cTb0%2Bqh9B5NuGGHCHLURadysr033DskiboRpXvG876Eywl0QvsisT5xoQU8kkOioKDpYMtZdAW%2B7mpsbI5ur8iG7xxsfYbYaOa0g31AqiOd2Fux2028MVXYpUpwM9Qgk1u%2FSl%2BdNK8%2BQF0PKz9Qq8txj4KwfWKOeQe8ijSb15fYmslGAx9eXXcYYmapwyboklFALJt619k%2BAUgG5uel9Od59J5SwaJGC3gh1RLewC70s3r01FQUwrkg%2FpWWJ3r%2FIIb9Bc68OHIDIIXnW%2FKvoQKM0VqWLNBAPOF5I%3D%7Ctkp%3ABk9SR7ispoXZZw",
-          "img": "https://i.ebayimg.com/images/g/MD4AAeSw5sZqKKCp/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/188489956619?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&epid=18094779118&itmmeta=01KV5JH50QBFJ5YH5MTAM1N2DD&hash=item2be2e07d0b:g:MD4AAeSw5sZqKKCp&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xB%2BHfk9Z2HNTcuQZbeDXbNH9Lj4DE6ap7fcWC36mUdxv9ycrRYYLCShvR2i1WhTs4pwY8Yw4OfayIOdGOWNu7MRTKJLh%2FGCpiAPG7XjjsSJzWzBF2K1mnP8Q0YJnngmgLvbTmRlaGBXDenfroHaMbjovhdMQku1NV5TqKchy4hc1%2BHR27ZLttXFmuTArVorz%2FAlA4X1OxD3qiw4uFYwAcZEy0mQi%2BG9eMPaffjadK%2Bpy6th4lzp9Fp6932f6nEltMvpfv8mn5%2BSeeNO8wFOXWBM%7Ctkp%3ABk9SR8zQxLLZZw",
+          "img": "https://i.ebayimg.com/images/g/MD4AAeSw5sZqKKCp/s-l500.webp",
           "sd": "Jun 9, 2026"
         },
         {
           "t": "OP16-034 Monkey.D.Luffy R Alt Art The Time To Battle One Piece TCG English Card",
           "p": 58,
-          "u": "https://www.ebay.com/itm/178195687798?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&itmmeta=01KV459JRNCB2NRFV9F7XHBR12&hash=item297d4a6976:g:eQUAAeSwcuNqIwBR&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCtK8ujlfwQy6eLBHyg4IG81BgXH7hZx%2FK3%2BH0JOLqQ6Dz%2F3OFYJZ6aSRBYRDcQHKXYim%2BE1g3ME9Xb21nycKoOmxUUdpSNY4b4yW3sMOltPs%2Bq0I%2BGjXUYsQ9XLzYY3jJCzvuPIBY6V6rczr7GWLvBeV8YvxXyAEtFJ38ZMy98dLz3qY3IPKd8F5aGtDLjPRw17twQk725zUQfW9UKt7zCmSxgTMD%2BkECZ79QyNjk%2BJ6%2BD6Sy%2BdTXU35hyM4Sr1yvwDTMlLlAmeSUXS9v%2F8xem%7Ctkp%3ABk9SR7ispoXZZw",
-          "img": "https://i.ebayimg.com/images/g/eQUAAeSwcuNqIwBR/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/178195687798?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&itmmeta=01KV5JH50RYK9P6ZVRYD9XPZ8N&hash=item297d4a6976:g:eQUAAeSwcuNqIwBR&itmprp=enc%3AAQALAAAA4GfYFPkwiKCW4ZNSs2u11xCtK8ujlfwQy6eLBHyg4IG81BgXH7hZx%2FK3%2BH0JOLqQ6ElbzyVHs0M6xIQWNIBAqvpSh0g0kgtsmRT9SsAR5huaEgJJRD%2FqGEi%2FTWbsbqzHITYuqMqfPsU87TXdZvazekgbfnsQIHDwBCNbuTgrO7zLaPY7rn2LAG7fyEHK%2FLRAVRRWcPN1NftHBXz8n6y6NzvmjCV9SUQQtYA55HWiwgQ3rrqvrnUzy31hgNDtWdRTg6KrusM%2FDlT4Cp79xdgHpnTRBGrnH3EF5sQ3UQRq9Bmr%7Ctkp%3ABk9SR87QxLLZZw",
+          "img": "https://i.ebayimg.com/images/g/eQUAAeSwcuNqIwBR/s-l500.webp",
           "sd": "Jun 7, 2026"
         },
         {
           "t": "Monkey.D.Luffy Alt Art (OP16-034) | OP16 - The Time of Battle | ENGLISH",
           "p": 56,
-          "u": "https://www.ebay.com/itm/168436250769?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&epid=18094779118&itmmeta=01KV459JRN1RV47KNPDNDYJ6MM&hash=item2737953891:g:VSIAAeSwFhpqJFnP&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xCM5tlAyTXofXX77GlB%2BGMnpHYDzUHkHblFVlWk8iACrgm6z%2Fa9XjZN4%2FqCQYVvGilbc1AY2cmsB7aPbKt7VziGDg8sTDH6IeFuC9voBurgU3LVDSM4%2BL6AaLspNIZsPH%2FFHtprNIGYj1qsCg8qGckV7QzXHLw%2FZUB4Lxoy2ZBc7Z8XIHxdHZoucNisuDB%2FFSgCTz7ovOD5IedFzlIM4VdlEZiijyD7%2B2hScO62ekcXOIogSjTRlUF1trt5TsqFJQde6WgV%2FnOcnuiaXRA1ucjQsHzILcGPIEHw82NqhMY2kn6OnX1%2BBmP4PFhX9ihdbO4%3D%7Ctkp%3ABk9SR7ispoXZZw",
-          "img": "https://i.ebayimg.com/images/g/VSIAAeSwFhpqJFnP/s-l500.jpg",
+          "u": "https://www.ebay.com/itm/168436250769?_skw=luffy+OP16-034+alt+art+-PSA+-CGC+-lot&epid=18094779118&itmmeta=01KV5JH50R4SAZYZQ11BXDNXWR&hash=item2737953891:g:VSIAAeSwFhpqJFnP&itmprp=enc%3AAQALAAABAGfYFPkwiKCW4ZNSs2u11xCM5tlAyTXofXX77GlB%2BGMnpHYDzUHkHblFVlWk8iACrgm6z%2Fa9XjZN4%2FqCQYVvGilbc1AY2cmsB7aPbKt7VziGDg8sTDH6IeFuC9voBurgU3LVDSM4%2BL6AaLspNIZsPH8e%2BAPz1QA5dfyziCrPyOX3%2FR1JZ9GzLbLbYBmA%2BFT9Nkl2S%2FebqT5rWZaEe9kjepmsLNk0a3DScINgEIGYaPLOa4DpvIaB5wlET2S0iR%2FTXyVNA2cXJCjmLwBxuWrlUtSz0v5Y2sD6YOPIbgGn3aaEn1JZOjcbTXmPg0C0QVanrvd1ZXNdmjE%2FQapU4eoYjwg%3D%7Ctkp%3ABk9SR87QxLLZZw",
+          "img": "https://i.ebayimg.com/images/g/VSIAAeSwFhpqJFnP/s-l500.webp",
           "sd": "Jun 7, 2026"
         }
       ],
-      "img": "https://i.ebayimg.com/images/g/MD4AAeSw5sZqKKCp/s-l500.jpg"
+      "img": "https://i.ebayimg.com/images/g/MD4AAeSw5sZqKKCp/s-l500.webp"
     },
     {
       "ticker": "$MAGNETON",
       "name": "Dark Magneton 11/82 · Team Rocket 1st Ed · PSA 7",
       "cost": 100,
-      "prev": 105.39,
+      "prev": 102.0,
       "now": 102.0,
       "color": "#9aa0a6",
       "floor": 30,
@@ -412,7 +427,31 @@
       "queries": [
         "dark magneton team rocket 1st edition PSA 7 -lot",
         "dark magneton 11/82 1st edition holo PSA 7 -lot"
-      ]
+      ],
+      "listings": [
+        {
+          "t": "DARK MAGNETON PSA 7 2000 POKEMON TEAM ROCKET 1ST FIRST EDITION #11/82 HOLO 1817",
+          "p": 109,
+          "u": "https://www.ebay.com/itm/188483787493?_skw=dark+magneton+team+rocket+1st+edition+PSA+7+-lot&epid=22043374877&itmmeta=01KV5JHFBRWTA9MXQYQNN7VNK0&hash=item2be2825ae5:g:LqEAAeSwjW5qJu4w&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xAY%2FzEDXHxn1rNIZnerGPKjRO6PV7bXI2O8I86xX%2BftCeUOr2I4kyTF2fcW6Tk4wI%2Bcm2ZH8zw0Qzgw73Zxn5uxE6o091NmYBQjQIJ9v2rnbH3PRmksGF0%2B0n3FQVTqeH86YVRI6RRZNpuyCxO4rk9dg%2ByvUX2cYF7N2UKMHEFiOvfJvzN9K67JJ%2BxqgoZ0DbxopqY4%2B4yn2Cnsw0Z0FuDuRNu6Ovpc%2BDNMvyJYtoEJGIHHpJtvT5dUp5fV%2FdvpxyOH7TSRLuOMKPloPmpMd22HZNxpoykVzz%2FPSUBcXsm4QA%3D%3D%7Ctkp%3ABk9SR_j1xbLZZw",
+          "img": "https://i.ebayimg.com/images/g/LqEAAeSwjW5qJu4w/s-l500.webp",
+          "sd": "Jun 12, 2026"
+        },
+        {
+          "t": "Pokemon 2000 Dark Magneton 11/82 1st Edition Holo Team Rocket PSA 7",
+          "p": 77,
+          "u": "https://www.ebay.com/itm/406911893584?_skw=dark+magneton+team+rocket+1st+edition+PSA+7+-lot&epid=22043374877&itmmeta=01KV5JHFBSNKK1913KN05AVAY2&hash=item5ebdd6c050:g:kosAAeSw6oxp~ToX&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xAWg2yUsCcwJOqHqOO3AU965xpptrZ1WNadTD66pqztEqRsXOlFl2x443ndBuAe6F2zOtA81S80kRkNbMzt5NvpSqxDxNXOar7LP1eyfEKaB61Qh%2FlWc5xFjZ2zRfbJQ%2FZ5XlTU5ZhEriibdH2heGEHFKeE8pWWviFJ7B8apO94jAQVdKaF6Xj%2FRHCKA4Yb9RzVarzVuifMhkzpKHBi9Fy58%2BZnO%2F1ndvGU2zze7Xkqoz9K4sy9xU5tORwoZBY1bwYR1xBrN%2BDxzs9M2w4TT19IeJt4lMOu0sOdzn5bISSyKw%3D%3D%7Ctkp%3ABk9SR_j1xbLZZw",
+          "img": "https://i.ebayimg.com/images/g/kosAAeSw6oxp~ToX/s-l500.webp",
+          "sd": "May 17, 2026"
+        },
+        {
+          "t": "Pokemon Dark Magneton Team Rocket 1st Edition Holo Rare #11 PSA 7",
+          "p": 82,
+          "u": "https://www.ebay.com/itm/287247660276?_skw=dark+magneton+team+rocket+1st+edition+PSA+7+-lot&epid=22043374877&itmmeta=01KV5JHFBSMCM8E3T04MRHZWA6&hash=item42e14b74f4:g:pbIAAeSwh-BpzadK&itmprp=enc%3AAQALAAAA8GfYFPkwiKCW4ZNSs2u11xB0kf8m8oW4g%2BHk0EdEKzB%2BUMM2gUkqry6x0paFw2iYVVfF4jp5BkQXKOxqWcj67jbjpfDZG3hWk%2FYG0lPq1fbVERGqzfowU59vgN2%2FcmNV%2BhoHr5VDhiEZBGrfArKQCVWGWSSGXrPseoXdxcf3klJv3LaOaAr9GI7uSk55QtARL8jVoloWS8zEO1HJC%2FJiae%2BFqbSxCGk3f8vG4VHyr2awOOmmdBgqBo7iro2cPD6G8RPvELeqTCvVvAq2npXeZeMylKarDXMNrX9LH0niY0eYsAeXO2g0At21ksGuXinw6Q%3D%3D%7Ctkp%3ABk9SR_j1xbLZZw",
+          "img": "https://i.ebayimg.com/images/g/pbIAAeSwh-BpzadK/s-l500.webp",
+          "sd": "Apr 12, 2026"
+        }
+      ],
+      "img": "https://i.ebayimg.com/images/g/LqEAAeSwjW5qJu4w/s-l500.webp"
     }
   ]
 }
