@@ -1,5 +1,5 @@
 {
-  "updated": "Jul 09 2026",
+  "updated": "Jul 10 2026",
   "currency": "C$",
   "history": [
     {
@@ -484,6 +484,21 @@
     },
     {
       "d": "Jul 09 2026",
+      "v": 2764,
+      "cards": {
+        "Luffy OP13-118 SP": 730,
+        "Marshadow & Machamp GX 199": 408,
+        "Mega Gardevoir ex MEP 032": 368,
+        "Mega Hawlucha ex 268/217": 231,
+        "Eevee 074/131": 235,
+        "Flareon": 109,
+        "Mega Lucario ex MEP 033": 510,
+        "Luffy OP16-034": 58,
+        "Dark Magneton 11/82": 116
+      }
+    },
+    {
+      "d": "Jul 10 2026",
       "v": 2764,
       "cards": {
         "Luffy OP13-118 SP": 730,
